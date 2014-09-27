@@ -1,4 +1,10 @@
-<?php echo $this->Html->script('publicaciones'); ?>
+<?php 
+echo $this->Html->css('daterangepicker');
+echo $this->Html->script('publicaciones');
+echo $this->Html->script('moment.min');
+echo $this->Html->script('jquery.daterangepicker');
+
+?>
 <div id="page-container" class="row">
 
 	<div id="sidebar" class="col-sm-3">
@@ -39,6 +45,17 @@
 						<?php echo $this->Form->input('property_type_id', array('class' => 'form-control')); ?>
 				</div>
 				</div>
+				<div class="well" id="tiempo" style="display:none;">
+					<h3>
+						<?php echo __('Disponibilidad'); ?>
+						</h3>
+						<div class="form-group row">
+					<div class="col-lg-8 col-md-8 col-sx-12">
+					<?php echo $this->Form->input('availability', array('class' => 'form-control','label'=>false, 'readonly'=>"readonly",'style'=>'cursor:pointer;')); ?>
+					</div>
+					</div>
+				</div>
+				
 				<div class="well">
 					<h3>
 						<?php echo __('Multimedia'); ?>
