@@ -1,0 +1,939 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2014-09-25 02:50-0300\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/CitiesControllerphp:38;71;100
+msgid "Invalid city"
+msgstr ""
+
+#: Controller/CitiesControllerphp:53;75
+msgid "The city has been saved"
+msgstr ""
+
+#: Controller/CitiesControllerphp:56;78
+msgid "The city could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/CitiesControllerphp:103
+msgid "City deleted"
+msgstr ""
+
+#: Controller/CitiesControllerphp:106
+msgid "City was not deleted"
+msgstr ""
+
+#: Controller/NeighborhoodsControllerphp:38;73;104
+msgid "Invalid neighborhood"
+msgstr ""
+
+#: Controller/NeighborhoodsControllerphp:53;77
+msgid "The neighborhood has been saved"
+msgstr ""
+
+#: Controller/NeighborhoodsControllerphp:56;80
+msgid "The neighborhood could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/NeighborhoodsControllerphp:107
+msgid "Neighborhood deleted"
+msgstr ""
+
+#: Controller/NeighborhoodsControllerphp:110
+msgid "Neighborhood was not deleted"
+msgstr ""
+
+#: Controller/OperationTypesControllerphp:38;71;100
+msgid "Invalid operation type"
+msgstr ""
+
+#: Controller/OperationTypesControllerphp:53;75
+msgid "The operation type has been saved"
+msgstr ""
+
+#: Controller/OperationTypesControllerphp:56;78
+msgid "The operation type could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/OperationTypesControllerphp:103
+msgid "Operation type deleted"
+msgstr ""
+
+#: Controller/OperationTypesControllerphp:106
+msgid "Operation type was not deleted"
+msgstr ""
+
+#: Controller/PropertyTypesControllerphp:38;71;100
+msgid "Invalid property type"
+msgstr ""
+
+#: Controller/PropertyTypesControllerphp:53;75
+msgid "The property type has been saved"
+msgstr ""
+
+#: Controller/PropertyTypesControllerphp:56;78
+msgid "The property type could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/PropertyTypesControllerphp:103
+msgid "Property type deleted"
+msgstr ""
+
+#: Controller/PropertyTypesControllerphp:106
+msgid "Property type was not deleted"
+msgstr ""
+
+#: Controller/PublicationsControllerphp:38;76;110
+msgid "Invalid publication"
+msgstr "Publicación Inválida"
+
+#: Controller/PublicationsControllerphp:53;80
+msgid "The publication has been saved"
+msgstr "La publicación ha sido guardada."
+
+#: Controller/PublicationsControllerphp:56;83
+msgid "The publication could not be saved. Please, try again."
+msgstr "La publicación no ha sido guardada.Por favor, intente nuevamente."
+
+#: Controller/PublicationsControllerphp:113
+msgid "Publication deleted"
+msgstr "Publicación eliminada"
+
+#: Controller/PublicationsControllerphp:116
+msgid "Publication was not deleted"
+msgstr "La Publicación no fue eliminada"
+
+#: Controller/UsersControllerphp:38;71;100
+msgid "Invalid user"
+msgstr "Usuario Inválido"
+
+#: Controller/UsersControllerphp:53;75
+msgid "The user has been saved"
+msgstr "El Usuario ha sido guardado."
+
+#: Controller/UsersControllerphp:56;78
+msgid "The user could not be saved. Please, try again."
+msgstr "El usuario no ha sido guardado. Por favor, intente nuevamente."
+
+#: Controller/UsersControllerphp:103
+msgid "User deleted"
+msgstr "Usuario eliminado"
+
+#: Controller/UsersControllerphp:106
+msgid "User was not deleted"
+msgstr ""
+
+#: View/Cities/addctp:9
+#: View/Cities/editctp:10
+#: View/Cities/viewctp:11
+#: View/Neighborhoods/addctp:10
+#: View/Neighborhoods/editctp:11
+#: View/Neighborhoods/indexctp:10
+#: View/Neighborhoods/viewctp:13
+msgid "Listado de Ciudades"
+msgstr ""
+
+#: View/Cities/addctp:10
+#: View/Cities/editctp:11
+#: View/Cities/indexctp:10
+#: View/Cities/viewctp:13
+#: View/Neighborhoods/addctp:9
+#: View/Neighborhoods/editctp:10
+#: View/Neighborhoods/viewctp:11
+#: View/Publications/addctp:10
+#: View/Publications/editctp:11
+#: View/Publications/indexctp:10
+#: View/Publications/viewctp:13
+msgid "Listado de Barrios"
+msgstr ""
+
+#: View/Cities/addctp:11
+#: View/Cities/editctp:12
+#: View/Cities/indexctp:11
+#: View/Cities/viewctp:14;101
+#: View/Neighborhoods/indexctp:9
+#: View/Neighborhoods/viewctp:12
+#: View/Publications/addctp:11
+#: View/Publications/editctp:12
+#: View/Publications/indexctp:11
+#: View/Publications/viewctp:14
+msgid "Nuevo Barrio"
+msgstr ""
+
+#: View/Cities/addctp:20
+msgid "Crear Ciudad"
+msgstr ""
+
+#: View/Cities/editctp:9
+#: View/Cities/indexctp:45
+#: View/Cities/viewctp:89
+#: View/Neighborhoods/editctp:9
+#: View/Neighborhoods/indexctp:51
+#: View/Neighborhoods/viewctp:174
+#: View/OperationTypes/editctp:9
+#: View/OperationTypes/indexctp:45
+#: View/OperationTypes/viewctp:167
+#: View/PropertyTypes/editctp:9
+#: View/PropertyTypes/indexctp:47
+#: View/PropertyTypes/viewctp:172
+#: View/Publications/indexctp:139
+#: View/Users/editctp:9
+#: View/Users/indexctp:53
+#: View/Users/viewctp:187
+msgid "Eliminar"
+msgstr ""
+
+#: View/Cities/editctp:9
+#: View/Cities/indexctp:45
+#: View/Cities/viewctp:10;89
+#: View/Neighborhoods/editctp:9
+#: View/Neighborhoods/indexctp:51
+#: View/Neighborhoods/viewctp:10;174
+#: View/OperationTypes/editctp:9
+#: View/OperationTypes/indexctp:45
+#: View/OperationTypes/viewctp:10;167
+#: View/PropertyTypes/editctp:9
+#: View/PropertyTypes/indexctp:47
+#: View/PropertyTypes/viewctp:10;172
+#: View/Publications/editctp:9
+#: View/Publications/indexctp:139
+#: View/Publications/viewctp:10
+#: View/Users/editctp:9
+#: View/Users/indexctp:53
+#: View/Users/viewctp:10;187
+#: View/Scaffolds/formctp:34
+#: View/Scaffolds/indexctp:54
+#: View/Scaffolds/viewctp:57;178
+msgid "Are you sure you want to delete # %s?"
+msgstr "Estas seguro de eleiminar # %s?"
+
+#: View/Cities/editctp:21
+#: View/Cities/viewctp:9
+msgid "Editar Ciudad"
+msgstr ""
+
+#: View/Cities/indexctp:9
+#: View/Cities/viewctp:12
+#: View/Neighborhoods/addctp:11
+#: View/Neighborhoods/editctp:12
+#: View/Neighborhoods/indexctp:11
+#: View/Neighborhoods/viewctp:14
+msgid "Nueva Ciudad"
+msgstr ""
+
+#: View/Cities/indexctp:22
+msgid "Ciudades"
+msgstr ""
+
+#: View/Cities/indexctp:32
+#: View/Cities/viewctp:73
+#: View/Neighborhoods/indexctp:35
+#: View/Neighborhoods/viewctp:119
+#: View/OperationTypes/indexctp:32
+#: View/OperationTypes/viewctp:112
+#: View/PropertyTypes/indexctp:33
+#: View/PropertyTypes/viewctp:117
+#: View/Publications/indexctp:78
+#: View/Users/indexctp:36
+#: View/Users/viewctp:132
+#: View/Scaffolds/formctp:27
+#: View/Scaffolds/indexctp:26;77
+#: View/Scaffolds/viewctp:49
+msgid "Actions"
+msgstr "Acciones"
+
+#: View/Cities/indexctp:43
+#: View/Cities/viewctp:87
+#: View/Neighborhoods/indexctp:49
+#: View/Neighborhoods/viewctp:172
+#: View/OperationTypes/indexctp:43
+#: View/OperationTypes/viewctp:165
+#: View/PropertyTypes/indexctp:45
+#: View/PropertyTypes/viewctp:170
+#: View/Publications/indexctp:137
+#: View/Users/indexctp:51
+#: View/Users/viewctp:185
+msgid "Ver"
+msgstr ""
+
+#: View/Cities/indexctp:44
+#: View/Cities/viewctp:88
+#: View/Neighborhoods/indexctp:50
+#: View/Neighborhoods/viewctp:173
+#: View/OperationTypes/indexctp:44
+#: View/OperationTypes/viewctp:166
+#: View/PropertyTypes/indexctp:46
+#: View/PropertyTypes/viewctp:171
+#: View/Publications/indexctp:138
+#: View/Users/indexctp:52
+#: View/Users/viewctp:186
+msgid "Editar"
+msgstr ""
+
+#: View/Cities/indexctp:56
+#: View/Neighborhoods/indexctp:62
+#: View/OperationTypes/indexctp:56
+#: View/PropertyTypes/indexctp:58
+#: View/Publications/indexctp:150
+#: View/Users/indexctp:64
+#: View/Scaffolds/indexctp:65
+msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
+msgstr "Página {:page} de {:pages}, mostrando {:current} registros de un total de {:count}, comenzando por el registro {:start}, terminando en el {:end}"
+
+#: View/Cities/indexctp:63
+#: View/Neighborhoods/indexctp:69
+#: View/OperationTypes/indexctp:63
+#: View/PropertyTypes/indexctp:65
+#: View/Publications/indexctp:157
+#: View/Users/indexctp:71
+msgid "Previous"
+msgstr "Anterior"
+
+#: View/Cities/indexctp:65
+#: View/Neighborhoods/indexctp:71
+#: View/OperationTypes/indexctp:65
+#: View/PropertyTypes/indexctp:67
+#: View/Publications/indexctp:159
+#: View/Users/indexctp:73
+msgid "Next"
+msgstr "Siguiente"
+
+#: View/Cities/viewctp:10
+msgid "Eliminar Ciudad"
+msgstr ""
+
+#: View/Cities/viewctp:26
+#: View/Neighborhoods/viewctp:53
+msgid "City"
+msgstr "Ciudad"
+
+#: View/Cities/viewctp:31;68
+#: View/Neighborhoods/viewctp:33;75
+#: View/OperationTypes/viewctp:31;68
+#: View/PropertyTypes/viewctp:31;73
+#: View/Publications/viewctp:37
+#: View/Users/viewctp:31;88
+msgid "Id"
+msgstr ""
+
+#: View/Cities/viewctp:36;69
+#: View/Neighborhoods/viewctp:38
+#: View/OperationTypes/viewctp:36
+#: View/PropertyTypes/viewctp:36
+#: View/Users/viewctp:46
+msgid "Name"
+msgstr "Nombre"
+
+#: View/Cities/viewctp:41;70
+#: View/Neighborhoods/viewctp:43;114
+#: View/OperationTypes/viewctp:41;107
+#: View/PropertyTypes/viewctp:46;112
+#: View/Publications/viewctp:232
+#: View/Users/viewctp:61;127
+msgid "Created"
+msgstr "Creado"
+
+#: View/Cities/viewctp:46;71
+#: View/Neighborhoods/viewctp:48;115
+#: View/OperationTypes/viewctp:46;108
+#: View/PropertyTypes/viewctp:51;113
+#: View/Publications/viewctp:237
+#: View/Users/viewctp:66;128
+msgid "Updated"
+msgstr "Actualizado"
+
+#: View/Cities/viewctp:60
+msgid "Related Neighborhoods"
+msgstr "Barrios Relacionados"
+
+#: View/Cities/viewctp:72
+msgid "City Id"
+msgstr ""
+
+#: View/Neighborhoods/addctp:12
+#: View/Neighborhoods/editctp:13
+#: View/Neighborhoods/indexctp:12
+#: View/Neighborhoods/viewctp:15
+#: View/OperationTypes/addctp:10
+#: View/OperationTypes/editctp:11
+#: View/OperationTypes/indexctp:10
+#: View/OperationTypes/viewctp:13
+#: View/PropertyTypes/addctp:10
+#: View/PropertyTypes/editctp:11
+#: View/PropertyTypes/indexctp:10
+#: View/PropertyTypes/viewctp:13
+#: View/Publications/addctp:9
+#: View/Publications/editctp:10
+#: View/Publications/viewctp:11
+#: View/Users/addctp:10
+#: View/Users/editctp:11
+#: View/Users/indexctp:10
+#: View/Users/viewctp:13
+msgid "Listado de Publicaciones"
+msgstr ""
+
+#: View/Neighborhoods/addctp:13
+#: View/Neighborhoods/editctp:14
+#: View/Neighborhoods/indexctp:13
+#: View/Neighborhoods/viewctp:16;186
+#: View/OperationTypes/addctp:11
+#: View/OperationTypes/editctp:12
+#: View/OperationTypes/indexctp:11
+#: View/OperationTypes/viewctp:14;179
+#: View/PropertyTypes/addctp:11
+#: View/PropertyTypes/editctp:12
+#: View/PropertyTypes/indexctp:11
+#: View/PropertyTypes/viewctp:14;184
+#: View/Publications/indexctp:9
+#: View/Publications/viewctp:12
+#: View/Users/addctp:11
+#: View/Users/editctp:12
+#: View/Users/indexctp:11
+#: View/Users/viewctp:14;199
+msgid "Nueva Publicación"
+msgstr ""
+
+#: View/Neighborhoods/addctp:22
+msgid "Crear Barrio"
+msgstr ""
+
+#: View/Neighborhoods/editctp:23
+#: View/Neighborhoods/viewctp:9
+msgid "Editar Barrio"
+msgstr ""
+
+#: View/Neighborhoods/indexctp:24
+msgid "Barrios"
+msgstr ""
+
+#: View/Neighborhoods/viewctp:10
+msgid "Eliminar Barrio"
+msgstr ""
+
+#: View/Neighborhoods/viewctp:28
+msgid "Barrio"
+msgstr ""
+
+#: View/Neighborhoods/viewctp:67
+#: View/OperationTypes/viewctp:60
+#: View/PropertyTypes/viewctp:65
+#: View/Users/viewctp:80
+msgid "Publicaciones Relacionadas"
+msgstr ""
+
+#: View/Neighborhoods/viewctp:76
+#: View/OperationTypes/viewctp:69
+#: View/PropertyTypes/viewctp:74
+#: View/Publications/viewctp:42
+#: View/Users/viewctp:89
+msgid "Street"
+msgstr "Calle"
+
+#: View/Neighborhoods/viewctp:77
+#: View/OperationTypes/viewctp:70
+#: View/PropertyTypes/viewctp:75
+#: View/Publications/viewctp:47
+#: View/Users/viewctp:90
+msgid "St Number"
+msgstr "Altura"
+
+#: View/Neighborhoods/viewctp:78
+#: View/OperationTypes/viewctp:71
+#: View/PropertyTypes/viewctp:76
+#: View/Users/viewctp:91
+msgid "Neighborhood Id"
+msgstr ""
+
+#: View/Neighborhoods/viewctp:79
+#: View/OperationTypes/viewctp:72
+#: View/PropertyTypes/viewctp:77
+#: View/Publications/viewctp:57
+#: View/Users/viewctp:92
+msgid "Covered Area"
+msgstr "Superficie Cubierta"
+
+#: View/Neighborhoods/viewctp:80
+#: View/OperationTypes/viewctp:73
+#: View/PropertyTypes/viewctp:78
+#: View/Publications/viewctp:62
+#: View/Users/viewctp:93
+msgid "Total Area"
+msgstr "Superficie Total"
+
+#: View/Neighborhoods/viewctp:81
+#: View/OperationTypes/viewctp:74
+#: View/PropertyTypes/viewctp:79
+#: View/Publications/viewctp:67
+#: View/Users/viewctp:94
+msgid "Rooms"
+msgstr "Ambientes"
+
+#: View/Neighborhoods/viewctp:82
+#: View/OperationTypes/viewctp:75
+#: View/PropertyTypes/viewctp:80
+#: View/Publications/viewctp:72
+#: View/Users/viewctp:95
+msgid "Expenses"
+msgstr "Expensas"
+
+#: View/Neighborhoods/viewctp:83
+#: View/OperationTypes/viewctp:76
+#: View/PropertyTypes/viewctp:81
+#: View/Publications/viewctp:77
+#: View/Users/viewctp:96
+msgid "Age"
+msgstr "Antigüedad"
+
+#: View/Neighborhoods/viewctp:84
+#: View/OperationTypes/viewctp:77
+#: View/PropertyTypes/viewctp:82
+#: View/Publications/viewctp:82
+#: View/Users/viewctp:97
+msgid "Brand New"
+msgstr "A estrenar?"
+
+#: View/Neighborhoods/viewctp:85
+#: View/OperationTypes/viewctp:78
+#: View/PropertyTypes/viewctp:83
+#: View/Publications/viewctp:87
+#: View/Users/viewctp:98
+msgid "Price"
+msgstr "Precio"
+
+#: View/Neighborhoods/viewctp:86
+#: View/OperationTypes/viewctp:79
+#: View/PropertyTypes/viewctp:84
+#: View/Publications/viewctp:92
+#: View/Users/viewctp:99
+msgid "Currency"
+msgstr "Moneda"
+
+#: View/Neighborhoods/viewctp:87
+#: View/OperationTypes/viewctp:80
+#: View/PropertyTypes/viewctp:85
+#: View/Publications/viewctp:97
+#: View/Users/viewctp:100
+msgid "Balcony"
+msgstr "Tiene Balcón?"
+
+#: View/Neighborhoods/viewctp:88
+#: View/OperationTypes/viewctp:81
+#: View/PropertyTypes/viewctp:86
+#: View/Publications/viewctp:102
+#: View/Users/viewctp:101
+msgid "Bathrooms"
+msgstr "Baños"
+
+#: View/Neighborhoods/viewctp:89
+#: View/OperationTypes/viewctp:82
+#: View/PropertyTypes/viewctp:87
+#: View/Publications/viewctp:107
+#: View/Users/viewctp:102
+msgid "Dining Room"
+msgstr "Comedor"
+
+#: View/Neighborhoods/viewctp:90
+#: View/OperationTypes/viewctp:83
+#: View/PropertyTypes/viewctp:88
+#: View/Publications/viewctp:112
+#: View/Users/viewctp:103
+msgid "Ensuite Bedroom"
+msgstr "Dormitorio en Suite"
+
+#: View/Neighborhoods/viewctp:91
+#: View/OperationTypes/viewctp:84
+#: View/PropertyTypes/viewctp:89
+#: View/Publications/viewctp:117
+#: View/Users/viewctp:104
+msgid "Storage"
+msgstr "Baulera"
+
+#: View/Neighborhoods/viewctp:92
+#: View/OperationTypes/viewctp:85
+#: View/PropertyTypes/viewctp:90
+#: View/Publications/viewctp:122
+#: View/Users/viewctp:105
+msgid "Garage"
+msgstr "Cochera"
+
+#: View/Neighborhoods/viewctp:93
+#: View/OperationTypes/viewctp:86
+#: View/PropertyTypes/viewctp:91
+#: View/Publications/viewctp:127
+#: View/Users/viewctp:106
+msgid "Studio"
+msgstr "Escritorio/Estudio"
+
+#: View/Neighborhoods/viewctp:94
+#: View/OperationTypes/viewctp:87
+#: View/PropertyTypes/viewctp:92
+#: View/Publications/viewctp:132
+#: View/Users/viewctp:107
+msgid "Kitchen"
+msgstr "Cocina"
+
+#: View/Neighborhoods/viewctp:95
+#: View/OperationTypes/viewctp:88
+#: View/PropertyTypes/viewctp:93
+#: View/Publications/viewctp:137
+#: View/Users/viewctp:108
+msgid "Service Unit"
+msgstr "Dependencia de Servicio"
+
+#: View/Neighborhoods/viewctp:96
+#: View/OperationTypes/viewctp:89
+#: View/PropertyTypes/viewctp:94
+#: View/Publications/viewctp:142
+#: View/Users/viewctp:109
+msgid "Hall"
+msgstr ""
+
+#: View/Neighborhoods/viewctp:97
+#: View/OperationTypes/viewctp:90
+#: View/PropertyTypes/viewctp:95
+#: View/Publications/viewctp:147
+#: View/Users/viewctp:110
+msgid "Frontgarden"
+msgstr "Jardín delantero"
+
+#: View/Neighborhoods/viewctp:98
+#: View/OperationTypes/viewctp:91
+#: View/PropertyTypes/viewctp:96
+#: View/Publications/viewctp:152
+#: View/Users/viewctp:111
+msgid "Backyard"
+msgstr "Patio"
+
+#: View/Neighborhoods/viewctp:99
+#: View/OperationTypes/viewctp:92
+#: View/PropertyTypes/viewctp:97
+#: View/Publications/viewctp:157
+#: View/Users/viewctp:112
+msgid "Laundry"
+msgstr "Lavadero"
+
+#: View/Neighborhoods/viewctp:100
+#: View/OperationTypes/viewctp:93
+#: View/PropertyTypes/viewctp:98
+#: View/Publications/viewctp:162
+#: View/Users/viewctp:113
+msgid "Lounge"
+msgstr "Living"
+
+#: View/Neighborhoods/viewctp:101
+#: View/OperationTypes/viewctp:94
+#: View/PropertyTypes/viewctp:99
+#: View/Publications/viewctp:167
+#: View/Users/viewctp:114
+msgid "Living Room"
+msgstr "Living Comedor"
+
+#: View/Neighborhoods/viewctp:102
+#: View/OperationTypes/viewctp:95
+#: View/PropertyTypes/viewctp:100
+#: View/Publications/viewctp:172
+#: View/Users/viewctp:115
+msgid "Terrace"
+msgstr "Terraza"
+
+#: View/Neighborhoods/viewctp:103
+#: View/OperationTypes/viewctp:96
+#: View/PropertyTypes/viewctp:101
+#: View/Publications/viewctp:177
+#: View/Users/viewctp:116
+msgid "Mains Water"
+msgstr "Agua Corriente"
+
+#: View/Neighborhoods/viewctp:104
+#: View/OperationTypes/viewctp:97
+#: View/PropertyTypes/viewctp:102
+#: View/Publications/viewctp:182
+#: View/Users/viewctp:117
+msgid "Drains"
+msgstr "Desagüe cloacal"
+
+#: View/Neighborhoods/viewctp:105
+#: View/OperationTypes/viewctp:98
+#: View/PropertyTypes/viewctp:103
+#: View/Publications/viewctp:187
+#: View/Users/viewctp:118
+msgid "Video Cable"
+msgstr ""
+
+#: View/Neighborhoods/viewctp:106
+#: View/OperationTypes/viewctp:99
+#: View/PropertyTypes/viewctp:104
+#: View/Publications/viewctp:192
+#: View/Users/viewctp:119
+msgid "Gas"
+msgstr "Gas Natural"
+
+#: View/Neighborhoods/viewctp:107
+#: View/OperationTypes/viewctp:100
+#: View/PropertyTypes/viewctp:105
+#: View/Publications/viewctp:197
+#: View/Users/viewctp:120
+msgid "Internet"
+msgstr ""
+
+#: View/Neighborhoods/viewctp:108
+#: View/OperationTypes/viewctp:101
+#: View/PropertyTypes/viewctp:106
+#: View/Publications/viewctp:202
+#: View/Users/viewctp:121
+msgid "Pavement"
+msgstr "Pavimento"
+
+#: View/Neighborhoods/viewctp:109
+#: View/OperationTypes/viewctp:102
+#: View/PropertyTypes/viewctp:107
+#: View/Publications/viewctp:207
+#: View/Users/viewctp:122
+msgid "Publication Date"
+msgstr "Fecha de Publicación"
+
+#: View/Neighborhoods/viewctp:110
+#: View/OperationTypes/viewctp:103
+#: View/PropertyTypes/viewctp:108
+#: View/Publications/viewctp:212
+#: View/Users/viewctp:123
+msgid "Publcation Type"
+msgstr "Tipo de Publicación"
+
+#: View/Neighborhoods/viewctp:111
+#: View/OperationTypes/viewctp:104
+#: View/PropertyTypes/viewctp:109
+#: View/Publications/viewctp:217
+#: View/Users/viewctp:124
+msgid "Status"
+msgstr "Estado"
+
+#: View/Neighborhoods/viewctp:112
+#: View/OperationTypes/viewctp:105
+#: View/PropertyTypes/viewctp:110
+#: View/Publications/viewctp:222
+#: View/Users/viewctp:125
+msgid "Video"
+msgstr ""
+
+#: View/Neighborhoods/viewctp:113
+#: View/OperationTypes/viewctp:106
+#: View/PropertyTypes/viewctp:111
+#: View/Publications/viewctp:227
+#: View/Users/viewctp:126
+msgid "Images Url"
+msgstr ""
+
+
+#: View/OperationTypes/addctp:9
+#: View/OperationTypes/editctp:10
+#: View/OperationTypes/viewctp:11
+#: View/Publications/addctp:12
+#: View/Publications/editctp:13
+#: View/Publications/indexctp:12
+#: View/Publications/viewctp:15
+msgid "Lista de Tipos de Operaciones"
+msgstr ""
+
+#: View/OperationTypes/addctp:20
+msgid "Crear Tipo de Operación"
+msgstr ""
+
+#: View/OperationTypes/editctp:21
+#: View/OperationTypes/viewctp:9
+msgid "Editar Tipo de Operación"
+msgstr ""
+
+#: View/OperationTypes/indexctp:9
+#: View/OperationTypes/viewctp:12
+#: View/Publications/addctp:13
+#: View/Publications/editctp:14
+#: View/Publications/indexctp:13
+#: View/Publications/viewctp:16
+msgid "Nuevo Tipo de Operación"
+msgstr ""
+
+#: View/OperationTypes/indexctp:22
+msgid "Tipos de Operaciones"
+msgstr ""
+
+#: View/OperationTypes/viewctp:10
+msgid "Eliminar Tipo de Operación"
+msgstr ""
+
+#: View/OperationTypes/viewctp:26
+msgid "Tipo de Operación"
+msgstr ""
+
+#: View/PropertyTypes/addctp:9
+#: View/PropertyTypes/editctp:10
+#: View/PropertyTypes/viewctp:11
+#: View/Publications/addctp:14
+#: View/Publications/editctp:15
+#: View/Publications/indexctp:14
+#: View/Publications/viewctp:17
+msgid "Lista de Tipos de Propiedades"
+msgstr ""
+
+#: View/PropertyTypes/addctp:20
+msgid "Crear Tipo de Propiedad"
+msgstr ""
+
+#: View/PropertyTypes/editctp:21
+#: View/PropertyTypes/viewctp:9
+msgid "Editar Tipo de Propiedad"
+msgstr ""
+
+#: View/PropertyTypes/indexctp:9
+#: View/PropertyTypes/viewctp:12
+#: View/Publications/addctp:15
+#: View/Publications/editctp:16
+#: View/Publications/indexctp:15
+#: View/Publications/viewctp:18
+msgid "Nuevo Tipo de Propiedad"
+msgstr ""
+
+#: View/PropertyTypes/indexctp:22
+msgid "Tipos de Propiedad"
+msgstr ""
+
+#: View/PropertyTypes/viewctp:10
+msgid "Eliminar Tipo de Propiedad"
+msgstr ""
+
+#: View/PropertyTypes/viewctp:26
+msgid "Tipo de Propiedad"
+msgstr ""
+
+#: View/PropertyTypes/viewctp:41
+msgid "Category"
+msgstr "Categoría"
+
+#: View/Publications/addctp:16
+#: View/Publications/editctp:17
+#: View/Publications/indexctp:16
+#: View/Publications/viewctp:19
+#: View/Users/addctp:9
+#: View/Users/editctp:10
+#: View/Users/viewctp:11
+msgid "Lista de Usuarios"
+msgstr ""
+
+#: View/Publications/addctp:17
+#: View/Publications/editctp:18
+#: View/Publications/indexctp:17
+#: View/Publications/viewctp:20
+#: View/Users/indexctp:9
+#: View/Users/viewctp:12
+msgid "Nuevo Usuario"
+msgstr ""
+
+#: View/Publications/addctp:26
+msgid "Crear Publicación"
+msgstr ""
+
+#: View/Publications/editctp:9
+#: View/Scaffolds/formctp:31
+#: View/Scaffolds/indexctp:51
+#: View/Scaffolds/viewctp:175
+msgid "Delete"
+msgstr "Eliminar"
+
+#: View/Publications/editctp:27
+#: View/Publications/viewctp:9
+msgid "Editar Publicación"
+msgstr ""
+
+#: View/Publications/indexctp:28
+msgid "Publicaciones"
+msgstr ""
+
+#: View/Publications/viewctp:10
+msgid "Eliminar Publicación"
+msgstr ""
+
+#: View/Publications/viewctp:32
+msgid "Publicación"
+msgstr ""
+
+#: View/Publications/viewctp:52
+msgid "Neighborhood"
+msgstr "Barrio"
+
+#: View/Publications/viewctp:242
+msgid "Operation Type"
+msgstr "Tipo de Operación"
+
+#: View/Publications/viewctp:247
+msgid "Property Type"
+msgstr "Tipo de Propiedad"
+
+#: View/Publications/viewctp:252
+#: View/Users/viewctp:26
+msgid "User"
+msgstr "Usuario"
+
+#: View/Users/addctp:20
+msgid "Crear Usuario"
+msgstr ""
+
+#: View/Users/editctp:21
+#: View/Users/viewctp:9
+msgid "Editar Usuario"
+msgstr ""
+
+#: View/Users/indexctp:22
+msgid "Usuarios"
+msgstr ""
+
+#: View/Users/viewctp:10
+msgid "Eliminar Usuario"
+msgstr ""
+
+#: View/Users/viewctp:36
+msgid "Username"
+msgstr "Nombre de Usuario"
+
+#: View/Users/viewctp:41
+msgid "Password"
+msgstr "Contraseña"
+
+#: View/Users/viewctp:51
+msgid "Tel Part"
+msgstr "Teléfono Particular"
+
+#: View/Users/viewctp:56
+msgid "Mobile"
+msgstr "Celular"
+
+msgid "End Date"
+msgstr "Fecha Finalización"
+
+msgid "Publication Date"
+msgstr "Fecha Publicación"
+
+msgid "Publication Type"
+msgstr "Tipo de Publicación"
+
+msgid "solo_numeros_error"
+msgstr "Ingrese solo números enteros positivos."
+
+
+msgid "minimopass_caracteres"
+msgstr "La contraseña debe tener uns mínimo de 8 caracteres."
+
+
+msgid "Description"
+msgstr "Descripción"
+

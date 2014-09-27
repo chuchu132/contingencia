@@ -1,0 +1,50 @@
+
+#: View/Helper/FormHelper.php:2849
+msgid "January"
+msgstr "Enero"
+
+#: View/Helper/FormHelper.php:2850
+msgid "February"
+msgstr "Febrero"
+
+#: View/Helper/FormHelper.php:2851
+msgid "March"
+msgstr "Marzo"
+
+#: View/Helper/FormHelper.php:2852
+msgid "April"
+msgstr "Abril"
+
+#: View/Helper/FormHelper.php:2853
+msgid "May"
+msgstr "Mayo"
+
+#: View/Helper/FormHelper.php:2854
+msgid "June"
+msgstr "Junio"
+
+#: View/Helper/FormHelper.php:2855
+msgid "July"
+msgstr "Julio"
+
+#: View/Helper/FormHelper.php:2856
+msgid "August"
+msgstr "Agosto"
+
+#: View/Helper/FormHelper.php:2857
+msgid "September"
+msgstr "Septiembre"
+
+#: View/Helper/FormHelper.php:2858
+msgid "October"
+msgstr "Octubre"
+
+#: View/Helper/FormHelper.php:2859
+msgid "November"
+msgstr "Noviembre"
+
+#: View/Helper/FormHelper.php:2860
+msgid "December"
+msgstr "Diciembre"
+
+
