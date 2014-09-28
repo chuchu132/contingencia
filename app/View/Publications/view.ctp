@@ -66,12 +66,29 @@
 			&nbsp;
 		</td>
 </tr>
-						<tr>		<td><strong><?php echo __('Ubicación'); ?></strong></td>
+<?php if($publication['Publication']['operation_type_id'] == "4" ){ ?>
+<tr>		
+<td><strong><?php echo __('Disponibile'); ?></strong></td>
+		<td>
+			<?php echo h($publication['Publication']['availability']); ?>
+			&nbsp;
+		</td>
+</tr>
+<?php }?>
+<tr>		<td><strong><?php echo __('Ubicación'); ?></strong></td>
 		<td>
 			<?php echo h($publication['Publication']['street']).' '.h($publication['Publication']['st_number']).', '.h($publication['Neighborhood']['name']); ?>
 			&nbsp;
 		</td>
-</tr><tr>		<td><strong><?php echo __('Covered Area'); ?></strong></td>
+
+		</tr>
+		<tr>		<td><strong><?php echo __('Price'); ?></strong></td>
+		<td>
+			<?php echo h($publication['Publication']['price']).' '.h($publication['Publication']['currency']); ?>
+			&nbsp;
+		</td>
+</tr>
+<tr>		<td><strong><?php echo __('Covered Area'); ?></strong></td>
 		<td>
 			<?php echo h($publication['Publication']['covered_area']); ?>
 			&nbsp;
@@ -81,17 +98,14 @@
 			<?php echo h($publication['Publication']['total_area']); ?>
 			&nbsp;
 		</td>
-</tr><tr>		<td><strong><?php echo __('Rooms'); ?></strong></td>
-		<td>
-			<?php echo h($publication['Publication']['rooms']); ?>
-			&nbsp;
-		</td>
-</tr><tr>		<td><strong><?php echo __('Expenses'); ?></strong></td>
+</tr>
+<tr>		<td><strong><?php echo __('Expenses'); ?></strong></td>
 		<td>
 			<?php echo h($publication['Publication']['expenses']); ?>
 			&nbsp;
 		</td>
-</tr><tr>		<td><strong><?php echo __('Age'); ?></strong></td>
+</tr>
+<tr>		<td><strong><?php echo __('Age'); ?></strong></td>
 		<td>
 			<?php echo h($publication['Publication']['age']); ?>
 			&nbsp;
@@ -101,14 +115,13 @@
 			<?php echo h($publication['Publication']['brand_new']); ?>
 			&nbsp;
 		</td>
-</tr><tr>		<td><strong><?php echo __('Price'); ?></strong></td>
+</tr>
+
+<?php if($publication['Publication']['property_type_id'] < "8"){?>
+
+<tr>		<td><strong><?php echo __('Rooms'); ?></strong></td>
 		<td>
-			<?php echo h($publication['Publication']['price']); ?>
-			&nbsp;
-		</td>
-</tr><tr>		<td><strong><?php echo __('Currency'); ?></strong></td>
-		<td>
-			<?php echo h($publication['Publication']['currency']); ?>
+			<?php echo h($publication['Publication']['rooms']); ?>
 			&nbsp;
 		</td>
 </tr><tr>		<td><strong><?php echo __('Balcony'); ?></strong></td>
@@ -191,7 +204,9 @@
 			<?php echo h($publication['Publication']['terrace']); ?>
 			&nbsp;
 		</td>
-</tr><tr>		<td><strong><?php echo __('Mains Water'); ?></strong></td>
+</tr>
+<?php }?>
+<tr>		<td><strong><?php echo __('Mains Water'); ?></strong></td>
 		<td>
 			<?php echo h($publication['Publication']['mains_water']); ?>
 			&nbsp;
@@ -222,6 +237,7 @@
 			&nbsp;
 		</td>
 </tr>
+
 <tr>		<td><strong><?php echo __('Publcation Type'); ?></strong></td>
 		<td>
 				<?php echo h($type[$publication['Publication']['publication_type']]); ?>
