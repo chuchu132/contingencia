@@ -6,10 +6,10 @@
 		<div class="actions">
 			
 			<ul class="list-group">			
-		<li class="list-group-item"><?php echo $this->Html->link(__('Mis Publicaciones'), array('action' => 'index'), array('class' => '')); ?> </li>
-		<li class="list-group-item"><?php echo $this->Html->link(__('Nueva Publicación'), array('action' => 'choose'), array('class' => '')); ?> </li>
-
-					<li class="list-group-item active"><?php echo __('Detalle de la Publicación'); ?>	
+				<li class="list-group-item"><?php echo $this->Html->link(__('Mis Publicaciones'), array('action' => 'index'), array('class' => '')); ?> </li>
+				<li class="list-group-item"><?php echo $this->Html->link(__('Nueva Publicación'), array('action' => 'choose'), array('class' => '')); ?> </li>
+				<li class="list-group-item active"><?php echo __('Detalle de la Publicación'); ?>	
+				<li class="list-group-item"><?php echo $this->Html->link(__('Editar Publicación'), array('action' => 'edit',$publication['Publication']['id']), array('class' => '')); ?> </li>
 			</ul><!-- /.list-group -->
 			
 		</div><!-- /.actions -->

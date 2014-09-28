@@ -144,12 +144,13 @@ class PublicationsController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
-        $this->Publication->id = $id;
-		if (!$this->Publication->exists($id)) {
+        $publication = $this->Publication->findByIdAndUserId($id,$this->current_user['id']);
+		if (!((bool)$publication)) {
 			throw new NotFoundException(__('Invalid publication'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
-			if ($this->Publication->save($this->request->data)) {
+			$data['Publication']= array('id'=>$id,'price'=>$this->request->data['Publication']['price'],'currency'=>$this->request->data['Publication']['currency']);
+			if ($this->Publication->save($data)) {
 				$this->Session->setFlash(__('The publication has been saved'), 'flash/success');
 				$this->redirect(array('action' => 'index'));
 			} else {
@@ -159,11 +160,8 @@ class PublicationsController extends AppController {
 			$options = array('conditions' => array('Publication.' . $this->Publication->primaryKey => $id));
 			$this->request->data = $this->Publication->find('first', $options);
 		}
-		$neighborhoods = $this->Publication->Neighborhood->find('list');
-		$operationTypes = $this->Publication->OperationType->find('list');
-		$propertyTypes = $this->Publication->PropertyType->find('list');
-		$users = $this->Publication->User->find('list');
-		$this->set(compact('neighborhoods', 'operationTypes', 'propertyTypes', 'users'));
+		
+		$this->set('currency_types',unserialize(MONEDAS));
 	}
 
 /**
@@ -198,14 +196,14 @@ class PublicationsController extends AppController {
 		if (!$this->request->is('post')) {
 			throw new MethodNotAllowedException();
 		}
-		$this->Publication->id = $id;
-		if (!$this->Publication->exists()) {
+		$publication = $this->Publication->findByIdAndUserId($id,$this->current_user['id']);
+		if (!((bool)$publication)) {
 			throw new NotFoundException(__('Invalid publication'));
 		}
-		$publication = $this->Publication->findByIdAndUserId($id,$this->current_user['id']);
+		
 		if($publication['Publication']['status'] != FINALIZADA){
-			$this->Publication->set('status',PAUSADO);
-			if($this->Publication->save()){
+			$this->Publication->id = $id;
+			if($this->Publication->saveField('status',PAUSADO)){
 				$this->Session->setFlash(__('La Publicación fue pausada'), 'flash/success');
 			}
 		}
@@ -217,11 +215,10 @@ class PublicationsController extends AppController {
 		if (!$this->request->is('post')) {
 			throw new MethodNotAllowedException();
 		}
-		if (!$this->Publication->exists($id)) {
+		$publication = $this->Publication->findByIdAndUserId($id,$this->current_user['id']);
+		if (!((bool)$publication)) {
 			throw new NotFoundException(__('Invalid publication'));
 		}
-		
-		$publication = $this->Publication->findByIdAndUserId($id,$this->current_user['id']);
 		error_log($publication['Publication']['status']);
 		if($publication['Publication']['status'] != FINALIZADA && !CakeTime::isPast($publication['Publication']['end_date'])){
 			$this->Publication->id = $id;
@@ -238,8 +235,8 @@ class PublicationsController extends AppController {
 		if (!$this->request->is('post')) {
 			throw new MethodNotAllowedException();
 		}
-		$this->Publication->id = $id;
-		if (!$this->Publication->exists()) {
+		$publication = $this->Publication->findByIdAndUserId($id,$this->current_user['id']);
+		if (!((bool)$publication)) {
 			throw new NotFoundException(__('Invalid publication'));
 		}
 		$this->Publication->id = $id;

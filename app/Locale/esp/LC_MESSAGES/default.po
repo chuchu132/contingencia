@@ -926,6 +926,10 @@ msgstr "Fecha Publicación"
 msgid "Publication Type"
 msgstr "Tipo de Publicación"
 
+
+msgid "numeric"
+msgstr "Ingrese solo números enteros positivos."
+
 msgid "solo_numeros_error"
 msgstr "Ingrese solo números enteros positivos."
 

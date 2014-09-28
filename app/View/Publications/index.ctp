@@ -88,7 +88,7 @@
 			<?php //echo $this->Form->postLink($this->Html->tag('span', null, array('class' => 'glyphicon glyphicon-trash')), array('action' => 'delete', $publication['Publication']['id']), array('class' => 'btn btn-danger btn-xs','escapeTitle' => false ), __('Are you sure you want to delete # %s?', $publication['Publication']['id'])); ?>
 			<?php  if( $publication['Publication']['status'] == PUBLICADA){
 					echo $this->Form->postLink($this->Html->tag('span', null, array('class' => 'glyphicon glyphicon-pause')), array('action' => 'pause', $publication['Publication']['id']), array('class' => 'btn btn-warning btn-xs','escapeTitle' => false, 'title'=>__('Pausar Publicación')), __('Estas seguro de pausar esta publicación?'));
-				}else if($publication['Publication']['status'] == PAUSADO && (strtotime($publication['Publication']['end_date']) < time()) ){
+				}else if($publication['Publication']['status'] == PAUSADO  ){
 					echo $this->Form->postLink($this->Html->tag('span', null, array('class' => 'glyphicon glyphicon-play')), array('action' => 'play', $publication['Publication']['id']), array('class' => 'btn btn-success btn-xs','escapeTitle' => false, 'title'=>__('Reanudar Publicación')), __('Estas seguro de reanudar esta publicación?'));
 				} 
 				if( $publication['Publication']['status'] != FINALIZADA) {
