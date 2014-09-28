@@ -23,8 +23,8 @@ $cakeDescription = __d('cake_dev', 'MiLEEM');
 	<head>
 		<?php echo $this->Html->charset(); ?>
 		<title>
-			<?php echo $cakeDescription ?>:
-			<?php echo $title_for_layout; ?>
+			<?php echo $cakeDescription ?>
+			
 		</title>
 		<?php
 			echo $this->Html->meta('icon');

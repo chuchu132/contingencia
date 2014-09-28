@@ -56,6 +56,8 @@ class ApiController extends AppController {
 	}
 	
 	public function publications(){
+	error_log('Publications request from :'.$_SERVER['REMOTE_ADDR']);
+	error_log('Request: '.print_r($this->request->query,true));	
 		$this->response->type('json');
 		$this->Publication->recursive = 1;
 		
@@ -63,9 +65,6 @@ class ApiController extends AppController {
 		$conditions['Publication.property_type_id'] =  $this->request->query('property_type');
 		$conditions['Publication.operation_type_id'] =  $this->request->query('operation_type');
 		$conditions['Publication.neighborhood_id'] =  $this->request->query('neighborhood');
-		error_log($this->request->query('timestamp'));
-		error_log(strtotime( $this->request->query('timestamp')));
-		error_log(date("Y-m-d H:i:s",$this->request->query('timestamp')));
 		$conditions['Publication.publication_date <='] = date("Y-m-d H:i:s", $this->request->query('timestamp'));
 		$conditions['Publication.status'] =  PUBLICADA;
 		
