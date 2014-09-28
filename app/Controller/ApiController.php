@@ -63,15 +63,18 @@ class ApiController extends AppController {
 		$conditions['Publication.property_type_id'] =  $this->request->query('property_type');
 		$conditions['Publication.operation_type_id'] =  $this->request->query('operation_type');
 		$conditions['Publication.neighborhood_id'] =  $this->request->query('neighborhood');
-		$conditions['Publication.publication_date >='] =  $this->request->query('timestamp');
+		error_log($this->request->query('timestamp'));
+		error_log(strtotime( $this->request->query('timestamp')));
+		error_log(date("Y-m-d H:i:s",$this->request->query('timestamp')));
+		$conditions['Publication.publication_date <='] = date("Y-m-d H:i:s", $this->request->query('timestamp'));
 		$conditions['Publication.status'] =  PUBLICADA;
 		
 		$options = array();
 		$options['conditions'] = $conditions;
 		$options['order'] = array('Publication.publication_type desc','Publication.'.$this->request->query('sort_field').' '.$this->request->query('order'), 'Publication.created DESC');
-		$options['limit'] = 10;
+		$options['limit'] = 5;
 		$options['offset'] = $this->request->query('offset');
-		$options['fields'] = array('Publication.*','PropertyType.name','OperationType.name','(User.username) as email','User.name','User.tel_part','User.mobile');
+		$options['fields'] = array('Publication.address','Publication.images_url','Publication.operation_type','Publication.currency','Publication.scaled_price','Publication.price','Publication.publication_type','Publication.neighborhood','Publication.property_type' );
 		$options['joins'] =array(
         array(
             'table' => 'currency_convertor',
@@ -82,6 +85,11 @@ class ApiController extends AppController {
             )
         )
     );
+	
+		$this->Publication->virtualFields['address'] = 'CONCAT(Publication.street," ", Publication.st_number)';
+		$this->Publication->virtualFields['neighborhood'] = 'Neighborhood.name';
+		$this->Publication->virtualFields['operation_type'] = 'OperationType.name';
+		$this->Publication->virtualFields['property_type'] = 'PropertyType.name';
 		$this->Publication->virtualFields['scaled_price'] = '(Publication.price * Currency.factor)';
 		$publications = $this->Publication->find('all',$options);
 		$this->response->body(json_encode($publications));

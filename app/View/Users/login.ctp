@@ -2,7 +2,7 @@
 <?php echo $this->Html->script('jquery.slides.min'); ?>
 <?php echo $this->Html->script('login'); ?>
 <div class="row">
-<div class="users form col-lg-4 col-md-6">
+<div class="col-lg-4 col-md-6">
 <div class="well">
 
 
@@ -27,6 +27,14 @@
 <?php echo $this->Html->link(__('Registrarse'), array('controller' => 'users', 'action' => 'add'), array('class' => "btn btn-lg btn-primary") )  ?>
 <br/>
 <br/>
+</div>
+
+<div class="well"  style="text-align:center;">
+	
+<h2 class="legend" style="text-align:left;"><?php echo __('QR'); ?></h2>
+
+<?php echo  $this->Html->image('qr.png',array('width'=>'190px'));  ?>
+<br/>
 <br/>
 </div>
 	
@@ -42,7 +50,10 @@
 		
 		?>
 		</div>
-		<?php echo $this->Html->link($this->Html->tag('span', null, array('class' => 'glyphicon glyphicon-cloud-download')) . "</span> ".__('Descargar App') ,array() ,array('class' => "btn btn-lg btn-primary", 'escapeTitle'=>false,'style'=>'margin-top:10px' ) );  ?>
+		<?php echo $this->Html->link($this->Html->tag('span', null, array('class' => 'glyphicon glyphicon-cloud-download')) . "</span> ".__('Descargar App') ,'https://drive.google.com/file/d/0B5Vp69pKvP2lRGE1U2k5Q0l6dFU/edit?usp=sharing' ,array('class' => "btn btn-lg btn-primary", 'escapeTitle'=>false,'style'=>'margin-top:10px' ) );  ?>
+	<br/>
+	<br/>
+	<br/>
 	</div>
 
 </div>
