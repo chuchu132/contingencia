@@ -47,4 +47,8 @@ msgstr "Noviembre"
 msgid "December"
 msgstr "Diciembre"
 
+msgid "You are not authorized to access that location."
+msgstr "Debes iniciar sesión para entrar al sitio."
+
+
 
