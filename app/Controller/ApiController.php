@@ -68,7 +68,7 @@ class ApiController extends AppController {
 		$conditions['Publication.updated <='] = date("Y-m-d H:i:s", ($this->request->query('timestamp')));
 		$conditions['Publication.status'] =  PUBLICADA;
 
-		
+		/*
 		
 		if(!is_null($this->request->query('precio')) && !is_null($this->request->query('moneda'))){
 			$scale = $this->Currency->findByCode($this->request->query('moneda'));
@@ -115,7 +115,7 @@ class ApiController extends AppController {
 			$conditions['Publication.garage'] = (bool)$this->request->query('con_cochera') ;
 		}
 		
-		
+		*/
 		$options = array();
 		$options['conditions'] = $conditions;
 		$options['order'] = array('Publication.publication_type desc','Publication.'.$this->request->query('sort_field').' '.$this->request->query('order'), 'Publication.created DESC');
