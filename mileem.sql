@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.10deb1
+-- version 3.4.10.1deb1
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 27-09-2014 a las 21:30:05
--- Versión del servidor: 5.5.38-0ubuntu0.14.04.1
--- Versión de PHP: 5.5.9-1ubuntu4.4
+-- Tiempo de generación: 28-09-2014 a las 21:21:28
+-- Versión del servidor: 5.5.38
+-- Versión de PHP: 5.4.30-2+deb.sury.org~precise+1
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -162,8 +162,8 @@ CREATE TABLE IF NOT EXISTS `operation_type` (
 --
 
 INSERT INTO `operation_type` (`id`, `name`, `created`, `updated`) VALUES
-(1, 'Venta', '2014-09-25 01:27:30', '2014-09-25 01:27:30'),
-(2, 'Alquiler', '2014-09-25 01:27:36', '2014-09-25 01:27:36'),
+(1, 'Alquiler', '2014-09-25 01:27:30', '2014-09-25 01:27:30'),
+(2, 'Venta', '2014-09-25 01:27:36', '2014-09-25 01:27:36'),
 (3, 'Alquiler Temporario', '2014-09-25 01:28:02', '2014-09-25 01:28:02'),
 (4, 'Tiempo Compartido', '2014-09-25 01:28:12', '2014-09-25 01:28:12');
 
@@ -262,30 +262,20 @@ CREATE TABLE IF NOT EXISTS `publications` (
   KEY `operation_type_id` (`operation_type_id`),
   KEY `property_type_id` (`property_type_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=23 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 --
 -- Volcado de datos para la tabla `publications`
 --
 
 INSERT INTO `publications` (`id`, `street`, `st_number`, `neighborhood_id`, `covered_area`, `total_area`, `rooms`, `expenses`, `age`, `brand_new`, `price`, `currency`, `balcony`, `bathrooms`, `dining_room`, `ensuite_bedroom`, `storage`, `garage`, `studio`, `kitchen`, `service_unit`, `hall`, `frontgarden`, `backyard`, `laundry`, `lounge`, `living_room`, `terrace`, `mains_water`, `drains`, `cable`, `gas`, `internet`, `pavement`, `publication_date`, `publication_type`, `status`, `video`, `images_url`, `created`, `updated`, `operation_type_id`, `property_type_id`, `user_id`, `end_date`, `description`, `availability`) VALUES
-(3, 'asd', 1, 1, 12, 123, 1, 123, 1, 0, 12, 'ars', 0, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2014-09-26 18:57:45', 1, 3, '', '[]', '2014-09-25 23:04:30', '2014-09-26 23:26:45', 1, 1, 2, '2014-10-26 00:00:00', '', NULL),
-(6, 'Dr E Finochieto', 850, 1, 12, 123, 1, 123, 1, 0, 12, 'ars', 0, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2014-09-26 18:57:45', 1, 2, '', '[]', '2014-09-25 23:04:30', '2014-09-27 13:12:16', 1, 1, 2, '2014-10-26 00:00:00', '', NULL),
-(8, 'ddsd', 34, 1, 234, 34, 34, 34, 34, 0, 234524, 'ARS', 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2014-09-26 18:57:45', 1, 2, '', '', '2014-09-26 18:24:38', '2014-09-27 13:16:01', 1, 1, 2, '2014-10-26 00:00:00', '', NULL),
-(9, 'asd', 23, 1, 34, 34, NULL, 342, NULL, 0, 234324, 'ARS', 0, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2014-09-26 18:57:45', 1, 2, '', '', '2014-09-26 18:31:21', '2014-09-27 13:03:01', 1, 1, 2, '2014-10-26 00:00:00', '', NULL),
-(10, 'Montes de Oca', 200, 4, 32, 32, 2, NULL, 1, 0, 90000, 'ARS', 0, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2014-09-26 18:57:45', 1, 2, '', '', '2014-09-26 18:39:47', '2014-09-26 23:24:58', 1, 1, 2, '2014-10-26 00:00:00', '', NULL),
-(11, 'asdad', 6456, 1, 46, 65, 56, 65, 5, 0, 546546, 'USD', 0, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2014-09-26 18:57:45', 1, 2, '', '[]', '2014-09-26 18:50:39', '2014-09-26 23:26:35', 1, 1, 2, '2014-10-26 00:00:00', '', NULL),
-(12, 'qweqwe', 12, 1, 23, 23, 5, 123, 23, 0, 12321, 'ARS', 0, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2014-09-27 00:00:00', 1, 2, '', '[]', '2014-09-27 10:52:45', '2014-09-27 13:53:57', 1, 1, 2, '2014-10-27 00:00:00', '', NULL),
-(13, 'asdasd', 23, 1, 23, 32, 23, 23, 23, 0, 23, 'ARS', 0, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2014-09-27 00:00:00', 1, 2, '', '[]', '2014-09-27 11:00:24', '2014-09-27 11:00:24', 1, 1, 2, '2014-10-27 00:00:00', '', NULL),
-(14, 'sdf', 10, 1, 54, 54, 3, 555, 4, 0, 54, 'ARS', 0, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2014-09-27 00:00:00', 1, 3, '', '[]', '2014-09-27 11:10:19', '2014-09-27 13:11:52', 1, 1, 2, '2014-10-27 00:00:00', '', NULL),
-(15, 'sadasds', 56, 1, 675, 675, 6, 76, 76, 0, 67, 'ARS', 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2014-09-27 00:00:00', 1, 2, '', '[]', '2014-09-27 12:31:07', '2014-09-27 12:31:07', 1, 1, 2, '2014-10-27 00:00:00', '', NULL),
-(16, 'asdasd', 234, 1, 34, 34, 3, 34, 34, 0, 34, 'ARS', 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2014-09-27 00:00:00', 1, 2, '', '[]', '2014-09-27 12:32:20', '2014-09-27 12:32:20', 1, 1, 2, '2014-10-27 00:00:00', '', NULL),
-(17, 'sadas', 34, 1, 34, 34, 34, 34, 34, 0, 134, 'USD', 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2014-09-27 00:00:00', 1, 2, '', '["files\\/06c0a2559fdf171f737e2857e3e2f009c9f8f1ba.jpg"]', '2014-09-27 12:41:14', '2014-09-27 12:41:14', 1, 1, 2, '2014-10-27 00:00:00', '', NULL),
-(18, 'sadas', 34, 1, 34, 34, 34, 34, 34, 0, 134, 'USD', 0, 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2014-09-27 00:00:00', 1, 2, '', '["files\\/06c0a2559fdf171f737e2857e3e2f009c9f8f1ba.jpg"]', '2014-09-27 12:41:23', '2014-09-27 12:41:23', 1, 1, 2, '2014-10-27 00:00:00', '', NULL),
-(19, 'Av la Plata', 2541, 1, 56, 56, NULL, 0, 1, 0, 6709, 'USD', 0, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, '2014-09-27 00:00:00', 3, 2, 'https://www.youtube.com/watch?v=Z7PG_twJ0P0', '["files\\/.jpg","files\\/.jpg","files\\/.jpg"]', '2014-09-27 17:13:13', '2014-09-27 17:13:13', 1, 15, 2, '2014-10-27 00:00:00', '', NULL),
-(20, 'asdsad', 54, 1, 45, 45, NULL, 45, 45, 0, 345, 'ARS', 0, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '2014-09-27 00:00:00', 3, 2, '', '["files\\/06c0a2559fdf171f737e2857e3e2f009c9f8f1ba.jpg","files\\/cea7809915b3c578843cd9a509d5cf28f1154706.jpg","files\\/40ebf0b3ca967c5d3f3ed508aa1257e1a2980a93.jpg"]', '2014-09-27 17:26:38', '2014-09-27 17:26:38', 1, 15, 2, '2014-10-27 00:00:00', '', NULL),
-(21, 'asdasdsadasdsa a adsadasd ', 2342, 1, 45, 45, NULL, 45, 0, 1, 45, 'ARS', 0, NULL, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, '2014-09-27 00:00:00', 1, 2, '', '[]', '2014-09-27 18:07:46', '2014-09-27 18:07:46', 1, 15, 2, '2014-10-27 00:00:00', 'descripcion sarasassa \r\nmas cosas', NULL),
-(22, 'sddfsdfsdf', 65, 1, 45, 45, 45, 444, 4, 1, 543, 'USD', 0, 45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, '2014-09-27 00:00:00', 1, 2, '', '["files\\/d259635a4513e661038d25402f4f41e78eb7a0c6.png"]', '2014-09-27 20:41:50', '2014-09-27 20:41:50', 4, 1, 2, '2014-10-27 00:00:00', 'texto libre', '03-10-2014 hasta 29-10-2014');
+(1, 'Av Diaz Velez', 3790, 2, 30, 35, 1, 800, 5, 0, 2000, 'ARS', 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, '2014-09-28 00:00:00', 1, 2, '', '["files\\/96df72290f54511ba31ce5fe4f5e26009ebc4b78.jpg","files\\/4b26605a1e2ac0b4dc968b64d9425f166c4525bc.jpg"]', '2014-09-28 19:46:14', '2014-09-28 19:46:14', 1, 4, 5, '2014-10-28 00:00:00', 'Departamento de CategorÃ­a, orientaciÃ³n Norte. Excelente zona. 2 cuadras subte A, 3 cuadras de subte B. ', ''),
+(2, 'Tinogasta', 5600, 44, 200, 250, 5, 0, 0, 1, 120000, 'USD', 1, 2, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, '2014-09-28 00:00:00', 2, 2, '', '["files\\/1c5f283877ca99b25250e139d61059d13074830c.jpg","files\\/0f72dd79ee9e4d0f30dbada476ba79a98a50ee99.jpg","files\\/79a00a8df0e8a3020057a6cc66df6898f7c6ac27.jpg"]', '2014-09-28 19:48:30', '2014-09-28 19:48:30', 2, 1, 5, '2014-10-28 00:00:00', 'Excelente casa en barrio residencial. Lote propio. A estrenar', ''),
+(3, 'Av Luis Maria Campos', 800, 5, 60, 70, 1, 1000, 5, 0, 5000, 'ARS', 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, '2014-09-28 00:00:00', 3, 2, 'https://www.youtube.com/watch?v=_uK3GcN-qXw', '["files\\/ef522736def4d28b487b41683ef5b12982911fab.jpg","files\\/773b080ea75000ffc2cd1caea0bd7991f1cdddcb.jpg","files\\/d5774633d32d37d1cda229a4f1808bccc84ea313.jpg","files\\/f1bb6d5898f3099964fb005e508f695245558ac7.jpg","files\\/26dae16c419f6f994b08e6d2bd437f05b219465e.jpg"]', '2014-09-28 19:51:56', '2014-09-28 19:51:56', 3, 4, 5, '2014-10-28 00:00:00', 'Excelente departamento en zona norte. Edificio con piscina y amenities.', ''),
+(4, 'Arcos', 4500, 21, 200, 250, 6, 0, 2, 0, 80000, 'ARS', 1, 3, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, '2014-09-28 00:00:00', 3, 2, 'https://www.youtube.com/watch?v=THXFZyVsK2E', '["files\\/d801e5c7da41d53e040184ece6a7badae50a6099.jpg","files\\/6302aced966db1ea4893b857e552e29023c6571b.jpg","files\\/9acd1aa12e9cad96adfed959f17685db04e92bf1.jpg"]', '2014-09-28 19:56:19', '2014-09-28 19:57:21', 4, 1, 5, '2014-10-28 00:00:00', 'Alquiler de tiempos compartidos. ', '01-10-2014 hasta 30-05-2015'),
+(5, 'Cuba', 4700, 5, 60, 75, 1, 700, 6, 0, 4700, 'ARS', 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, '2014-09-28 00:00:00', 1, 2, '', '["files\\/1a807f252bb10b4c0ff336905ffe29ca243bcb86.jpg","files\\/49150f8e6f76116fe83175877713ea2960adb663.jpg","files\\/5c76982d0e2052ec55800ba869ce559d08445282.jpg"]', '2014-09-28 20:00:51', '2014-09-28 20:00:51', 3, 4, 5, '2014-10-28 00:00:00', 'Departamento en alquiler temporal, excelente zona. Amoblado.', ''),
+(6, 'Grecia', 4300, 5, 60, 70, 1, 890, 2, 0, 6000, 'ARS', 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, '2014-09-28 00:00:00', 2, 2, '', '["files\\/6c3a8d115f90391babe574108b9eaed1ce399957.jpg","files\\/5ea778a33bf79d19c88ac7fd9a8cd3df7802f789.jpg","files\\/93d245c327e8b7030d2546028600bd3fd5d1ba81.jpg"]', '2014-09-28 20:11:43', '2014-09-28 20:11:43', 3, 4, 5, '2014-10-28 00:00:00', 'Excelente depto para alquiler temporario', ''),
+(7, 'Deheza', 1500, 5, 60, 68, 1, 500, 4, 0, 6100, 'ARS', 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, '2014-09-28 00:00:00', 3, 2, 'https://www.youtube.com/watch?v=LloxkfD9QNQ', '["files\\/ee990bcc06c464c7499f02a71afe39fb14c0bb45.jpg","files\\/2f4ec74a9a50170e83824e0fcbdbd3053bb921d3.jpg","files\\/07c6fc0bc54c092bad9d6eee1e860fa7d5ad275f.jpg","files\\/3dc540c8f0d49d07ddb01e300aec4c3507d33ddd.jpg","files\\/96df72290f54511ba31ce5fe4f5e26009ebc4b78.jpg"]', '2014-09-28 20:21:24', '2014-09-28 20:21:59', 3, 4, 5, '2014-10-28 00:00:00', 'Departamento en alquiler temporario. Excelente zona. Edificio con ameninites.', '');
 
 -- --------------------------------------------------------
 
@@ -303,7 +293,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `created` datetime NOT NULL,
   `updated` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Volcado de datos para la tabla `users`
@@ -311,7 +301,9 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `username`, `password`, `name`, `tel_part`, `mobile`, `created`, `updated`) VALUES
 (2, 'chuchu132@gmail.com', '677b7ca0580d075c0f0236665c0064a1a73e2915', 'Ale Barbieri', '11-6224-3188', '11-6224-3187', '2014-09-25 19:46:04', '2014-09-27 16:53:41'),
-(3, 'ale@abarbieri.com.ar', '4bab6cdec78bdefa87086c64b171eb1575f283d2', 'Ale2 Barbieri', '12-123213-123', '123-12321-3-213', '2014-09-26 14:16:43', '2014-09-26 14:16:43');
+(3, 'ale@abarbieri.com.ar', '4bab6cdec78bdefa87086c64b171eb1575f283d2', 'Ale2 Barbieri', '12-123213-123', '123-12321-3-213', '2014-09-26 14:16:43', '2014-09-26 14:16:43'),
+(4, 'alejandrodaraio@gmail.com', '24f8e09d47802a034efb64f41bb54cb70ef8db79', 'Alejandro', '99991234', '155112345678', '2014-09-28 17:11:10', '2014-09-28 17:42:46'),
+(5, 'liz.smocovich@gmail.com', '1d591b0147b3508cc83be6c0e4f3a6960db6d146', 'Liz Smocovich', '48653118', '1130672233', '2014-09-28 17:14:59', '2014-09-28 17:14:59');
 
 --
 -- Restricciones para tablas volcadas
@@ -329,14 +321,6 @@ ALTER TABLE `neighborhoods`
 ALTER TABLE `neighborhood_limit_with_neighborhoods`
   ADD CONSTRAINT `neighborhood_limit_with_neighborhoods_ibfk_1` FOREIGN KEY (`neighborhood_id`) REFERENCES `neighborhoods` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `neighborhood_limit_with_neighborhoods_ibfk_2` FOREIGN KEY (`neighborhood2_id`) REFERENCES `neighborhoods` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `publications`
---
-ALTER TABLE `publications`
-  ADD CONSTRAINT `publications_ibfk_1` FOREIGN KEY (`neighborhood_id`) REFERENCES `neighborhoods` (`id`),
-  ADD CONSTRAINT `publications_ibfk_2` FOREIGN KEY (`operation_type_id`) REFERENCES `operation_type` (`id`),
-  ADD CONSTRAINT `publications_ibfk_3` FOREIGN KEY (`property_type_id`) REFERENCES `property_types` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
