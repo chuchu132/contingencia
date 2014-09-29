@@ -10,7 +10,7 @@ App::uses('AppController', 'Controller');
 class ApiController extends AppController {
 
 
-	public $uses = array('City','Publication','PropertyType','OperationType','Neighborhood');
+	public $uses = array('City','Publication','PropertyType','OperationType','Neighborhood','Currency');
 	  
 	public $autoRender = false;
 
@@ -67,6 +67,55 @@ class ApiController extends AppController {
 		$conditions['Publication.neighborhood_id'] =  $this->request->query('neighborhood');
 		$conditions['Publication.updated <='] = date("Y-m-d H:i:s", ($this->request->query('timestamp')));
 		$conditions['Publication.status'] =  PUBLICADA;
+
+		
+		
+		if(!is_null($this->request->query('precio')) && !is_null($this->request->query('moneda'))){
+			$scale = $this->Currency->findByCode($this->request->query('moneda'));
+			$precios = $this->request->query('precio');
+			$desde = ($precios[0] == '')?0:$precios[0];
+			$hasta = $precios[1];
+			if($hasta != ''){
+					if($desde>$hasta){
+						$tmp = $hasta;
+						$hasta = $desde;
+						$desde = $tmp;
+					}
+				$conditions['Publication.scaled_price BETWEEN ? AND ?'] =  array(($desde * $scale['Currency']['factor']),($hasta * $scale['Currency']['factor']));
+			}else {
+				$conditions['Publication.scaled_price >='] =  ($desde * $scale['Currency']['factor']);
+			}
+		}
+		
+		if(!is_null($this->request->query('sup_total'))){
+			$conditions['Publication.total_area >='] = $this->request->query('sup_total') ;
+		}
+		if(!is_null($this->request->query('sup_cubierta'))){
+			$conditions['Publication.covered_area >='] = $this->request->query('sup_cubierta') ;
+		}
+		if(!is_null($this->request->query('ambientes'))){
+			$conditions['Publication.rooms >='] = $this->request->query('ambientes') ;
+		}
+		if(!is_null($this->request->query('expensas'))){
+			$conditions['Publication.expenses <='] = $this->request->query('expensas') ;
+		}
+		if(!is_null($this->request->query('antiguedad'))){
+			$conditions['Publication.age <='] = $this->request->query('antiguedad') ;
+		}
+		if(!is_null($this->request->query('a_estrenar'))){
+			$conditions['Publication.expenses'] = (bool)$this->request->query('a_estrenar') ;
+		}
+		if(!is_null($this->request->query('banos'))){
+			$conditions['Publication.bathrooms >='] = $this->request->query('banos') ;
+		}
+		if(!is_null($this->request->query('en_suite'))){
+			$conditions['Publication.ensuite_bedroom'] = (bool)$this->request->query('en_suite') ;
+		}
+		if(!is_null($this->request->query('con_cochera'))){
+			$conditions['Publication.garage'] = (bool)$this->request->query('con_cochera') ;
+		}
+		
+		
 		$options = array();
 		$options['conditions'] = $conditions;
 		$options['order'] = array('Publication.publication_type desc','Publication.'.$this->request->query('sort_field').' '.$this->request->query('order'), 'Publication.created DESC');
@@ -90,7 +139,7 @@ class ApiController extends AppController {
 		$this->Publication->virtualFields['property_type'] = 'PropertyType.name';
 		$this->Publication->virtualFields['scaled_price'] = '(Publication.price * Currency.factor)';
 		$publications = $this->Publication->find('all',$options);
-		error_log(print_r($publications,true));
+		error_log("Resultados: ".count($publications));
 		$this->response->body(json_encode($publications));
 	}
 	

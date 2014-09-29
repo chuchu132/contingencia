@@ -83,7 +83,6 @@ class PublicationsController extends AppController {
 				$this->Session->setFlash(__('The publication has been saved'), 'flash/success');
 				$this->redirect(array('action' => 'index'));
 			} else {
-				debug($this->validationErrors);
 				$this->Session->setFlash(__('The publication could not be saved. Please, try again.'), 'flash/error');
 			}
 		}
@@ -176,10 +175,11 @@ class PublicationsController extends AppController {
 		if (!$this->request->is('post')) {
 			throw new MethodNotAllowedException();
 		}
-		$this->Publication->id = $id;
-		if (!$this->Publication->exists()) {
+		$publication = $this->Publication->findByIdAndUserId($id,$this->current_user['id']);
+		if (!((bool)$publication)) {
 			throw new NotFoundException(__('Invalid publication'));
 		}
+		$this->Publication->id = $id;
 		if ($this->Publication->delete()) {
 			$this->Session->setFlash(__('Publication deleted'), 'flash/success');
 			$this->redirect(array('action' => 'index'));
