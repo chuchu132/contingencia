@@ -24,14 +24,28 @@ class Publication extends AppModel {
  * @var array
  */
 	public $validate = array(
+		'imagen_1'=>array(
+				'notEmpty' => array(
+						'rule' => array('notEmpty'),
+						'message' => 'El campo no puede quedar vacío.',
+						//'allowEmpty' => false,
+						//'required' => false,
+						//'last' => false, // Stop validation after this rule
+						//'on' => 'create', // Limit validation to 'create' or 'update' operations
+				),
+				
+	),	
+			
 		'street' => array(
 			 'characters' => array(
        		 'rule' => array('custom', '/^[a-z0-9 ]*$/i'),
-        		'message'  => 'Solo letras, números y espacios.'
+        		'message'  => 'Solo letras, números y espacios.',
+			 		'required' => false,
+			 		
    		 ),
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
+				'message' => 'El campo no puede quedar vacío.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -55,6 +69,10 @@ class Publication extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+			'number' => array(
+					'rule'    => array('range', 0, 20001),
+					'message' => 'Por favor ingrese un número entre 1 y 20000'
+			)
 		),
 		'covered_area' => array(
 			'numeric' => array(
@@ -65,6 +83,14 @@ class Publication extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+			'number' => array(
+					'rule'    => array('range', -1, 1000000000),
+					'message' => 'Por favor ingrese un número entre 0 y 999999999'
+			),
+			'area' => array(
+				'rule' => array('validateArea'),
+				'message' => 'La superficie cubierta debe ser menor o igual a la superficie total.'
+			)
 		),
 		'total_area' => array(
 			'numeric' => array(
@@ -75,6 +101,11 @@ class Publication extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+			'number' => array(
+					'rule'    => array('range', -1, 1000000000),
+					'message' => 'Por favor ingrese un número entre 0 y 999999999'
+			),
+			
 		),
 		'rooms' => array(
 			'numeric' => array(
@@ -85,6 +116,10 @@ class Publication extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+			'number' => array(
+					'rule'    => array('range', 0, 101),
+					'message' => 'Por favor ingrese un número entre 1 y 100'
+			)
 		),
 		'expenses' => array(
 			'numeric' => array(
@@ -95,16 +130,24 @@ class Publication extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+			'number' => array(
+					'rule'    => array('range', -1, 5001),
+					'message' => 'Por favor ingrese un número entre 0 y 5000'
+			)
 		),
 		'age' => array(
 			'numeric' => array(
 				'rule' => array('positiveNumber'),
 				'message' => 'Debes ingresar la antigüedad aproximada en años.',
-				'allowEmpty' => false,
+				'allowEmpty' => true,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+			'number' => array(
+					'rule'    => array('range', -1, 5001),
+					'message' => 'Por favor ingrese un número entre 0 y 5000'
+			)
 		),
 	
 		'price' => array(
@@ -116,6 +159,10 @@ class Publication extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+			'number' => array(
+					'rule'    => array('range', -1, 1000000000),
+					'message' => 'Por favor ingrese un número entre 0 y 999999999'
+			)
 		),
 		'currency' => array(
 			'notEmpty' => array(
@@ -146,6 +193,10 @@ class Publication extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+			'number' => array(
+					'rule'    => array('range', -1, 101),
+					'message' => 'Por favor ingrese un número entre 0 y 100'
+			)
 		),
 		
 	
@@ -159,6 +210,14 @@ class Publication extends AppModel {
 		return (is_numeric($value) && $value >= 0);
 	}
 
+	
+	public function validateArea($field){
+		if(isset($this->data['Publication']['covered_area']) && isset($this->data['Publication']['total_area'])){
+			return $this->data['Publication']['covered_area'] <= $this->data['Publication']['total_area'];
+		}else {
+			return true;
+		}
+	}
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
 /**

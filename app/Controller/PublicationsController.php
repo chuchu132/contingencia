@@ -104,6 +104,7 @@ class PublicationsController extends AppController {
 		$this->request->data['Publication']['status'] = PUBLICADA;
 		
 	}
+	
 	private function __uploadImages(){
 		error_reporting(0);
 		$images = array();

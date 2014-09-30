@@ -118,7 +118,7 @@ class ApiController extends AppController {
 		*/
 		$options = array();
 		$options['conditions'] = $conditions;
-		$options['order'] = array('Publication.publication_type desc','Publication.'.$this->request->query('sort_field').' '.$this->request->query('order'), 'Publication.created DESC');
+		$options['order'] = array('Publication.'.$this->request->query('sort_field').' '.$this->request->query('order'), 'Publication.created DESC');
 		$options['limit'] = 5;
 		$options['offset'] = $this->request->query('offset');
 		$options['fields'] = array('Publication.address','Publication.rooms','Publication.total_area','Publication.images_url','Publication.operation_type','Publication.currency','Publication.scaled_price','Publication.price','Publication.publication_type','Publication.neighborhood','Publication.property_type' );
@@ -141,6 +141,16 @@ class ApiController extends AppController {
 		$publications = $this->Publication->find('all',$options);
 		error_log("Resultados: ".count($publications));
 		$this->response->body(json_encode($publications));
+	}
+	
+	public function publication($id){
+		$this->response->type('json');
+		$this->Publication->recursive = 0;
+		$publication = $this->Publication->find('first',array('fields' => array('Publication.*'),'conditions'=>array('Publication.id' => $id,'Publication.status' =>  PUBLICADA)));
+		if($publication == null){
+			$publication = array('Publication'=>null);
+		}
+		$this->response->body(json_encode($publication));
 	}
 	
 	

@@ -85,7 +85,6 @@
 		<td class="actions">
 			<?php echo $this->Html->link($this->Html->tag('span', null, array('class' => 'glyphicon glyphicon-info-sign')), array('action' => 'view', $publication['Publication']['id']), array('class' => 'btn btn-info btn-xs','escapeTitle' => false, 'title'=>__('Ver Publicación'))); ?>
 			<?php // echo $this->Html->link(__('Editar'), array('action' => 'edit', $publication['Publication']['id']), array('class' => 'btn btn-default btn-xs')); ?>
-			<?php //echo $this->Form->postLink($this->Html->tag('span', null, array('class' => 'glyphicon glyphicon-trash')), array('action' => 'delete', $publication['Publication']['id']), array('class' => 'btn btn-danger btn-xs','escapeTitle' => false ), __('Are you sure you want to delete # %s?', $publication['Publication']['id'])); ?>
 			<?php  if( $publication['Publication']['status'] == PUBLICADA){
 					echo $this->Form->postLink($this->Html->tag('span', null, array('class' => 'glyphicon glyphicon-pause')), array('action' => 'pause', $publication['Publication']['id']), array('class' => 'btn btn-warning btn-xs','escapeTitle' => false, 'title'=>__('Pausar Publicación')), __('Estas seguro de pausar esta publicación?'));
 				}else if($publication['Publication']['status'] == PAUSADO  ){
@@ -95,6 +94,7 @@
 					echo $this->Form->postLink($this->Html->tag('span', null, array('class' => 'glyphicon glyphicon-stop')), array('action' => 'end', $publication['Publication']['id']), array('class' => 'btn btn-danger btn-xs','escapeTitle' => false, 'title'=>__('Finalizar Publicación')), __('Estas seguro de finalizar esta publicación?'));
 				}
 			?>
+			<?php echo $this->Form->postLink($this->Html->tag('span', null, array('class' => 'glyphicon glyphicon-trash')), array('action' => 'delete', $publication['Publication']['id']), array('class' => 'btn btn-danger btn-xs','escapeTitle' => false ),__('Estas seguro de eliminar esta publicación?')); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>

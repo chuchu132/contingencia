@@ -32,9 +32,9 @@ echo $this->Html->script('usig.min');
 		<div class="publications form">
 		
 		
-			<?php echo $this->Form->create('Publication',array(
+			<?php echo $this->Form->create('Publication',array('novalidate' => true,
     'inputDefaults' => array(
-        'format' => array('before', 'error', 'label', 'between', 'input', 'after')
+        'format' => array('before', 'label', 'between', 'input', 'error','after')
     ),'role' => 'form', 'type' => 'file' )); ?>
 
 				<fieldset>

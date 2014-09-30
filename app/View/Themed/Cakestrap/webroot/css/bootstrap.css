@@ -9,6 +9,12 @@
  * Config saved to config.json and https://gist.github.com/5ce09db626217b548800
  */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+
+
+.error-message{
+	color:#ff0000;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
