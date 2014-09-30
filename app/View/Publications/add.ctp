@@ -3,6 +3,7 @@ echo $this->Html->css('daterangepicker');
 echo $this->Html->script('publicaciones');
 echo $this->Html->script('moment.min');
 echo $this->Html->script('jquery.daterangepicker');
+echo $this->Html->script('usig.min');
 
 ?>
 <div id="page-container" class="row">

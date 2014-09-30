@@ -41,4 +41,14 @@ $(document).ready(function() {
 	$("#PublicationOperationTypeId").change(function() {
 		cargarTiempo($(this));
 	});
+        new usig.AutoCompleter('PublicationStreet', {
+        debug: true,
+        skin: 'usig',
+        useInventario: false,
+        afterSelection: function(option) {
+            if (option instanceof usig.Direccion || option instanceof
+                    usig.inventario.Objeto) {
+            }
+        },
+    });
 });
