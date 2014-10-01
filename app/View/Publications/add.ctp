@@ -81,7 +81,7 @@ echo $this->Html->script('usig.min');
 									<?php echo $this->Form->input('imagen_3', array('type' => 'file')); ?>
 				
 							</div>
-							<?php if($type == PREMIUM){?>
+							<?php if($type == BASICA || $type == PREMIUM){?>
 							<div class="col-lg-12 col-md-12 col-sx-12">
 							<?php echo $this->Form->input('imagen_4', array('type' => 'file')); ?>
 				
