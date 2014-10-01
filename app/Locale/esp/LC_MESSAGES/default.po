@@ -941,5 +941,10 @@ msgstr "La contraseña debe tener uns mínimo de 8 caracteres."
 msgid "Description"
 msgstr "Descripción"
 
+msgid "formato_mail"
+msgstr "El nombre de usuario debe ser una dirección de email válida."
+
+msgid "campo_no_vacio"
+msgstr "El campo no puede quedar vacío."
 
 

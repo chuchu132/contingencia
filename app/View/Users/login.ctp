@@ -10,7 +10,7 @@
 <?php echo $this->Form->create('User',  array('url' => array('controller' => 'users', 'action' =>'login'))); ?>
     <fieldset>
         <h2 class="legend"><?php echo __('Usuario registrado'); ?></h2>
-        <?php echo $this->Form->input('username', array('class' => 'form-control','label' => __('Email')));
+       <?php echo $this->Form->input('username', array('class' => 'form-control','placeholder'=>'ejemplo@mail.com')); 
         	  echo $this->Form->input('password', array('class' => 'form-control','label' => __('Password')));?>
        <br/>
 

@@ -71,7 +71,7 @@
 		<td><?php echo h($publication['Publication']['street']); ?>&nbsp;</td>
 		<td><?php echo h($publication['Publication']['st_number']); ?>&nbsp;</td>
 		<td><?php echo h($publication['Neighborhood']['name']);?>&nbsp;</td>
-		<td><div class="btn-xs btn-<?php
+		<td><div class="btn-xs mileem-btn-<?php
 			$class = array(PUBLICADA=>'success',PAUSADO=>'warning',FINALIZADA=>'danger');
 			if(key_exists($publication['Publication']['status'], $class)){
 				echo $class[$publication['Publication']['status']];		

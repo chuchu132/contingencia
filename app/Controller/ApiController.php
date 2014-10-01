@@ -64,11 +64,10 @@ class ApiController extends AppController {
 		$conditions = array();
 		$conditions['Publication.property_type_id'] =  $this->request->query('property_type');
 		$conditions['Publication.operation_type_id'] =  $this->request->query('operation_type');
-		$conditions['Publication.neighborhood_id'] =  $this->request->query('neighborhood');
 		$conditions['Publication.updated <='] = date("Y-m-d H:i:s", ($this->request->query('timestamp')));
 		$conditions['Publication.status'] =  PUBLICADA;
 
-		/*
+		
 		
 		if(!is_null($this->request->query('precio')) && !is_null($this->request->query('moneda'))){
 			$scale = $this->Currency->findByCode($this->request->query('moneda'));
@@ -87,6 +86,19 @@ class ApiController extends AppController {
 			}
 		}
 		
+		if(!is_null($this->request->query('con_zonas')) && $this->request->query('con_zonas') != 'false'){
+			$neighborhood = $this->Neighborhood->findById($this->request->query('neighborhood'));
+			$limitWith[]= $this->request->query('neighborhood');
+			if($neighborhood && !empty($neighborhood['LimitWith'])){
+				foreach ($neighborhood['LimitWith'] as $neighbor ) {
+					$limitWith[] = $neighbor['id'];
+				}
+			}
+			$conditions['Publication.neighborhood_id'] = $limitWith;
+		}else{
+			$conditions['Publication.neighborhood_id'] =  $this->request->query('neighborhood');
+		}
+		
 		if(!is_null($this->request->query('sup_total'))){
 			$conditions['Publication.total_area >='] = $this->request->query('sup_total') ;
 		}
@@ -103,19 +115,20 @@ class ApiController extends AppController {
 			$conditions['Publication.age <='] = $this->request->query('antiguedad') ;
 		}
 		if(!is_null($this->request->query('a_estrenar'))){
-			$conditions['Publication.expenses'] = (bool)$this->request->query('a_estrenar') ;
+			$conditions['Publication.brand_new'] = ($this->request->query('a_estrenar')=='true') ;
 		}
 		if(!is_null($this->request->query('banos'))){
 			$conditions['Publication.bathrooms >='] = $this->request->query('banos') ;
 		}
 		if(!is_null($this->request->query('en_suite'))){
-			$conditions['Publication.ensuite_bedroom'] = (bool)$this->request->query('en_suite') ;
+			$conditions['Publication.ensuite_bedroom'] = ($this->request->query('en_suite')== 'true') ;
 		}
 		if(!is_null($this->request->query('con_cochera'))){
-			$conditions['Publication.garage'] = (bool)$this->request->query('con_cochera') ;
+			$conditions['Publication.garage'] = ($this->request->query('con_cochera') =='true');
 		}
 		
-		*/
+		error_log(print_r($conditions,true));
+		
 		$options = array();
 		$options['conditions'] = $conditions;
 		$options['order'] = array('Publication.'.$this->request->query('sort_field').' '.$this->request->query('order'), 'Publication.created DESC');

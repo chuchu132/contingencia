@@ -63,7 +63,7 @@ class Publication extends AppModel {
 			),
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
+				'message' => 'El campo no puede quedar vacío.',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -153,7 +153,7 @@ class Publication extends AppModel {
 		'price' => array(
 			'numeric' => array(
 				'rule' => array('positiveNumber'),
-				//'message' => 'Your custom message here',
+				'message' => 'solo_numeros_error',
 				'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -167,27 +167,20 @@ class Publication extends AppModel {
 		'currency' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				//'message' => 'Your custom message here',
+				'message' => 'El campo no puede quedar vacío.',
 				'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
-			'alphaNumeric' => array(
-				'rule' => array('alphaNumeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
+			
 			
 		),
 		
 		'bathrooms' => array(
 			'numeric' => array(
 				'rule' => array('positiveNumber'),
-				//'message' => 'Your custom message here',
+			'message' => 'solo_numeros_error',
 				'allowEmpty' => true,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule

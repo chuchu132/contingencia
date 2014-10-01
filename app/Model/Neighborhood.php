@@ -53,5 +53,14 @@ class Neighborhood extends AppModel {
 			'counterQuery' => ''
 		)
 	);
+	
+	 var $hasAndBelongsToMany = array(
+        'LimitWith' => array(
+            'className' => 'Neighborhood',
+            'joinTable' => 'neighborhood_limit_with_neighborhoods',
+            'foreignKey' => 'neighborhood_id',
+            'associationForeignKey' => 'neighborhood2_id',
+        ),
+    ); 
 
 }

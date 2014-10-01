@@ -2867,6 +2867,13 @@ fieldset[disabled] .btn-primary.active {
   color: #e91e63;
   background-color: #ffffff;
 }
+
+.mileem-btn-success {
+  color: #ffffff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
 .btn-success {
   color: #ffffff;
   background-color: #5cb85c;
@@ -2908,6 +2915,13 @@ fieldset[disabled] .btn-success.active {
   color: #5cb85c;
   background-color: #ffffff;
 }
+
+.mileem-btn-info {
+  color: #ffffff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
 .btn-info {
   color: #ffffff;
   background-color: #5bc0de;
@@ -2949,6 +2963,13 @@ fieldset[disabled] .btn-info.active {
   color: #5bc0de;
   background-color: #ffffff;
 }
+
+.mileem-btn-warning {
+  color: #ffffff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+
 .btn-warning {
   color: #ffffff;
   background-color: #f0ad4e;
@@ -2990,6 +3011,13 @@ fieldset[disabled] .btn-warning.active {
   color: #f0ad4e;
   background-color: #ffffff;
 }
+
+.mileem-btn-danger {
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
 .btn-danger {
   color: #ffffff;
   background-color: #d9534f;

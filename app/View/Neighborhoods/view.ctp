@@ -61,6 +61,56 @@
 			
 		</div><!-- /.view -->
 
+
+
+
+
+					
+			<div class="related">
+
+				<h3><?php echo __('Barrios con los que limita'); ?></h3>
+				
+				<?php if (!empty($neighborhood['LimitWith'])): ?>
+					
+					<div class="table-responsive">
+						<table class="table table-striped table-bordered">
+							<thead>
+								<tr>
+											<th><?php echo __('Id'); ?></th>
+		<th><?php echo __('Barrio'); ?></th>
+
+									<th class="actions"><?php echo __('Actions'); ?></th>
+								</tr>
+							</thead>
+							<tbody>
+									<?php
+										$i = 0;
+										foreach ($neighborhood['LimitWith'] as $neighbor): ?>
+		<tr>
+			<td><?php echo $neighbor['id']; ?></td>
+			<td><?php echo $neighbor['name']; ?></td>
+			<td class="actions">
+				<?php echo $this->Html->link(__('Ver'), array( 'action' => 'view', $neighbor['id']), array('class' => 'btn btn-default btn-xs')); ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+							</tbody>
+						</table><!-- /.table table-striped table-bordered -->
+					</div><!-- /.table-responsive -->
+					
+				<?php endif; ?>
+
+				
+				<div class="actions">
+					<?php echo $this->Html->link('<i class="icon-plus icon-white"></i> '.__('Nueva Publicación'), array('controller' => 'publications', 'action' => 'add'), array('class' => 'btn btn-primary', 'escape' => false)); ?>				</div><!-- /.actions -->
+				
+			</div><!-- /.related -->
+
+
+
+
+
+
 					
 			<div class="related">
 

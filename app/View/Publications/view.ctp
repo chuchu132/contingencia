@@ -259,7 +259,7 @@
 </tr>
 <tr>		<td><strong><?php echo __('Status'); ?></strong></td>
 		<td>
-			<div style="width: 100px;text-align:center;" class="btn-xs btn-<?php
+			<div style="width: 100px;text-align:center;" class="btn-xs mileem-btn-<?php
 			$class = array(PUBLICADA=>'success',PAUSADO=>'warning',FINALIZADA=>'danger');
 			if(key_exists($publication['Publication']['status'], $class)){
 				echo $class[$publication['Publication']['status']];		

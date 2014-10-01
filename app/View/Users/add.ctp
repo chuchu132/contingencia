@@ -25,7 +25,7 @@
 				<fieldset>
 
 					<div class="form-group">
-						<?php echo $this->Form->input('username', array('class' => 'form-control')); ?>
+						<?php echo $this->Form->input('username', array('class' => 'form-control','placeholder'=>'ejemplo@mail.com')); ?>
 					</div><!-- .form-group -->
 					<div class="form-group">
 						<?php echo $this->Form->input('password', array('class' => 'form-control')); ?>
