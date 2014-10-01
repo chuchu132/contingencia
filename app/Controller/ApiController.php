@@ -121,7 +121,7 @@ class ApiController extends AppController {
 		$options['order'] = array('Publication.'.$this->request->query('sort_field').' '.$this->request->query('order'), 'Publication.created DESC');
 		$options['limit'] = 5;
 		$options['offset'] = $this->request->query('offset');
-		$options['fields'] = array('Publication.address','Publication.rooms','Publication.total_area','Publication.images_url','Publication.operation_type','Publication.currency','Publication.scaled_price','Publication.price','Publication.publication_type','Publication.neighborhood','Publication.property_type' );
+		$options['fields'] = array('Publication.id','Publication.address','Publication.rooms','Publication.total_area','Publication.images_url','Publication.operation_type','Publication.currency','Publication.scaled_price','Publication.price','Publication.publication_type','Publication.neighborhood','Publication.property_type' );
 		$options['joins'] =array(
         array(
             'table' => 'currency_convertor',
