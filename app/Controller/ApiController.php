@@ -87,6 +87,7 @@ class ApiController extends AppController {
 		}
 		
 		if(!is_null($this->request->query('con_zonas')) && $this->request->query('con_zonas') != 'false'){
+			$this->Neighborhood->recursive = 1;
 			$neighborhood = $this->Neighborhood->findById($this->request->query('neighborhood'));
 			$limitWith[]= $this->request->query('neighborhood');
 			if($neighborhood && !empty($neighborhood['LimitWith'])){
@@ -159,7 +160,11 @@ class ApiController extends AppController {
 	public function publication($id){
 		$this->response->type('json');
 		$this->Publication->recursive = 0;
-		$publication = $this->Publication->find('first',array('fields' => array('Publication.*'),'conditions'=>array('Publication.id' => $id,'Publication.status' =>  PUBLICADA)));
+		$this->Publication->virtualFields['address'] = 'CONCAT(Publication.street," ", Publication.st_number)';
+		$this->Publication->virtualFields['neighborhood'] = 'Neighborhood.name';
+		$this->Publication->virtualFields['operation_type'] = 'OperationType.name';
+		$this->Publication->virtualFields['property_type'] = 'PropertyType.name';
+		$publication = $this->Publication->find('first',array('fields' => array('Publication.*','User.name','User.username','User.tel_part','User.mobile'),'conditions'=>array('Publication.id' => $id,'Publication.status' =>  PUBLICADA)));
 		if($publication == null){
 			$publication = array('Publication'=>null);
 		}

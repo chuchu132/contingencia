@@ -38,6 +38,7 @@ class NeighborhoodsController extends AppController {
 			throw new NotFoundException(__('Invalid neighborhood'));
 		}
 		$options = array('conditions' => array('Neighborhood.' . $this->Neighborhood->primaryKey => $id));
+		$this->Neighborhood->recursive = 1;
 		$this->set('neighborhood', $this->Neighborhood->find('first', $options));
 	}
 
