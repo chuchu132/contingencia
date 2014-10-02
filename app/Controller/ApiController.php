@@ -1,7 +1,7 @@
 <?php
 App::uses('AppController', 'Controller');
 /**
- * Cities Controller
+ * Api Controller
  *
  * @property City $City
  * @property PaginatorComponent $Paginator
