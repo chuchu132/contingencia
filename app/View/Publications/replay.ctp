@@ -9,7 +9,6 @@
 		<li class="list-group-item"><?php echo $this->Html->link(__('Mis Publicaciones'), array('action' => 'index'), array('class' => '')); ?> </li>
 		<li class="list-group-item"><?php echo $this->Html->link(__('Nueva Publicación'), array('action' => 'choose'), array('class' => '')); ?> </li>
 		<li class="list-group-item"><?php echo $this->Html->link(__('Detalle de la Publicación'), array('action' => 'view', $this->data['Publication']['id']), array('class' => '')); ?> </li>
-			<li class="list-group-item active"><?php echo __('Editar Publicación'); ?>	
 			</ul><!-- /.list-group -->
 			
 		</div><!-- /.actions -->
@@ -18,7 +17,7 @@
 	
 	<div id="page-content" class="col-sm-9">
 
-		<h2><?php echo __('Editar Publicación'); ?></h2>
+		<h2><?php echo __('Republicar Publicación'); ?></h2>
 
 		<div class="publications form">
 		

@@ -19,6 +19,15 @@ class PublicationsController extends AppController {
 	
 	public $components = array('Paginator', 'Session');
 
+	public $uses =  array('PublicationType','Publication');
+	
+	
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->allow('cron_update_publications');
+	}
+	
+	
 /**
  * index method
  *
@@ -76,6 +85,10 @@ class PublicationsController extends AppController {
 		if(!isset($type)){
 			$this->redirect(array('action' => 'choose'));
 		}
+		$publication_type = $this->PublicationType->findById($type);
+		if(!$publication_type){
+			$this->redirect(array('action' => 'choose'));
+		}
 		if ($this->request->is('post')) {
 			$this->Publication->create();
 			$this->setDefaults();
@@ -95,12 +108,12 @@ class PublicationsController extends AppController {
 		$this->set(compact('neighborhoods', 'operationTypes', 'propertyTypes', 'users'));
 	}
 
-	private function setDefaults(){
+	private function setDefaults($publication_type){
 		$images_urls = $this->__uploadImages();
 		$this->request->data['Publication']['images_url'] = $images_urls;
 		$this->request->data['Publication']['user_id'] = $this->current_user['id'];
 		$this->request->data['Publication']['publication_date'] = date("Y-m-d");
-		$this->request->data['Publication']['end_date'] = date('Y-m-d', strtotime("+30 days"));
+		$this->request->data['Publication']['end_date'] = date('Y-m-d', strtotime("+".$publication_type['PublicationType']['duration']." days"));
 		$this->request->data['Publication']['status'] = PUBLICADA;
 		
 	}
@@ -136,20 +149,19 @@ class PublicationsController extends AppController {
 		return json_encode($images_urls);
 	}
 	
-/**
- * edit method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-	public function edit($id = null) {
+
+	public function replay($id = null) {
         $publication = $this->Publication->findByIdAndUserId($id,$this->current_user['id']);
 		if (!((bool)$publication)) {
 			throw new NotFoundException(__('Invalid publication'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
-			$data['Publication']= array('id'=>$id,'price'=>$this->request->data['Publication']['price'],'currency'=>$this->request->data['Publication']['currency']);
+			$data['Publication']['id']=$id;
+			$data['Publication']['price']= $this->request->data['Publication']['price'];
+			$data['Publication']['currency']= $this->request->data['Publication']['currency'];
+			$data['Publication']['publication_date'] = date("Y-m-d");
+			$data['Publication']['end_date'] = date('Y-m-d', strtotime("+".$publication['PublicationType']['duration']." days"));
+			$data['Publication']['status'] = PUBLICADA;
 			if ($this->Publication->save($data)) {
 				$this->Session->setFlash(__('The publication has been saved'), 'flash/success');
 				$this->redirect(array('action' => 'index'));
@@ -245,6 +257,16 @@ class PublicationsController extends AppController {
 			$this->Session->setFlash(__('La Publicación fue finalizada.'), 'flash/success');
 		}
 		$this->redirect(array('action' => 'index'));
+	}
+	
+	
+	public function cron_update_publications(){
+			$this->autoRender = false;
+			$this->Publication->updateAll(
+					array('Publication.status' => FINALIZADA),
+					array('Publication.end_date <' => date('Y-m-d'), 'Publication.status !=' => FINALIZADA)
+			);
+			echo "cron_update_publications";
 	}
 	
 }

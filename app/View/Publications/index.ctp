@@ -92,6 +92,8 @@
 				} 
 				if( $publication['Publication']['status'] != FINALIZADA) {
 					echo $this->Form->postLink($this->Html->tag('span', null, array('class' => 'glyphicon glyphicon-stop')), array('action' => 'end', $publication['Publication']['id']), array('class' => 'btn btn-danger btn-xs','escapeTitle' => false, 'title'=>__('Finalizar Publicación')), __('Estas seguro de finalizar esta publicación?'));
+				}else if(date('Y-m-d') <= date('Y-m-d',strtotime( $publication['Publication']['end_date'].' +'.$publication['PublicationType']['republication_days'].' days' ))){
+					 echo $this->Html->link($this->Html->tag('span', null, array('class' => 'glyphicon glyphicon-play')), array('action' => 'replay', $publication['Publication']['id']), array('class' => 'btn btn-success btn-xs','escapeTitle' => false, 'title'=>__('Republicar Publicación')), __('Estas seguro de republicar esta publicación?'));					
 				}
 			?>
 			<?php echo $this->Form->postLink($this->Html->tag('span', null, array('class' => 'glyphicon glyphicon-trash')), array('action' => 'delete', $publication['Publication']['id']), array('class' => 'btn btn-danger btn-xs','escapeTitle' => false ),__('Estas seguro de eliminar esta publicación?')); ?>

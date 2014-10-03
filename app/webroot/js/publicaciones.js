@@ -41,7 +41,8 @@ $(document).ready(function() {
 	$("#PublicationOperationTypeId").change(function() {
 		cargarTiempo($(this));
 	});
-        new usig.AutoCompleter('PublicationStreet', {
+       
+	new usig.AutoCompleter('PublicationStreet', {
         debug: true,
         skin: 'usig',
         useInventario: false,

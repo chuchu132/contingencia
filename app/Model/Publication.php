@@ -246,6 +246,13 @@ class Publication extends AppModel {
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
+		),
+		'PublicationType' => array(
+			'className' => 'PublicationType',
+			'foreignKey' => 'publication_type',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
 		)
 	);
 }
