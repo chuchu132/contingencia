@@ -2,6 +2,7 @@
 App::uses('AppController', 'Controller');
 App::uses('CakeTime', 'Utility');
 App::uses('Sanitize', 'Utility');
+App::uses('CakeEmail', 'Network/Email');
 /**
  * Publications Controller
  *
@@ -91,11 +92,15 @@ class PublicationsController extends AppController {
 		}
 		if ($this->request->is('post')) {
 			$this->Publication->create();
-			$this->setDefaults();
+			$this->setDefaults($publication_type);
+			debug($this->request->data); 
 			if ($this->Publication->save($this->request->data)) {
+				$publication =$this->Publication->findById($this->Publication->getLastInsertID()); 
+				$this->__sendPublicationStartEmail($publication);
 				$this->Session->setFlash(__('The publication has been saved'), 'flash/success');
 				$this->redirect(array('action' => 'index'));
 			} else {
+				debug($this->Publication->validationErrors);
 				$this->Session->setFlash(__('The publication could not be saved. Please, try again.'), 'flash/error');
 			}
 		}
@@ -163,6 +168,8 @@ class PublicationsController extends AppController {
 			$data['Publication']['end_date'] = date('Y-m-d', strtotime("+".$publication['PublicationType']['duration']." days"));
 			$data['Publication']['status'] = PUBLICADA;
 			if ($this->Publication->save($data)) {
+				$publication = $this->Publication->findById($id);
+				$this-> __sendPublicationStartEmail($publication);
 				$this->Session->setFlash(__('The publication has been saved'), 'flash/success');
 				$this->redirect(array('action' => 'index'));
 			} else {
@@ -262,11 +269,31 @@ class PublicationsController extends AppController {
 	
 	public function cron_update_publications(){
 			$this->autoRender = false;
-			$this->Publication->updateAll(
-					array('Publication.status' => FINALIZADA),
-					array('Publication.end_date <' => date('Y-m-d'), 'Publication.status !=' => FINALIZADA)
-			);
+			$ended_publications = $this->Publication->find('all',	array('conditions'=>array('Publication.end_date <' => date('Y-m-d'), 'Publication.status !=' => FINALIZADA)));
+			foreach ($ended_publications as $publication){
+				$this->Publication->id = $publication['Publication']['id'];
+				$this->Publication->saveField('status',FINALIZADA);
+				$this->__sendPublicationEndEmail($publication);
+				echo "FINALIZA LA PUBLICACION #".$publication['Publication']['id']."<br/>";
+			}
 			echo "cron_update_publications";
 	}
+	
+	private function __sendPublicationStartEmail($publication){
+		$Email = new CakeEmail('gmail');
+		$Email->from("infomileem@gmail.com","MiLEEM");
+		$Email->to($publication['User']['username']);
+		$Email->subject($publication['Publication']['address']. ' ha comenzado.');
+		$Email->send('La Publicación #'.$publication['Publication']['id'].' ha comenzado y finalizará el día '.date('d-m-Y', strtotime($publication['Publication']['end_date'] )));
+	}
+	
+	private function __sendPublicationEndEmail($publication){
+		$Email = new CakeEmail('gmail');
+		$Email->from("infomileem@gmail.com","MiLEEM");
+		$Email->to($publication['User']['username']);
+		$Email->subject($publication['Publication']['address']. ' ha finalizado.');
+		$Email->send('La Publicación #'.$publication['Publication']['id'].' ha finalizado'.(($publication['PublicationType']['republication_days'] ==0)?'.':'. Tienes tiempo hasta el '. date('d-m-Y',strtotime( $publication['Publication']['end_date'].' +'.$publication['PublicationType']['republication_days'].' days' )).' para republicar tu propiedad a precios promocionales.'));
+	}
+	
 	
 }

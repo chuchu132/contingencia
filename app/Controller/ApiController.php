@@ -147,7 +147,7 @@ class ApiController extends AppController {
         )
     );
 	
-		$this->Publication->virtualFields['address'] = 'CONCAT(Publication.street," ", Publication.st_number)';
+		
 		$this->Publication->virtualFields['neighborhood'] = 'Neighborhood.name';
 		$this->Publication->virtualFields['operation_type'] = 'OperationType.name';
 		$this->Publication->virtualFields['property_type'] = 'PropertyType.name';

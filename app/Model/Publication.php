@@ -16,7 +16,7 @@ class Publication extends AppModel {
  * @var string
  */
 	public $displayField = 'street';
-	
+	public $virtualFields = array('address'=>'CONCAT(Publication.street," ", Publication.st_number)');
 
 /**
  * Validation rules
@@ -25,8 +25,8 @@ class Publication extends AppModel {
  */
 	public $validate = array(
 		'imagen_1'=>array(
-				'notEmpty' => array(
-						'rule' => array('notEmpty'),
+				'fileNotEmpty' => array(
+						'rule' => array('fileNotEmpty'),
 						'message' => 'El campo no puede quedar vacío.',
 						//'allowEmpty' => false,
 						//'required' => false,
@@ -194,7 +194,11 @@ class Publication extends AppModel {
 		
 	
 	);
+
 	
+	public function fileNotEmpty($check) {
+		return (is_array($check['imagen_1']) && !empty($check['imagen_1']['name']) );
+	}
 	public function positiveNumber($check) {
 		// $data array is passed using the form field name as the key
 		// have to extract the value to make the function generic

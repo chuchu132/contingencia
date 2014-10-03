@@ -39,6 +39,16 @@
  */
 class EmailConfig {
 
+	
+	
+	public $gmail = array(
+			'host' => 'ssl://smtp.gmail.com',
+			'port' => 465,
+			'username' => 'infomileem@gmail.com',
+			'password' => 'mileem123',
+			'transport' => 'Smtp'
+	);
+	
 	public $default = array(
 		'transport' => 'Mail',
 		'from' => 'you@localhost',
