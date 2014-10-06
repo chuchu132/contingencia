@@ -38,7 +38,7 @@ class Publication extends AppModel {
 			
 		'street' => array(
 			 'characters' => array(
-       		 'rule' => array('custom', '/^[a-z0-9 ]*$/i'),
+       		 'rule' => array('custom', '/^[a-z0-9 ,.]*$/i'),
         		'message'  => 'Solo letras, números y espacios.',
 			 		'required' => false,
 			 		

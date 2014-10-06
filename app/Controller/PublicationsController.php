@@ -25,7 +25,7 @@ class PublicationsController extends AppController {
 	
 	public function beforeFilter() {
 		parent::beforeFilter();
-		$this->Auth->allow('cron_update_publications');
+		$this->Auth->allow('cron_update_publications','public_view');
 	}
 	
 	
@@ -75,6 +75,7 @@ class PublicationsController extends AppController {
 		$this->set('publication', $this->Publication->find('first', $options));
 		$this->set('status_list',unserialize(FILTROS_ESTADOS));
 		$this->set('type',unserialize(TIPOS_PUBLICACION));
+		$this->set('is_public',false);
 	}
 
 /**
@@ -93,14 +94,12 @@ class PublicationsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Publication->create();
 			$this->setDefaults($publication_type);
-			debug($this->request->data); 
 			if ($this->Publication->save($this->request->data)) {
 				$publication =$this->Publication->findById($this->Publication->getLastInsertID()); 
 				$this->__sendPublicationStartEmail($publication);
 				$this->Session->setFlash(__('The publication has been saved'), 'flash/success');
 				$this->redirect(array('action' => 'index'));
 			} else {
-				debug($this->Publication->validationErrors);
 				$this->Session->setFlash(__('The publication could not be saved. Please, try again.'), 'flash/error');
 			}
 		}
@@ -295,5 +294,19 @@ class PublicationsController extends AppController {
 		$Email->send('La Publicación #'.$publication['Publication']['id'].' ha finalizado'.(($publication['PublicationType']['republication_days'] ==0)?'.':'. Tienes tiempo hasta el '. date('d-m-Y',strtotime( $publication['Publication']['end_date'].' +'.$publication['PublicationType']['republication_days'].' days' )).' para republicar tu propiedad a precios promocionales.'));
 	}
 	
-	
+	public function public_view($id = null) {
+		
+		$options = array('conditions' => array('Publication.' . $this->Publication->primaryKey => $id , 'Publication.status'=> PUBLICADA ));
+		$publication = $this->Publication->find('first', $options);
+		if($publication != null){
+			$this->set('is_public',true);
+			$this->set('set_social_tags',true);
+			$this->set('publication',$publication );
+			$this->set('status_list',unserialize(FILTROS_ESTADOS));
+			$this->set('type',unserialize(TIPOS_PUBLICACION));
+			$this->render('view');
+		}else{
+			$this->redirect(array('controller'=>'users','action' => 'login'));
+		}
+	}
 }

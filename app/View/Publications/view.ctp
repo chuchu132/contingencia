@@ -1,6 +1,6 @@
 
 <div id="page-container" class="row">
-
+<?php if(!$is_public) { ?>
 	<div id="sidebar" class="col-sm-3">
 		
 		<div class="actions">
@@ -14,8 +14,8 @@
 		</div><!-- /.actions -->
 		
 	</div><!-- /#sidebar .span3 -->
-	
-	<div id="page-content" class="col-sm-9">
+<?php } ?>	
+	<div id="page-content" class="col-sm-<?php echo ($is_public)?'12':'9'?>">
 		
 		<div class="publications view">
 

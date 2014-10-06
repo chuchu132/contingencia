@@ -19,9 +19,16 @@
 $cakeDescription = __d('cake_dev', 'MiLEEM');
 ?>
 <?php echo $this->Html->docType('html5'); ?> 
-<html>
+<html prefix="og: http://ogp.me/ns#">
 	<head>
 		<?php echo $this->Html->charset(); ?>
+		<?php 
+		if(isset($set_social_tags) && $set_social_tags){
+			 echo $this->element('social_tags');  
+		}else{
+			 echo $this->element('base_social_tags');
+		}
+			?>
 		<title>
 			<?php echo $cakeDescription ?>
 			
