@@ -4,10 +4,10 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => true,
-		'host' => 'localhost',
+		'host' => 'us-cdbr-iron-east-01.cleardb.net',
 		'port' => 3306,
-		'login' => 'root',
-		'password' => 'tincho',
-		'database' => 'mileem',
+		'login' => 'bf9dd15a124ab0',
+		'password' => '3cec7d2e',
+		'database' => 'heroku_eb10def3e2e1a0b',
 	);
 }
