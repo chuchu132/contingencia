@@ -18,3 +18,4 @@
 <meta name="twitter:app:name:googleplay" content="MiLEEM App" />
 <meta name="twitter:app:id:googleplay" content="ar.fi.uba.mileem" />
 <meta name="twitter:app:url:googleplay" content="mileem://public_view/<?php echo $publication['Publication']['id']; ?>" />
+<meta name="twitter:app:country" content="AR" />

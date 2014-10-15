@@ -171,5 +171,55 @@ class ApiController extends AppController {
 		$this->response->body(json_encode($publication));
 	}
 	
-	
+	public function stats($neighborhood_id){
+		$this->response->type('json');
+		$resutls= array();
+		$results['rooms'] = $this->__rooms_count_distribution_on($neighborhood_id);
+		$results['average'] = $this->__average_price_stats($neighborhood_id);
+		$this->response->body(json_encode($results));
+	}
+
+	public function __rooms_count_distribution_on($neighborhood_id){
+		$options = array();
+		$this->Publication->recursive = 0;
+		$options['conditions'] = array('Publication.neighborhood_id'=>$neighborhood_id, 'Publication.status'=>PUBLICADA,'Publication.rooms !='=>null);
+		$options['order'] = array('Publication.rooms');
+		$options['fields'] = array('Publication.rooms','Publication.count');
+		$options['group'] = array('Publication.rooms');
+		$this->Publication->virtualFields['count'] = 'count(*)';
+		$publications = $this->Publication->find('all',$options);
+		return $publications;
+	}
+
+	public function __average_price_stats($neighborhood_id){
+		$options = array();
+		$this->Neighborhood->recursive = 1;
+		$neighborhood = $this->Neighborhood->findById($neighborhood_id);
+		$limitWith[]= $neighborhood_id;
+		if($neighborhood && !empty($neighborhood['LimitWith'])){
+			foreach ($neighborhood['LimitWith'] as $neighbor ) {
+				$limitWith[] = $neighbor['id'];
+			}
+		}
+		$options['conditions'] = array('Publication.neighborhood_id'=>$limitWith, 'Publication.status'=>PUBLICADA,);
+		$options['order'] = array('Publication.average_price');
+		$options['fields'] = array('Publication.neighborhood_name','Publication.average_price');
+		$options['group'] = array('Publication.neighborhood_id');
+		$options['joins'] =array(
+        array(
+            'table' => 'currency_convertor',
+            'alias' => 'Currency',
+            'type' => 'INNER',
+            'conditions' => array(
+                'Currency.code = Publication.currency'
+            )
+		),
+        
+		);
+		
+		$this->Publication->virtualFields['neighborhood_name'] = 'Neighborhood.name';
+		$this->Publication->virtualFields['average_price'] = 'AVG((Publication.price * Currency.factor) / Publication.total_area)';
+		$publications = $this->Publication->find('all',$options);
+		return $publications;	
+}
 }
