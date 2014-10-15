@@ -437,8 +437,8 @@ msgstr ""
 #: View/PropertyTypes/viewctp:74
 #: View/Publications/viewctp:42
 #: View/Users/viewctp:89
-msgid "Street"
-msgstr "Calle"
+msgid "Address"
+msgstr "Dirección"
 
 #: View/Neighborhoods/viewctp:77
 #: View/OperationTypes/viewctp:70

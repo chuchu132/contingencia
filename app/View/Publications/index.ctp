@@ -53,8 +53,7 @@
 						<tr>
 						<th><?php echo $this->Paginator->sort('operation_type_id'); ?></th>
 						<th><?php echo $this->Paginator->sort('property_type_id'); ?></th>
-							<th><?php echo $this->Paginator->sort('street'); ?></th>
-							<th><?php echo $this->Paginator->sort('st_number'); ?></th>
+							<th><?php echo $this->Paginator->sort('address'); ?></th>
 							<th><?php echo $this->Paginator->sort('neighborhood_id'); ?></th>
 							<th><?php echo $this->Paginator->sort('status'); ?></th>
 							<th><?php echo $this->Paginator->sort('publication_date'); ?></th>
@@ -68,8 +67,7 @@
 	<tr>
 		<td><?php echo h($publication['OperationType']['name']); ?>&nbsp;</td>
 		<td><?php echo h($publication['PropertyType']['name']); ?>&nbsp;</td>
-		<td><?php echo h($publication['Publication']['street']); ?>&nbsp;</td>
-		<td><?php echo h($publication['Publication']['st_number']); ?>&nbsp;</td>
+		<td><?php echo h($publication['Publication']['address']); ?>&nbsp;</td>
 		<td><?php echo h($publication['Neighborhood']['name']);?>&nbsp;</td>
 		<td><div class="btn-xs mileem-btn-<?php
 			$class = array(PUBLICADA=>'success',PAUSADO=>'warning',FINALIZADA=>'danger');

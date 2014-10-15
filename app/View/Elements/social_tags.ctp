@@ -1,5 +1,5 @@
 <meta property="og:site_name" content="MiLEEM"/>
-<meta property="og:title" content="<?php echo $publication['OperationType']['name'].' | '.$publication['PropertyType']['name'].' | '.$publication['Publication']['street'].' '.$publication['Publication']['st_number'].', '.$publication['Neighborhood']['name']; ?>" />
+<meta property="og:title" content="<?php echo $publication['OperationType']['name'].' | '.$publication['PropertyType']['name'].' | '.$publication['Publication']['address'].', '.$publication['Neighborhood']['name']; ?>" />
 <meta property="og:url" content="<?php echo $this->html->url('/', true).'publications/public_view/'.$publication['Publication']['id']; ?>" />
 <?php  $images = json_decode($publication['Publication']['images_url']);
 				if(!empty($images)){

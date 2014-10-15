@@ -160,7 +160,7 @@ class ApiController extends AppController {
 	public function publication($id){
 		$this->response->type('json');
 		$this->Publication->recursive = 0;
-		$this->Publication->virtualFields['address'] = 'CONCAT(Publication.street," ", Publication.st_number)';
+		$this->Publication->virtualFields['address'] = 'CONCAT(Publication.address)';
 		$this->Publication->virtualFields['neighborhood'] = 'Neighborhood.name';
 		$this->Publication->virtualFields['operation_type'] = 'OperationType.name';
 		$this->Publication->virtualFields['property_type'] = 'PropertyType.name';
