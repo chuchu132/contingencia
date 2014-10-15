@@ -29,6 +29,8 @@ function cargarTiempo(input){
 }
 
 $(document).ready(function() {
+    var selectedOption = null;
+    var marker;
 	
 	$('#PublicationAvailability').dateRangePicker({format: 'DD-MM-YYYY',separator: ' hasta ', language: 'es'});
 	
@@ -42,14 +44,37 @@ $(document).ready(function() {
 		cargarTiempo($(this));
 	});
        
-	new usig.AutoCompleter('PublicationStreet', {
+	new usig.AutoCompleter('PublicationAddress', {
         debug: true,
         skin: 'usig',
+        onReady: function() {
+            $('#PublicationAddress').val('').removeAttr('disabled').focus();
+        },
         useInventario: false,
         afterSelection: function(option) {
-            if (option instanceof usig.Direccion || option instanceof
-                    usig.inventario.Objeto) {
+            if (option instanceof usig.Direccion || option instanceof usig.inventario.Objeto) {
+                dir= option.getCalle().nombre;
+                if(option.getAltura() == 0){
+                    dir= dir + " & "+ option.getCalleCruce().nombre;
+                }else{
+                    dir= dir + " " + option.getAltura();
+                }
+                dir= dir+ ", Ciudad Autónoma de Buenos Aires"
+                geocoder.geocode( { 'address': dir}, function(results, status) {
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        map.setCenter(results[0].geometry.location);
+                        if(marker) {
+                            marker.setMap(null)
+                        }
+                        marker = new google.maps.Marker({
+                            map: map,
+                            position: results[0].geometry.location
+                        });
+                        $('#PublicationLat').val(marker.getPosition().lat());
+                        $('#PublicationLng').val(marker.getPosition().lng());
+                    }
+                });
             }
-        },
+        }
     });
 });

@@ -76,8 +76,32 @@
 <?php }?>
 <tr>		<td><strong><?php echo __('Ubicación'); ?></strong></td>
 		<td>
-			<?php echo h($publication['Publication']['street']).' '.h($publication['Publication']['st_number']).', '.h($publication['Neighborhood']['name']); ?>
+			<?php echo h($publication['Publication']['address']).', '.h($publication['Neighborhood']['name']); ?>
 			&nbsp;
+		</td>
+
+		</tr>
+<tr>		<td><strong><?php echo __('Mapa'); ?></strong></td>
+		<td>
+			<input type="hidden" id="lat" value="<?php echo h($publication['Publication']['lat']) ?>"/>
+			<input type="hidden" id="lng" value="<?php echo h($publication['Publication']['lng']) ?>"/>
+			<div id="map_canvas"></div>
+			<script>
+$(document).ready(function() {
+function addMarker(){
+    var lat = $('#lat').val();
+    var lng = $('#lng').val();
+    if( lat && lng ){
+        var latlng= new google.maps.LatLng(lat, lng);
+        marker = new google.maps.Marker({
+            map: map,
+            position: latlng
+        });
+    }
+    }
+    google.maps.event.addDomListener(window, 'load', addMarker);
+    });
+    </script>
 		</td>
 
 		</tr>

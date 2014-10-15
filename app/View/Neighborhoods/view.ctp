@@ -123,8 +123,7 @@
 							<thead>
 								<tr>
 											<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Street'); ?></th>
-		<th><?php echo __('St Number'); ?></th>
+		<th><?php echo __('Address'); ?></th>
 		<th><?php echo __('Neighborhood Id'); ?></th>
 		<th><?php echo __('Covered Area'); ?></th>
 		<th><?php echo __('Total Area'); ?></th>
@@ -175,8 +174,7 @@
 										foreach ($neighborhood['Publication'] as $publication): ?>
 		<tr>
 			<td><?php echo $publication['id']; ?></td>
-			<td><?php echo $publication['street']; ?></td>
-			<td><?php echo $publication['st_number']; ?></td>
+			<td><?php echo $publication['address']; ?></td>
 			<td><?php echo $publication['neighborhood_id']; ?></td>
 			<td><?php echo $publication['covered_area']; ?></td>
 			<td><?php echo $publication['total_area']; ?></td>

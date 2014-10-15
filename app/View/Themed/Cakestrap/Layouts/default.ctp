@@ -48,6 +48,31 @@ $cakeDescription = __d('cake_dev', 'MiLEEM');
 			
 			echo $this->fetch('script');
 		?>
+
+    <style>
+      #map_canvas {
+        width: 500px;
+        height: 400px;
+        margin: 10px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      var map;
+      var geocoder;
+      function initialize() {
+
+        geocoder = new google.maps.Geocoder();
+        var mapCanvas = document.getElementById('map_canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(-34.6158526,-58.4332985,12),
+          zoom: 11,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 	</head>
 
 	<body>

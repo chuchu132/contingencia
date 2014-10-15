@@ -98,12 +98,16 @@ echo $this->Html->script('usig.min');
 					<h3>
 						<?php echo __('Ubicación y Precio'); ?>
 						</h3>
+
 					<div class="form-group row">
 						<div class="col-lg-8 col-md-8 col-sx-12">
-					<?php echo $this->Form->input('street', array('class' => 'form-control')); ?>
+					<?php echo $this->Form->input('address', array('class' => 'form-control')); ?>
 			</div>
-						<div class="col-lg-4 col-md-4 col-sx-12">
-						<?php echo $this->Form->input('st_number', array('class' => 'form-control')); ?>
+
+					<?php echo $this->Form->hidden('lat'); ?>
+					<?php echo $this->Form->hidden('lng'); ?>
+						<div class="col-lg-8 col-md-8 col-sx-12">
+						<div id="map_canvas"></div>
 				</div>
 						<div class="col-lg-8 col-md-8 col-sx-12">
 						<?php echo $this->Form->input('neighborhood_id', array('class' => 'form-control')); ?>

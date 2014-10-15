@@ -15,8 +15,8 @@ class Publication extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'street';
-	public $virtualFields = array('address'=>'CONCAT(Publication.street," ", Publication.st_number)');
+	public $displayField = 'address';
+	public $virtualFields = array('address'=>'CONCAT(Publication.address)');
 
 /**
  * Validation rules
@@ -36,7 +36,7 @@ class Publication extends AppModel {
 				
 	),	
 			
-		'street' => array(
+		'address' => array(
 			 'characters' => array(
        		 'rule' => array('custom', '/^[a-z0-9 ,.]*$/i'),
         		'message'  => 'Solo letras, números y espacios.',
