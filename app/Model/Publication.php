@@ -35,6 +35,17 @@ class Publication extends AppModel {
 				),
 				
 	),	
+	'video'=>array(
+				'validateVideo' => array(
+						'rule' => array('validateVideo'),
+						'message' => 'El link es inválido.',
+						//'allowEmpty' => false,
+						//'required' => false,
+						//'last' => false, // Stop validation after this rule
+						//'on' => 'create', // Limit validation to 'create' or 'update' operations
+				),
+				
+	),	
 			
 		'address' => array(
 			 'characters' => array(
@@ -214,6 +225,23 @@ class Publication extends AppModel {
 		}else {
 			return true;
 		}
+	}
+	
+	public function validateVideo($field){
+		if(isset($this->data['Publication']['video'])){
+			$link = $this->data['Publication']['video'];
+			if(strlen(trim($link))> 0){
+				$pattern = '#^(?:https?://)?(?:www\.)?(?:youtu\.be/|youtube\.com(?:/embed/|/v/|/watch\?v=|/watch\?.+&v=))([\w-]{11})(?:.+)?$#x';
+    			preg_match($pattern, $link, $matches);
+    		 	$code = (isset($matches[1])) ? $matches[1] : false;
+				if($code && strlen($code) == 11){
+					$this->data['Publication']['video'] = 'https://www.youtube.com/watch?v='.$code;
+					return true;	
+				}
+				return false;
+			}	
+		}
+		return true;
 	}
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 

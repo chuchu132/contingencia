@@ -68,7 +68,8 @@ $(document).ready(function() {
                         }
                         marker = new google.maps.Marker({
                             map: map,
-                            position: results[0].geometry.location
+                            position: results[0].geometry.location,
+                            zoom:18                            
                         });
                         $('#PublicationLat').val(marker.getPosition().lat());
                         $('#PublicationLng').val(marker.getPosition().lng());
@@ -77,4 +78,10 @@ $(document).ready(function() {
             }
         }
     });
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
 });

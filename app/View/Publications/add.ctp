@@ -67,11 +67,11 @@ echo $this->Html->script('usig.min');
 						<?php echo $this -> Form -> label('video', __('Link de Youtube')); ?>
 						</div>
 						<div class="col-lg-8 col-md-8 col-sx-12">
-							<?php echo $this->Form->input('video', array('class' => 'form-control','label' => false)); ?>
+							<?php echo $this->Form->input('video', array('class' => 'form-control','label' => false, 'placeholder'=> 'https://www.youtube.com/watch?v=XXXXXXXXXXX')); ?>
 						</div>
 					<?php }?>
 						<div class="col-lg-12 col-md-12 col-sx-12">
-						<?php echo $this->Form->input('imagen_1', array('type' => 'file')); ?>
+						<?php echo $this->Form->input('imagen_1', array('type' => 'file','label'=>'Imagen 1 *')); ?>
 				</div>
 						<div class="col-lg-12 col-md-12 col-sx-12">
 						<?php echo $this->Form->input('imagen_2', array('type' => 'file')); ?>
@@ -101,7 +101,7 @@ echo $this->Html->script('usig.min');
 
 					<div class="form-group row">
 						<div class="col-lg-8 col-md-8 col-sx-12">
-					<?php echo $this->Form->input('address', array('class' => 'form-control')); ?>
+					<?php echo $this->Form->input('address', array('class' => 'form-control','label'=>'Dirección *')); ?>
 			</div>
 
 					<?php echo $this->Form->hidden('lat'); ?>
@@ -115,7 +115,7 @@ echo $this->Html->script('usig.min');
 							</div>
 						<div class="col-lg-8 col-md-8 col-sx-0"></div>
 						<div class="col-lg-8 col-md-8 col-sx-12">
-					<?php echo $this->Form->input('price', array('class' => 'form-control')); ?>
+					<?php echo $this->Form->input('price', array('class' => 'form-control','label'=>'Precio *')); ?>
 			</div>
 						<div class="col-lg-4 col-md-4 col-sx-12">
 							<?php echo $this->Form->input('currency', array('class' => 'form-control','options'=>$currency_types)); ?>
@@ -128,10 +128,10 @@ echo $this->Html->script('usig.min');
 				<div class="form-group row">
 					<h3><?php echo __('Datos Generales de la Propiedad'); ?></h3>
 						<div class="col-lg-6 col-md-6 col-sx-12">
-						<?php echo $this->Form->input('covered_area', array('class' => 'form-control')); ?>
+						<?php echo $this->Form->input('covered_area', array('class' => 'form-control','label'=>'Superficie Cubierta *')); ?>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sx-12">
-						<?php echo $this->Form->input('total_area', array('class' => 'form-control')); ?>
+						<?php echo $this->Form->input('total_area', array('class' => 'form-control','label'=>'Superficie Total *')); ?>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sx-12">
 						<?php echo $this->Form->input('expenses', array('class' => 'form-control')); ?>
