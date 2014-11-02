@@ -98,7 +98,7 @@ class PublicationsController extends AppController {
 				$publication =$this->Publication->findById($this->Publication->getLastInsertID()); 
 				$this->__sendPublicationStartEmail($publication);
 				$this->Session->setFlash(__('The publication has been saved'), 'flash/success');
-				$this->redirect(array('action' => 'index'));
+				    $this->redirect(array('action' => 'paypal', $this->Publication->id));
 			} else {
 				$this->Session->setFlash(__('The publication could not be saved. Please, try again.'), 'flash/error');
 			}
@@ -110,6 +110,27 @@ class PublicationsController extends AppController {
 		$this->set('type',$type);
 		$this->set('currency_types',unserialize(MONEDAS));
 		$this->set(compact('neighborhoods', 'operationTypes', 'propertyTypes', 'users'));
+	}
+
+/**
+ * paypal method
+ *
+ * @return void
+ */
+	public function paypal($id) {
+	/*
+        App::uses('Paypal', 'Paypal.Lib');
+
+        $this->Paypal = new Paypal(array(
+            'sandboxMode' => true,
+            'nvpUsername' => 'andes.garcia@inakanetworks.com',
+            'nvpPassword' => 'MiLEEM2014',
+            'nvpSignature' => '{signature}'
+        ));
+
+		$publication = $this->Publication->findById($id);
+		$type = $this->PublicationType->findById($publication->publication_type);
+	*/
 	}
 
 	private function setDefaults($publication_type){

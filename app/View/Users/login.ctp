@@ -57,5 +57,10 @@
 	</div>
 
 </div>
+<div class="col-lg-2 col-md-12">
+	    <!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="#" onclick="javascript:window.open('https://www.paypal.com/ar/cgi-bin/webscr?cmd=xpt/Marketing/general/WIPaypal-outside','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=700, height=600');"><img  src="https://www.paypal.com/en_US/Marketing/i/logo/bnr_international_buyer2_265x70.gif" border="0" alt="International Seller"></a></td></tr></table><!-- PayPal Logo -->
 </div>
+</div>
+
+
 
