@@ -7,7 +7,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'port' => 3306,
 		'login' => 'root',
-		'password' => 'chuchu132',
+		'password' => 'tincho',
 		'database' => 'mileem',
 	);
 }

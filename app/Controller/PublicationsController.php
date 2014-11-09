@@ -119,18 +119,72 @@ class PublicationsController extends AppController {
  */
 	public function paypal($id) {
 	/*
+        Paypal account= andes.garcia@inakanetworks.com
+        password = MiLEEM2014
+	*/
+
+		$publication = $this->Publication->findById($id);
+		$type = $this->PublicationType->findById($publication->publication_type);
+	}
+
+	public function pay_paypal($id) {
         App::uses('Paypal', 'Paypal.Lib');
 
         $this->Paypal = new Paypal(array(
             'sandboxMode' => true,
-            'nvpUsername' => 'andes.garcia@inakanetworks.com',
-            'nvpPassword' => 'MiLEEM2014',
-            'nvpSignature' => '{signature}'
-        ));
+            'nvpUsername' => 'andres.garcia_api1.inakanetworks.com',
+            'nvpPassword' => 'ARQY59AZZKERB77V',
+            'nvpSignature' => 'AXFyukV02UBJSG0LSH9jSmzlYM5wAw5qU1vHD.7FydofhLIfLELKyVHQ'
+        ));$order = array(
+               'description' => 'Your purchase with Acme clothes store',
+               'currency' => 'GBP',
+               'return' => 'https://www.my-amazing-clothes-store.com/review-paypal.php',
+               'cancel' => 'https://www.my-amazing-clothes-store.com/checkout.php',
+               'custom' => 'bingbong',
+               'items' => array(
+                   0 => array(
+                       'name' => 'Blue shoes',
+                       'description' => 'A pair of really great blue shoes',
+                       'tax' => 2.00,
+                       'shipping' => 0.00,
+                       'subtotal' => 8.00,
+                   ),
+                   1 => array(
+                       'name' => 'Red trousers',
+                       'description' => 'Tight pair of red pants, look good with a hat.',
+                       'tax' => 2.00,
+                       'shipping' => 2.00,
+                       'subtotal' => 6.00
+                   ),
+               )
+           );
+            try {
+               $this->Paypal->setExpressCheckout($order);
+           } catch (Exception $e) {
+               // $e->getMessage();
+           }
+	}
 
-		$publication = $this->Publication->findById($id);
-		$type = $this->PublicationType->findById($publication->publication_type);
-	*/
+/**
+ * paypal method
+ *
+ * @return void
+ */
+	public function paypal_cancel($id) {
+				$this->Session->setFlash(__('The publication has been saved'), 'flash/success');
+				    $this->redirect(array('action' => 'paypal', $this->Publication->id));
+			} else {
+				$this->Session->setFlash(__('The publication could not be saved. Please, try again.'), 'flash/error');
+	}
+
+/**
+ * paypal method
+ *
+ * @return void
+ */
+	public function paypal_success($id) {
+        $this->Session->setFlash(__('Cuando el pago se acreditado se publicara la publicacion'), 'flash/success');
+        $this->redirect(array('action' => 'paypal', $this->Publication->id));
 	}
 
 	private function setDefaults($publication_type){
