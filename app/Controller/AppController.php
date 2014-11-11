@@ -33,6 +33,7 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 	public $theme = "Cakestrap";
 	public $current_user;
+	public $helpers = array('Html','Form','PaypalIpn.Paypal');
 	
 	public $components = array( 'RequestHandler', 'Paginator' ,'Session',
 			'Auth' => array(
@@ -80,6 +81,24 @@ class AppController extends Controller {
 		}
 	
 	}
+
+	function afterPaypalNotification($txnId){
+         //Here is where you can implement code to apply the transaction to your app.
+         //for example, you could now mark an order as paid, a subscription, or give the user premium access.
+         //retrieve the transaction using the txnId passed and apply whatever logic your site needs.
+
+         $transaction = ClassRegistry::init('PaypalIpn.InstantPaymentNotification')->findById($txnId);
+         $this->log($transaction['InstantPaymentNotification']['id'], 'paypal');
+
+         //Tip: be sure to check the payment_status is complete because failure
+         //     are also saved to your database for review.
+
+         if ($transaction['InstantPaymentNotification']['payment_status'] == 'Completed') {
+             //Yay!  We have monies!
+         }   else {
+             //Oh no, better look at this transaction to determine what to do; like email a decline letter.
+         }
+     }
 	
 	
 }

@@ -56,6 +56,7 @@
 							<th><?php echo $this->Paginator->sort('address'); ?></th>
 							<th><?php echo $this->Paginator->sort('neighborhood_id'); ?></th>
 							<th><?php echo $this->Paginator->sort('status'); ?></th>
+							<th><?php echo $this->Paginator->sort('pagado'); ?></th>
 							<th><?php echo $this->Paginator->sort('publication_date'); ?></th>
 							<th><?php echo $this->Paginator->sort('end_date'); ?></th>
 							<th><?php echo $this->Paginator->sort('publication_type'); ?></th>
@@ -76,6 +77,11 @@
 			}
 		?>"> 
 		<?php echo h($status_list[$publication['Publication']['status']]); ?>&nbsp;</div></td>
+		<td><?php if($publication['Publication']['pagado']){
+		 echo $this->Html->tag('span', ' Pago', array('class' => 'glyphicon glyphicon-ok label label-success'));
+		 }else{
+		 echo $this->Html->tag('span', ' Impago', array('class' => 'glyphicon glyphicon-remove label label-danger'));
+		}?>&nbsp;</td>
 		<td><?php echo h( date('d-m-Y',strtotime($publication['Publication']['publication_date']))); ?>&nbsp;</td>
 		<td><?php echo h( date('d-m-Y',strtotime($publication['Publication']['end_date']))); ?>&nbsp;</td>
 		<td><?php echo h($type[$publication['Publication']['publication_type']]); ?>&nbsp;</td>

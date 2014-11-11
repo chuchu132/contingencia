@@ -20,7 +20,9 @@ class PublicationsController extends AppController {
 	
 	public $components = array('Paginator', 'Session');
 
-	public $uses =  array('PublicationType','Publication');
+	public $uses =  array('PublicationType','Publication', 'InstantPaymentNotification');
+
+	public $helpers = array('Html','Form','PaypalIpn.Paypal');
 	
 	
 	public function beforeFilter() {
@@ -98,7 +100,13 @@ class PublicationsController extends AppController {
 				$publication =$this->Publication->findById($this->Publication->getLastInsertID()); 
 				$this->__sendPublicationStartEmail($publication);
 				$this->Session->setFlash(__('The publication has been saved'), 'flash/success');
-				    $this->redirect(array('action' => 'paypal', $this->Publication->id));
+                if($publication_type->cost=="0"){
+                    $this->redirect(array('action' => 'index'));
+                }else{
+                    $this->Publication->saveField('status',PAUSADO);
+                    $this->Publication->saveField('pagado',false);
+                    $this->redirect(array('action' => 'paypal', $this->Publication->id));
+                }
 			} else {
 				$this->Session->setFlash(__('The publication could not be saved. Please, try again.'), 'flash/error');
 			}
@@ -123,47 +131,29 @@ class PublicationsController extends AppController {
         password = MiLEEM2014
 	*/
 
-		$publication = $this->Publication->findById($id);
-		$type = $this->PublicationType->findById($publication->publication_type);
-	}
+        $publication = $this->Publication->findByIdAndUserId($id,$this->current_user['id']);
+		$type = $publication['PublicationType'];
 
-	public function pay_paypal($id) {
-        App::uses('Paypal', 'Paypal.Lib');
-
-        $this->Paypal = new Paypal(array(
-            'sandboxMode' => true,
-            'nvpUsername' => 'andres.garcia_api1.inakanetworks.com',
-            'nvpPassword' => 'ARQY59AZZKERB77V',
-            'nvpSignature' => 'AXFyukV02UBJSG0LSH9jSmzlYM5wAw5qU1vHD.7FydofhLIfLELKyVHQ'
-        ));$order = array(
-               'description' => 'Your purchase with Acme clothes store',
-               'currency' => 'GBP',
-               'return' => 'https://www.my-amazing-clothes-store.com/review-paypal.php',
-               'cancel' => 'https://www.my-amazing-clothes-store.com/checkout.php',
-               'custom' => 'bingbong',
-               'items' => array(
-                   0 => array(
-                       'name' => 'Blue shoes',
-                       'description' => 'A pair of really great blue shoes',
-                       'tax' => 2.00,
-                       'shipping' => 0.00,
-                       'subtotal' => 8.00,
-                   ),
-                   1 => array(
-                       'name' => 'Red trousers',
-                       'description' => 'Tight pair of red pants, look good with a hat.',
-                       'tax' => 2.00,
-                       'shipping' => 2.00,
-                       'subtotal' => 6.00
-                   ),
-               )
+        if($publication['Publication']['republicada']){
+        $order = array(
+               'id' => $id,
+               'description' => 'Aviso republicado en MiLEEM',
+               'amount' => $type['republication_cost'],
+               'return' => "http://localhost/publications/paypal_success/".$id,
+               'cancel' => "http://localhost/publications/paypal_cancel/".$id
            );
-            try {
-               $this->Paypal->setExpressCheckout($order);
-           } catch (Exception $e) {
-               // $e->getMessage();
-           }
+        }else{
+        $order = array(
+               'id' => $id,
+               'description' => 'Aviso publicado en MiLEEM',
+               'amount' => $type['cost'],
+               'return' => "http://localhost/publications/paypal_success/".$id,
+               'cancel' => "http://localhost/publications/paypal_cancel/".$id
+           );
+        }
+        $this->set('order',$order);
 	}
+
 
 /**
  * paypal method
@@ -171,10 +161,8 @@ class PublicationsController extends AppController {
  * @return void
  */
 	public function paypal_cancel($id) {
-				$this->Session->setFlash(__('The publication has been saved'), 'flash/success');
-				    $this->redirect(array('action' => 'paypal', $this->Publication->id));
-			} else {
-				$this->Session->setFlash(__('The publication could not be saved. Please, try again.'), 'flash/error');
+		$this->Session->setFlash(__('Realize el pago para que el aviso sea publicado'), 'flash/error');
+        $this->redirect(array('action' => 'index'));
 	}
 
 /**
@@ -183,8 +171,8 @@ class PublicationsController extends AppController {
  * @return void
  */
 	public function paypal_success($id) {
-        $this->Session->setFlash(__('Cuando el pago se acreditado se publicara la publicacion'), 'flash/success');
-        $this->redirect(array('action' => 'paypal', $this->Publication->id));
+        $this->Session->setFlash(__('Cuando el pago sea acreditado su aviso será publicado'), 'flash/success');
+        $this->redirect(array('action' => 'index'));
 	}
 
 	private function setDefaults($publication_type){
@@ -241,11 +229,18 @@ class PublicationsController extends AppController {
 			$data['Publication']['publication_date'] = date("Y-m-d");
 			$data['Publication']['end_date'] = date('Y-m-d', strtotime("+".$publication['PublicationType']['duration']." days"));
 			$data['Publication']['status'] = PUBLICADA;
+			$data['Publication']['republicada'] = true;
 			if ($this->Publication->save($data)) {
 				$publication = $this->Publication->findById($id);
 				$this-> __sendPublicationStartEmail($publication);
 				$this->Session->setFlash(__('The publication has been saved'), 'flash/success');
-				$this->redirect(array('action' => 'index'));
+                if($publication['PublicationType']['cost']=="0"){
+                    $this->redirect(array('action' => 'index'));
+                }else{
+                    $this->Publication->saveField('status',PAUSADO);
+                    $this->Publication->saveField('pagado',false);
+                    $this->redirect(array('action' => 'paypal', $this->Publication->id));
+                }
 			} else {
 				$this->Session->setFlash(__('The publication could not be saved. Please, try again.'), 'flash/error');
 			}
@@ -316,9 +311,15 @@ class PublicationsController extends AppController {
 		error_log($publication['Publication']['status']);
 		if($publication['Publication']['status'] != FINALIZADA && !CakeTime::isPast($publication['Publication']['end_date'])){
 			$this->Publication->id = $id;
-			if($this->Publication->saveField('status',PUBLICADA)){
-				$this->Session->setFlash(__('La Publicación fue reanudada'), 'flash/success');
-			}
+
+            if($publication['Publication']['pagado']){
+                if($this->Publication->saveField('status',PUBLICADA)){
+                    $this->Session->setFlash(__('La Publicación fue reanudada'), 'flash/success');
+                }
+            }else{
+                $this->redirect(array('action' => 'paypal', $this->Publication->id));
+                return ;
+            }
 		}else{
 			$this->Session->setFlash(__('La Publicación no puede ser reanudada'), 'flash/error');
 		}

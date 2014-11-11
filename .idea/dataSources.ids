@@ -644,6 +644,100 @@
       <column name="code" sqlType="VARCHAR" precision="3" scale="0" nullable="false" jdbcType="12"/>
       <column name="factor" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
     </table>
+    <table name="instant_payment_notifications" schema="" catalog="mileem" type="TABLE">
+      <column name="id" sqlType="VARCHAR" precision="36" scale="0" nullable="false" jdbcType="12"/>
+      <column name="notify_version" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12" remarks="SVBOIFZlcnNpb24gTnVtYmVy"/>
+      <column name="verify_sign" sqlType="VARCHAR" precision="127" scale="0" nullable="true" jdbcType="12" remarks="RW5jcnlwdGVkIHN0cmluZyB1c2VkIHRvIHZlcmlmeSB0aGUgYXV0aGVudGljaXR5b2YgdGhlIHRhbnNhY3Rpb24="/>
+      <column name="test_ipn" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="address_city" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12" remarks="Q2l0eSBvZiBjdXN0b21lcnMgYWRkcmVzcw=="/>
+      <column name="address_country" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12" remarks="Q291bnRyeSBvZiBjdXN0b21lcnMgYWRkcmVzcw=="/>
+      <column name="address_country_code" sqlType="VARCHAR" precision="2" scale="0" nullable="true" jdbcType="12" remarks="VHdvIGNoYXJhY3RlciBJU08gMzE2NiBjb3VudHJ5IGNvZGU="/>
+      <column name="address_name" sqlType="VARCHAR" precision="128" scale="0" nullable="true" jdbcType="12" remarks="TmFtZSB1c2VkIHdpdGggYWRkcmVzcyAoaW5jbHVkZWQgd2hlbiBjdXN0b21lciBwcm92aWRlcyBhIEdpZnQgYWRkcmVzcyk="/>
+      <column name="address_state" sqlType="VARCHAR" precision="40" scale="0" nullable="true" jdbcType="12" remarks="U3RhdGUgb2YgY3VzdG9tZXIgYWRkcmVzcw=="/>
+      <column name="address_status" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="Y29uZmlybWVkL3VuY29uZmlybWVk"/>
+      <column name="address_street" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12" remarks="Q3VzdG9tZXIncyBzdHJlZXQgYWRkcmVzcw=="/>
+      <column name="address_zip" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="WmlwIGNvZGUgb2YgY3VzdG9tZXIncyBhZGRyZXNz"/>
+      <column name="first_name" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12" remarks="Q3VzdG9tZXIncyBmaXJzdCBuYW1l"/>
+      <column name="last_name" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12" remarks="Q3VzdG9tZXIncyBsYXN0IG5hbWU="/>
+      <column name="payer_business_name" sqlType="VARCHAR" precision="127" scale="0" nullable="true" jdbcType="12" remarks="Q3VzdG9tZXIncyBjb21wYW55IG5hbWUsIGlmIGN1c3RvbWVyIHJlcHJlc2VudHMgYSBidXNpbmVzcw=="/>
+      <column name="payer_email" sqlType="VARCHAR" precision="127" scale="0" nullable="true" jdbcType="12" remarks="Q3VzdG9tZXIncyBwcmltYXJ5IGVtYWlsIGFkZHJlc3MuIFVzZSB0aGlzIGVtYWlsIHRvIHByb3ZpZGUgYW55IGNyZWRpdHM="/>
+      <column name="payer_id" sqlType="VARCHAR" precision="13" scale="0" nullable="true" jdbcType="12" remarks="VW5pcXVlIGN1c3RvbWVyIElELg=="/>
+      <column name="payer_status" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="dmVyaWZpZWQvdW52ZXJpZmllZA=="/>
+      <column name="contact_phone" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="Q3VzdG9tZXIncyB0ZWxlcGhvbmUgbnVtYmVyLg=="/>
+      <column name="residence_country" sqlType="VARCHAR" precision="2" scale="0" nullable="true" jdbcType="12" remarks="VHdvLUNoYXJhY3RlciBJU08gMzE2NiBjb3VudHJ5IGNvZGU="/>
+      <column name="business" sqlType="VARCHAR" precision="127" scale="0" nullable="true" jdbcType="12" remarks="RW1haWwgYWRkcmVzcyBvciBhY2NvdW50IElEIG9mIHRoZSBwYXltZW50IHJlY2lwaWVudCAodGhhdCBpcywgdGhlIG1lcmNoYW50KS4gRXF1aXZhbGVudCB0byB0aGUgdmFsdWVzIG9mIHJlY2VpdmVyX2VtYWlsIChJZiBwYXltZW50IGlzIHNlbnQgdG8gcHJpbWFyeSBhY2NvdW50KSBhbmQgYnVzaW5lc3Mgc2V0IGluIHRoZSBXZWJzaXRlIFBheW1lbnQgSFRNTC4="/>
+      <column name="item_name" sqlType="VARCHAR" precision="127" scale="0" nullable="true" jdbcType="12" remarks="SXRlbSBuYW1lIGFzIHBhc3NlZCBieSB5b3UsIHRoZSBtZXJjaGFudC4gT3IsIGlmIG5vdCBwYXNzZWQgYnkgeW91LCBhcyBlbnRlcmVkIGJ5IHlvdXIgY3VzdG9tZXIuIElmIHRoaXMgaXMgYSBzaG9wcGluZyBjYXJ0IHRyYW5zYWN0aW9uLCBQYXlwYWwgd2lsbCBhcHBlbmQgdGhlIG51bWJlciBvZiB0aGUgaXRlbSAoZS5nLiwgaXRlbV9uYW1lXzEsaXRlbV9uYW1lXzIsIGFuZCBzbyBmb3J0aCku"/>
+      <column name="item_number" sqlType="VARCHAR" precision="127" scale="0" nullable="true" jdbcType="12" remarks="UGFzcy10aHJvdWdoIHZhcmlhYmxlIGZvciB5b3UgdG8gdHJhY2sgcHVyY2hhc2VzLiBJdCB3aWxsIGdldCBwYXNzZWQgYmFjayB0byB5b3UgYXQgdGhlIGNvbXBsZXRpb24gb2YgdGhlIHBheW1lbnQuIElmIG9taXR0ZWQsIG5vIHZhcmlhYmxlIHdpbGwgYmUgcGFzc2VkIGJhY2sgdG8geW91Lg=="/>
+      <column name="quantity" sqlType="VARCHAR" precision="127" scale="0" nullable="true" jdbcType="12" remarks="UXVhbnRpdHkgYXMgZW50ZXJlZCBieSB5b3VyIGN1c3RvbWVyIG9yIGFzIHBhc3NlZCBieSB5b3UsIHRoZSBtZXJjaGFudC4gSWYgdGhpcyBpcyBhIHNob3BwaW5nIGNhcnQgdHJhbnNhY3Rpb24sIFBheVBhbCBhcHBlbmRzIHRoZSBudW1iZXIgb2YgdGhlIGl0ZW0gKGUuZy4sIHF1YW50aXR5MSxxdWFudGl0eTIpLg=="/>
+      <column name="item_name1" sqlType="VARCHAR" precision="127" scale="0" nullable="true" jdbcType="12"/>
+      <column name="item_number1" sqlType="VARCHAR" precision="127" scale="0" nullable="true" jdbcType="12"/>
+      <column name="quantity1" sqlType="VARCHAR" precision="127" scale="0" nullable="true" jdbcType="12"/>
+      <column name="receiver_email" sqlType="VARCHAR" precision="127" scale="0" nullable="true" jdbcType="12" remarks="UHJpbWFyeSBlbWFpbCBhZGRyZXNzIG9mIHRoZSBwYXltZW50IHJlY2lwaWVudCAodGhhdCBpcywgdGhlIG1lcmNoYW50KS4gSWYgdGhlIHBheW1lbnQgaXMgc2VudCB0byBhIG5vbi1wcmltYXJ5IGVtYWlsIGFkZHJlc3Mgb24geW91ciBQYXlQYWwgYWNjb3VudCwgdGhlIHJlY2VpdmVyX2VtYWlsIGlzIHN0aWxsIHlvdXIgcHJpbWFyeSBlbWFpbC4="/>
+      <column name="receiver_id" sqlType="VARCHAR" precision="13" scale="0" nullable="true" jdbcType="12" remarks="VW5pcXVlIGFjY291bnQgSUQgb2YgdGhlIHBheW1lbnQgcmVjaXBpZW50IChpLmUuLCB0aGUgbWVyY2hhbnQpLiBUaGlzIGlzIHRoZSBzYW1lIGFzIHRoZSByZWNpcGllbnRzIHJlZmVycmFsIElELg=="/>
+      <column name="custom" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" remarks="Q3VzdG9tIHZhbHVlIGFzIHBhc3NlZCBieSB5b3UsIHRoZSBtZXJjaGFudC4gVGhlc2UgYXJlIHBhc3MtdGhyb3VnaCB2YXJpYWJsZXMgdGhhdCBhcmUgbmV2ZXIgcHJlc2VudGVkIHRvIHlvdXIgY3VzdG9tZXIu"/>
+      <column name="invoice" sqlType="VARCHAR" precision="127" scale="0" nullable="true" jdbcType="12" remarks="UGFzcyB0aHJvdWdoIHZhcmlhYmxlIHlvdSBjYW4gdXNlIHRvIGlkZW50aWZ5IHlvdXIgaW52b2ljZSBudW1iZXIgZm9yIHRoaXMgcHVyY2hhc2UuIElmIG9taXR0ZWQsIG5vIHZhcmlhYmxlIGlzIHBhc3NlZCBiYWNrLg=="/>
+      <column name="memo" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" remarks="TWVtbyBhcyBlbnRlcmVkIGJ5IHlvdXIgY3VzdG9tZXIgaW4gUGF5UGFsIFdlYnNpdGUgUGF5bWVudHMgbm90ZSBmaWVsZC4="/>
+      <column name="option_name_1" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12" remarks="T3B0aW9uIG5hbWUgMSBhcyByZXF1ZXN0ZWQgYnkgeW91"/>
+      <column name="option_name_2" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12" remarks="T3B0aW9uIDIgbmFtZSBhcyByZXF1ZXN0ZWQgYnkgeW91"/>
+      <column name="option_selection1" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12" remarks="T3B0aW9uIDEgY2hvaWNlIGFzIGVudGVyZWQgYnkgeW91ciBjdXN0b21lcg=="/>
+      <column name="option_selection2" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12" remarks="T3B0aW9uIDIgY2hvaWNlIGFzIGVudGVyZWQgYnkgeW91ciBjdXN0b21lcg=="/>
+      <column name="tax" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7" remarks="QW1vdW50IG9mIHRheCBjaGFyZ2VkIG9uIHBheW1lbnQ="/>
+      <column name="auth_id" sqlType="VARCHAR" precision="19" scale="0" nullable="true" jdbcType="12" remarks="QXV0aG9yaXphdGlvbiBpZGVudGlmaWNhdGlvbiBudW1iZXI="/>
+      <column name="auth_exp" sqlType="VARCHAR" precision="28" scale="0" nullable="true" jdbcType="12" remarks="QXV0aG9yaXphdGlvbiBleHBpcmF0aW9uIGRhdGUgYW5kIHRpbWUsIGluIHRoZSBmb2xsb3dpbmcgZm9ybWF0OiBISDpNTTpTUyBERCBNbW0gWVksIFlZWVkgUFNU"/>
+      <column name="auth_amount" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="QXV0aG9yaXphdGlvbiBhbW91bnQ="/>
+      <column name="auth_status" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="U3RhdHVzIG9mIGF1dGhvcml6YXRpb24="/>
+      <column name="num_cart_items" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="SWYgdGhpcyBpcyBhIFBheVBhbCBzaG9wcGluZyBjYXJ0IHRyYW5zYWN0aW9uLCBudW1iZXIgb2YgaXRlbXMgaW4gdGhlIGNhcnQ="/>
+      <column name="parent_txn_id" sqlType="VARCHAR" precision="19" scale="0" nullable="true" jdbcType="12" remarks="SW4gdGhlIGNhc2Ugb2YgYSByZWZ1bmQsIHJldmVyc2FsLCBvciBjYW5jZWxsZWQgcmV2ZXJzYWwsIHRoaXMgdmFyaWFibGUgY29udGFpbnMgdGhlIHR4bl9pZCBvZiB0aGUgb3JpZ2luYWwgdHJhbnNhY3Rpb24sIHdoaWxlIHR4bl9pZCBjb250YWlucyBhIG5ldyBJRCBmb3IgdGhlIG5ldyB0cmFuc2FjdGlvbi4="/>
+      <column name="payment_date" sqlType="VARCHAR" precision="28" scale="0" nullable="true" jdbcType="12" remarks="VGltZS9kYXRlIHN0YW1wIGdlbmVyYXRlZCBieSBQYXlQYWwsIGluIHRoZSBmb2xsb3dpbmcgZm9ybWF0OiBISDpNTTpTUyBERCBNbW0gWVksIFlZWVkgUFNU"/>
+      <column name="payment_status" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="UGF5bWVudCBzdGF0dXMgb2YgdGhlIHBheW1lbnQ="/>
+      <column name="payment_type" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="ZWNoZWNrL2luc3RhbnQ="/>
+      <column name="pending_reason" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="VGhpcyB2YXJpYWJsZSBpcyBvbmx5IHNldCBpZiBwYXltZW50X3N0YXR1cz1wZW5kaW5n"/>
+      <column name="reason_code" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="VGhpcyB2YXJpYWJsZSBpcyBvbmx5IHNldCBpZiBwYXltZW50X3N0YXR1cz1yZXZlcnNlZA=="/>
+      <column name="remaining_settle" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="UmVtYWluaW5nIGFtb3VudCB0aGF0IGNhbiBiZSBjYXB0dXJlZCB3aXRoIEF1dGhvcml6YXRpb24gYW5kIENhcHR1cmU="/>
+      <column name="shipping_method" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12" remarks="VGhlIG5hbWUgb2YgYSBzaGlwcGluZyBtZXRob2QgZnJvbSB0aGUgc2hpcHBpbmcgY2FsY3VsYXRpb25zIHNlY3Rpb24gb2YgdGhlIG1lcmNoYW50cyBhY2NvdW50IHByb2ZpbGUuIFRoZSBidXllciBzZWxlY3RlZCB0aGUgbmFtZWQgc2hpcHBpbmcgbWV0aG9kIGZvciB0aGlzIHRyYW5zYWN0aW9u"/>
+      <column name="shipping" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7" remarks="U2hpcHBpbmcgY2hhcmdlcyBhc3NvY2lhdGVkIHdpdGggdGhpcyB0cmFuc2FjdGlvbi4gRm9ybWF0IHVuc2lnbmVkLCBubyBjdXJyZW5jeSBzeW1ib2wsIHR3byBkZWNpbWFsIHBsYWNlcw=="/>
+      <column name="transaction_entity" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="QXV0aG9yaXphdGlvbiBhbmQgY2FwdHVyZSB0cmFuc2FjdGlvbiBlbnRpdHk="/>
+      <column name="txn_id" sqlType="VARCHAR" precision="19" scale="0" nullable="true" jdbcType="12" remarks="QSB1bmlxdWUgdHJhbnNhY3Rpb24gSUQgZ2VuZXJhdGVkIGJ5IFBheVBhbA=="/>
+      <column name="txn_type" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12" remarks="Y2FydC9leHByZXNzX2NoZWNrb3V0L3NlbmQtbW9uZXkvdmlydHVhbC10ZXJtaW5hbC93ZWItYWNjZXB0"/>
+      <column name="exchange_rate" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7" remarks="RXhjaGFuZ2UgcmF0ZSB1c2VkIGlmIGEgY3VycmVuY3kgY29udmVyc2lvbiBvY2N1cmVk"/>
+      <column name="mc_currency" sqlType="VARCHAR" precision="3" scale="0" nullable="true" jdbcType="12" remarks="VGhyZWUgY2hhcmFjdGVyIGNvdW50cnkgY29kZS4gRm9yIHBheW1lbnQgSVBOIG5vdGlmaWNhdGlvbnMsIHRoaXMgaXMgdGhlIGN1cnJlbmN5IG9mIHRoZSBwYXltZW50LCBmb3Igbm9uLXBheW1lbnQgc3Vic2NyaXB0aW9uIElQTiBub3RpZmljYXRpb25zLCB0aGlzIGlzIHRoZSBjdXJyZW5jeSBvZiB0aGUgc3Vic2NyaXB0aW9uLg=="/>
+      <column name="mc_fee" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7" remarks="VHJhbnNhY3Rpb24gZmVlIGFzc29jaWF0ZWQgd2l0aCB0aGUgcGF5bWVudCwgbWNfZ3Jvc3MgbWludXMgbWNfZmVlIGVxdWFscyB0aGUgYW1vdW50IGRlcG9zaXRlZCBpbnRvIHRoZSByZWNlaXZlcl9lbWFpbCBhY2NvdW50LiBFcXVpdmFsZW50IHRvIHBheW1lbnRfZmVlIGZvciBVU0QgcGF5bWVudHMuIElmIHRoaXMgYW1vdW50IGlzIG5lZ2F0aXZlLCBpdCBzaWduaWZpZXMgYSByZWZ1bmQgb3IgcmV2ZXJzYWwsIGFuZCBlaXRoZXIgb2Z0aG9zZSBw"/>
+      <column name="mc_gross" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7" remarks="RnVsbCBhbW91bnQgb2YgdGhlIGN1c3RvbWVyJ3MgcGF5bWVudA=="/>
+      <column name="mc_handling" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7" remarks="VG90YWwgaGFuZGxpbmcgY2hhcmdlIGFzc29jaWF0ZWQgd2l0aCB0aGUgdHJhbnNhY3Rpb24="/>
+      <column name="mc_shipping" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7" remarks="VG90YWwgc2hpcHBpbmcgYW1vdW50IGFzc29jaWF0ZWQgd2l0aCB0aGUgdHJhbnNhY3Rpb24="/>
+      <column name="payment_fee" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7" remarks="VVNEIHRyYW5zYWN0aW9uIGZlZSBhc3NvY2lhdGVkIHdpdGggdGhlIHBheW1lbnQ="/>
+      <column name="payment_gross" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7" remarks="RnVsbCBVU0QgYW1vdW50IG9mIHRoZSBjdXN0b21lcnMgcGF5bWVudCB0cmFuc2FjdGlvbiwgYmVmb3JlIHBheW1lbnRfZmVlIGlzIHN1YnRyYWN0ZWQ="/>
+      <column name="settle_amount" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7" remarks="QW1vdW50IHRoYXQgaXMgZGVwb3NpdGVkIGludG8gdGhlIGFjY291bnQncyBwcmltYXJ5IGJhbGFuY2UgYWZ0ZXIgYSBjdXJyZW5jeSBjb252ZXJzaW9u"/>
+      <column name="settle_currency" sqlType="VARCHAR" precision="3" scale="0" nullable="true" jdbcType="12" remarks="Q3VycmVuY3kgb2Ygc2V0dGxlIGFtb3VudC4gVGhyZWUgZGlnaXQgY3VycmVuY3kgY29kZQ=="/>
+      <column name="auction_buyer_id" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12" remarks="VGhlIGN1c3RvbWVyJ3MgYXVjdGlvbiBJRC4="/>
+      <column name="auction_closing_date" sqlType="VARCHAR" precision="28" scale="0" nullable="true" jdbcType="12" remarks="VGhlIGF1Y3Rpb24ncyBjbG9zZSBkYXRlLiBJbiB0aGUgZm9ybWF0OiBISDpNTTpTUyBERCBNbW0gWVksIFlZWVkgUFNE"/>
+      <column name="auction_multi_item" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="VGhlIG51bWJlciBvZiBpdGVtcyBwdXJjaGFzZWQgaW4gbXVsdGktaXRlbSBhdWN0aW9uIHBheW1lbnRz"/>
+      <column name="for_auction" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="VGhpcyBpcyBhbiBhdWN0aW9uIHBheW1lbnQgLSBwYXltZW50cyBtYWRlIHVzaW5nIFBheSBmb3IgZUJheSBJdGVtcyBvciBTbWFydCBMb2dvcyAtIGFzIHdlbGwgYXMgc2VuZCBtb25leS9tb25leSByZXF1ZXN0IHBheW1lbnRzIHdpdGggdGhlIHR5cGUgZUJheSBpdGVtcyBvciBBdWN0aW9uIEdvb2RzKG5vbi1lQmF5KQ=="/>
+      <column name="subscr_date" sqlType="VARCHAR" precision="28" scale="0" nullable="true" jdbcType="12" remarks="U3RhcnQgZGF0ZSBvciBjYW5jZWxsYXRpb24gZGF0ZSBkZXBlbmRpbmcgb24gd2hldGhlciB0eG5fdHlwZSBpcyBzdWJjcl9zaWdudXAgb3Igc3Vic2NyX2NhbmNlbA=="/>
+      <column name="subscr_effective" sqlType="VARCHAR" precision="28" scale="0" nullable="true" jdbcType="12" remarks="RGF0ZSB3aGVuIGEgc3Vic2NyaXB0aW9uIG1vZGlmaWNhdGlvbiBiZWNvbWVzIGVmZmVjdGl2ZQ=="/>
+      <column name="period1" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="KE9wdGlvbmFsKSBUcmlhbCBzdWJzY3JpcHRpb24gaW50ZXJ2YWwgaW4gZGF5cywgd2Vla3MsIG1vbnRocywgeWVhcnMgKGV4YW1wbGUgYSA0IGRheSBpbnRlcnZhbCBpcyA0IEQ="/>
+      <column name="period2" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="KE9wdGlvbmFsKSBUcmlhbCBwZXJpb2Q="/>
+      <column name="period3" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12" remarks="UmVndWxhciBzdWJzY3JpcHRpb24gaW50ZXJ2YWwgaW4gZGF5cywgd2Vla3MsIG1vbnRocywgeWVhcnM="/>
+      <column name="amount1" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7" remarks="QW1vdW50IG9mIHBheW1lbnQgZm9yIFRyaWFsIHBlcmlvZCAxIGZvciBVU0Q="/>
+      <column name="amount2" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7" remarks="QW1vdW50IG9mIHBheW1lbnQgZm9yIFRyaWFsIHBlcmlvZCAyIGZvciBVU0Q="/>
+      <column name="amount3" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7" remarks="QW1vdW50IG9mIHBheW1lbnQgZm9yIHJlZ3VsYXIgc3Vic2NyaXB0aW9uICBwZXJpb2QgMSBmb3IgVVNE"/>
+      <column name="mc_amount1" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7" remarks="QW1vdW50IG9mIHBheW1lbnQgZm9yIHRyaWFsIHBlcmlvZCAxIHJlZ2FyZGxlc3Mgb2YgY3VycmVuY3k="/>
+      <column name="mc_amount2" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7" remarks="QW1vdW50IG9mIHBheW1lbnQgZm9yIHRyaWFsIHBlcmlvZCAyIHJlZ2FyZGxlc3Mgb2YgY3VycmVuY3k="/>
+      <column name="mc_amount3" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7" remarks="QW1vdW50IG9mIHBheW1lbnQgZm9yIHJlZ3VsYXIgc3Vic2NyaXB0aW9uIHBlcmlvZCByZWdhcmRsZXNzIG9mIGN1cnJlbmN5"/>
+      <column name="recurring" sqlType="VARCHAR" precision="1" scale="0" nullable="true" jdbcType="12" remarks="SW5kaWNhdGVzIHdoZXRoZXIgcmF0ZSByZWN1cnMgKDEgaXMgeWVzLCBibGFuayBpcyBubyk="/>
+      <column name="reattempt" sqlType="VARCHAR" precision="1" scale="0" nullable="true" jdbcType="12" remarks="SW5kaWNhdGVzIHdoZXRoZXIgcmVhdHRlbXB0cyBzaG91bGQgb2NjdXIgb24gcGF5bWVudCBmYWlsdXJlICgxIGlzIHllcywgYmxhbmsgaXMgbm8p"/>
+      <column name="retry_at" sqlType="VARCHAR" precision="28" scale="0" nullable="true" jdbcType="12" remarks="RGF0ZSBQYXlQYWwgd2lsbCByZXRyeSBhIGZhaWxlZCBzdWJzY3JpcHRpb24gcGF5bWVudA=="/>
+      <column name="recur_times" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4" remarks="VGhlIG51bWJlciBvZiBwYXltZW50IGluc3RhbGxhdGlvbnMgdGhhdCB3aWxsIG9jY3VyIGF0IHRoZSByZWd1bGFyIHJhdGU="/>
+      <column name="username" sqlType="VARCHAR" precision="64" scale="0" nullable="true" jdbcType="12" remarks="KE9wdGlvbmFsKSBVc2VybmFtZSBnZW5lcmF0ZWQgYnkgUGF5UGFsIGFuZCBnaXZlbiB0byBzdWJzY3JpYmVyIHRvIGFjY2VzcyB0aGUgc3Vic2NyaXB0aW9u"/>
+      <column name="password" sqlType="VARCHAR" precision="24" scale="0" nullable="true" jdbcType="12" remarks="KE9wdGlvbmFsKSBQYXNzd29yZCBnZW5lcmF0ZWQgYnkgUGF5UGFsIGFuZCBnaXZlbiB0byBzdWJzY3JpYmVyIHRvIGFjY2VzcyB0aGUgc3Vic2NyaXB0aW9uIChFbmNyeXB0ZWQp"/>
+      <column name="subscr_id" sqlType="VARCHAR" precision="19" scale="0" nullable="true" jdbcType="12" remarks="SUQgZ2VuZXJhdGVkIGJ5IFBheVBhbCBmb3IgdGhlIHN1YnNjcmliZXI="/>
+      <column name="case_id" sqlType="VARCHAR" precision="28" scale="0" nullable="true" jdbcType="12" remarks="Q2FzZSBpZGVudGlmaWNhdGlvbiBudW1iZXI="/>
+      <column name="case_type" sqlType="VARCHAR" precision="28" scale="0" nullable="true" jdbcType="12" remarks="Y29tcGxhaW50L2NoYXJnZWJhY2s="/>
+      <column name="case_creation_date" sqlType="VARCHAR" precision="28" scale="0" nullable="true" jdbcType="12" remarks="RGF0ZS9UaW1lIHRoZSBjYXNlIHdhcyByZWdpc3RlcmVk"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
     <table name="neighborhood_limit_with_neighborhoods" schema="" catalog="mileem" type="TABLE">
       <column name="neighborhood_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <column name="neighborhood2_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
@@ -666,6 +760,20 @@
       <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
       <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
       <column name="updated" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="paypal_items" schema="" catalog="mileem" type="TABLE">
+      <column name="id" sqlType="VARCHAR" precision="36" scale="0" nullable="false" jdbcType="12"/>
+      <column name="instant_payment_notification_id" sqlType="VARCHAR" precision="36" scale="0" nullable="false" jdbcType="12"/>
+      <column name="item_name" sqlType="VARCHAR" precision="127" scale="0" nullable="true" jdbcType="12"/>
+      <column name="item_number" sqlType="VARCHAR" precision="127" scale="0" nullable="true" jdbcType="12"/>
+      <column name="quantity" sqlType="VARCHAR" precision="127" scale="0" nullable="true" jdbcType="12"/>
+      <column name="mc_gross" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7"/>
+      <column name="mc_shipping" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7"/>
+      <column name="mc_handling" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7"/>
+      <column name="tax" sqlType="FLOAT" precision="10" scale="2" nullable="true" jdbcType="7"/>
+      <column name="created" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="modified" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
     <table name="property_types" schema="" catalog="mileem" type="TABLE">
@@ -733,6 +841,8 @@
       <column name="end_date" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
       <column name="description" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
       <column name="availability" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="republicada" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <column name="pagado" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MQ=="/>
       <primary-key name="PRIMARY" columns="id"/>
       <index name="neighborhood_id" unique="false" columns="neighborhood_id"/>
       <index name="operation_type_id" unique="false" columns="operation_type_id"/>
