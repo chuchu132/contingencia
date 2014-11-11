@@ -2,7 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d49f7b69-6214-4b69-92d3-c87fcc0b9cd2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Plugin/Paypal" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_buynowCC_LG.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_buynow_LG.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_buynow_SM.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_cart_LG.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_cart_SM.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_donateCC_LG.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_donate_LG.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_donate_SM.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_giftCC_LG.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_gift_SM.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_paynowCC_LG.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_paynow_LG.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_paynow_SM.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_subscribeCC_LG.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_subscribe_LG.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_subscribe_SM.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_viewcart_LG.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/webroot/img/btn_viewcart_SM.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/Model/InstantPaymentNotification.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/Controller/InstantPaymentNotificationsController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/View/Helper/PaypalHelper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/Controller/PaypalIpnAppController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/Model/PaypalIpnAppModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/Model/Datasource/PaypalIpnSource.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/Test/Case/datasources/PaypalIpnTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/Model/PaypalItem.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/Controller/PaypalItemsController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/View/InstantPaymentNotifications/admin_edit.ctp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/View/PaypalItems/admin_edit.ctp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/View/InstantPaymentNotifications/admin_index.ctp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/View/PaypalItems/admin_index.ctp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/View/InstantPaymentNotifications/admin_view.ctp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/View/PaypalItems/admin_view.ctp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/Config/schema/ipn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/Config/schema/items.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/paypal_ipn.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/Config/paypal_ipn_config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/readme.markdown" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Plugin/PaypalIpn/Config/schema/schema.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="contingencia.iws" />
@@ -432,7 +471,15 @@
       <created>1415561870125</created>
       <updated>1415561870125</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added payment, remaining IPN">
+      <created>1415689928445</created>
+      <updated>1415689928445</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added payment, remaining IPN">
+      <created>1415689969721</created>
+      <updated>1415689969721</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
