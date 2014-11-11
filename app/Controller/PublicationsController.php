@@ -139,16 +139,16 @@ class PublicationsController extends AppController {
                'id' => $id,
                'description' => 'Aviso republicado en MiLEEM',
                'amount' => $type['republication_cost'],
-               'return' => "http://localhost/publications/paypal_success/".$id,
-               'cancel' => "http://localhost/publications/paypal_cancel/".$id
+               'return' => "http://mileem-fiuba.herokuapp.com/publications/paypal_success/".$id,
+               'cancel' => "http://mileem-fiuba.herokuapp.com/publications/paypal_cancel/".$id
            );
         }else{
         $order = array(
                'id' => $id,
                'description' => 'Aviso publicado en MiLEEM',
                'amount' => $type['cost'],
-               'return' => "http://localhost/publications/paypal_success/".$id,
-               'cancel' => "http://localhost/publications/paypal_cancel/".$id
+               'return' => "http://mileem-fiuba.herokuapp.com/publications/paypal_success/".$id,
+               'cancel' => "http://mileem-fiuba.herokuapp.com/publications/paypal_cancel/".$id
            );
         }
         $this->set('order',$order);
