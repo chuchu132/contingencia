@@ -101,6 +101,7 @@ class PublicationsController extends AppController {
 				$this->__sendPublicationStartEmail($publication);
 				$this->Session->setFlash(__('The publication has been saved'), 'flash/success');
                 if($publication_type->cost=="0"){
+                    $this->Publication->saveField('pagado',true);
                     $this->redirect(array('action' => 'index'));
                 }else{
                     $this->Publication->saveField('status',PAUSADO);
@@ -230,6 +231,7 @@ class PublicationsController extends AppController {
 			$data['Publication']['end_date'] = date('Y-m-d', strtotime("+".$publication['PublicationType']['duration']." days"));
 			$data['Publication']['status'] = PUBLICADA;
 			$data['Publication']['republicada'] = true;
+			$data['Publication']['pagado'] = true;
 			if ($this->Publication->save($data)) {
 				$publication = $this->Publication->findById($id);
 				$this-> __sendPublicationStartEmail($publication);
@@ -237,8 +239,10 @@ class PublicationsController extends AppController {
                 if($publication['PublicationType']['cost']=="0"){
                     $this->redirect(array('action' => 'index'));
                 }else{
-                    $this->Publication->saveField('status',PAUSADO);
-                    $this->Publication->saveField('pagado',false);
+
+			        $data['Publication']['status'] = PAUSADO;
+			        $data['Publication']['pagado'] = false;
+			        $this->Publication->save($data);
                     $this->redirect(array('action' => 'paypal', $this->Publication->id));
                 }
 			} else {

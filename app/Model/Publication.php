@@ -34,7 +34,7 @@ class Publication extends AppModel {
 						//'on' => 'create', // Limit validation to 'create' or 'update' operations
 				),
 				
-	),	
+	),
 	'video'=>array(
 				'validateVideo' => array(
 						'rule' => array('validateVideo'),
@@ -83,6 +83,16 @@ class Publication extends AppModel {
 			'number' => array(
 					'rule'    => array('range', 0, 20001),
 					'message' => 'Por favor ingrese un número entre 1 y 20000'
+			)
+		),
+		'lat' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty'),
+				'message' => 'Por favor marque la dirección en el mapa',
+				//'allowEmpty' => false,
+				//'required' => true,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			)
 		),
 		'covered_area' => array(
