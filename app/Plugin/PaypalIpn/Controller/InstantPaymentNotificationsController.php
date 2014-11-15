@@ -1,5 +1,8 @@
 <?php
+App::uses('AppController','Controller');
+App::uses('CakeEmail', 'Network/Email');
 class InstantPaymentNotificationsController extends PaypalIpnAppController {
+
 
 	public $name = 'InstantPaymentNotifications';
 	public $helpers = array('Html', 'Form');
@@ -44,6 +47,11 @@ class InstantPaymentNotificationsController extends PaypalIpnAppController {
 
 			$this->InstantPaymentNotification->saveAll($notification);
 			$this->__processTransaction($this->InstantPaymentNotification->id);
+
+			$publication= ClassRegistry::init('Publication')->findById(intval($_POST['item_number']));
+			$publication['Publication']['pagado'] =true;
+			$publication['Publication']['status'] =PUBLICADA;
+			ClassRegistry::init('Publication')->save($publication);
 		} else {
 			$this->log('POST Not Validated', 'paypal');
 		}

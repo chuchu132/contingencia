@@ -11,9 +11,12 @@ class PaypalIpnConfig {
  * Each settings key coresponds to the Paypal API.  Review www.paypal.com for more.
  */
 	var $default = array(
-		'business'      => 'live_email@paypal.com',         // 'live_email@paypal.com', //Your Paypal email account
-		'server'        => 'https://www.paypal.com',        // Main paypal server.
+		'business'      => 'andres.garcia@inakanetworks.com',         // 'live_email@paypal.com', //Your Paypal email account
+		'server'        => 'https://www.sandbox.paypal.com',        // Main paypal server.
 		'notify_url'    => 'http://mileem-fiuba.herokuapp.com/paypal_ipn/process',
+		'return'        => 'http://mileem-fiuba.herokuapp.com/publications/paypal_success/',
+		'cancel'        => 'http://mileem-fiuba.herokuapp.com/publications/paypal_cancel/',
+		'rm'            => 1,
                                                             // 'http://yoursite.com/paypal_ipn/process',
                                                             // Notify_url... set this to the process path of your
                                                             // paypal_ipn::instant_payment_notification::process action

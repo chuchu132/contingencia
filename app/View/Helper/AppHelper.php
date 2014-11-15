@@ -19,7 +19,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-App::uses('Helper', 'View');
+App::uses('Helper', 'View', 'PaypalIpn.Paypal');
 
 /**
  * Application helper

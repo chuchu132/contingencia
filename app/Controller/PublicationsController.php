@@ -97,7 +97,7 @@ class PublicationsController extends AppController {
 			$this->Publication->create();
 			$this->setDefaults($publication_type);
 			if ($this->Publication->save($this->request->data)) {
-				$publication =$this->Publication->findById($this->Publication->getLastInsertID()); 
+				$publication =$this->Publication->findById($this->Publication->getLastInsertID());
 				$this->__sendPublicationStartEmail($publication);
 				$this->Session->setFlash(__('The publication has been saved'), 'flash/success');
                 if($publication_type->cost=="0"){
