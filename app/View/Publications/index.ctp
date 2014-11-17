@@ -77,7 +77,9 @@
 			}
 		?>"> 
 		<?php echo h($status_list[$publication['Publication']['status']]); ?>&nbsp;</div></td>
-		<td><?php if($publication['OperationType']['id']!=0){
+		<td><?php echo $publication['OperationType']['id'];
+		var_dump($publication['OperationType']);
+		if($publication['OperationType']['id']!="0"){
             if($publication['Publication']['pagado']){
              echo $this->Html->tag('span', ' Pago', array('class' => 'glyphicon glyphicon-ok label label-success'));
              }else{

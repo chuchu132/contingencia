@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="338e6ee8-8984-4168-b3aa-1678eab3bbe0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/PublicationsController.php" afterPath="$PROJECT_DIR$/app/Controller/PublicationsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Publications/index.ctp" afterPath="$PROJECT_DIR$/app/View/Publications/index.ctp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,8 +29,8 @@
       <file leaf-file-name="PublicationsController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Controller/PublicationsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1960783" vertical-offset="893" max-vertical-offset="5970">
-              <caret line="84" column="2" selection-start-line="84" selection-start-column="2" selection-end-line="84" selection-end-column="2" />
+            <state vertical-scroll-proportion="-7.9411764" vertical-offset="1125" max-vertical-offset="5970">
+              <caret line="102" column="43" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -41,8 +42,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47368422" vertical-offset="888" max-vertical-offset="2085">
-              <caret line="79" column="61" selection-start-line="79" selection-start-column="61" selection-end-line="79" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.5215311" vertical-offset="873" max-vertical-offset="2115">
+              <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -80,8 +81,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/Controller/PublicationsController.php" />
         <option value="$PROJECT_DIR$/app/Config/core.php" />
+        <option value="$PROJECT_DIR$/app/Controller/PublicationsController.php" />
         <option value="$PROJECT_DIR$/app/View/Publications/index.ctp" />
       </list>
     </option>
@@ -318,7 +319,11 @@
       <created>1416248340921</created>
       <updated>1416248340921</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Revolve bugs">
+      <created>1416248429216</created>
+      <updated>1416248429216</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -390,8 +395,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/PublicationsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1960783" vertical-offset="893" max-vertical-offset="5970">
-          <caret line="84" column="2" selection-start-line="84" selection-start-column="2" selection-end-line="84" selection-end-column="2" />
+        <state vertical-scroll-proportion="-7.9411764" vertical-offset="1125" max-vertical-offset="5970">
+          <caret line="102" column="43" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -401,8 +406,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47368422" vertical-offset="888" max-vertical-offset="2085">
-          <caret line="79" column="61" selection-start-line="79" selection-start-column="61" selection-end-line="79" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.5215311" vertical-offset="873" max-vertical-offset="2115">
+          <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
           <folding />
         </state>
       </provider>
