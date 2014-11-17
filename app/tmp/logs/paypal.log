@@ -1,0 +1,2504 @@
+2014-11-11 01:35:49 Paypal: Process accessed
+2014-11-11 01:35:49 Paypal: POST Not Validated
+2014-11-11 01:36:03 Paypal: Process accessed
+2014-11-11 01:36:03 Paypal: POST Not Validated
+2014-11-15 01:55:32 Paypal: Process accessed
+2014-11-15 01:55:32 Paypal: POST Not Validated
+2014-11-15 01:56:08 Paypal: Process accessed
+2014-11-15 01:56:08 Paypal: POST Not Validated
+2014-11-15 01:56:54 Paypal: Process accessed
+2014-11-15 01:56:54 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [mc_fee] => 0.44
+    [txn_id] => 357637303
+    [receiver_email] => seller@paypalsandbox.com
+    [custom] => xyz123
+    [payment_date] => 20:56:43 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [item_name1] => something
+    [mc_handling] => 2.06
+    [mc_handling1] => 1.67
+    [tax] => 2.02
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [verify_sign] => ACtIyMf0kuHh6FDJy6NpyHAQbiNmAthpK2FF0bKOTo8jPJAKyrxSz7Np
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.4
+    [txn_type] => cart
+    [test_ipn] => 1
+    [payer_status] => unverified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [mc_shipping] => 3.02
+    [mc_shipping1] => 1.02
+    [item_number1] => AK-1234
+    [address_state] => CA
+    [mc_gross1] => 9.34
+    [payment_type] => instant
+    [address_street] => 123, any street
+)
+
+2014-11-15 01:56:56 Paypal: POST Valid
+2014-11-15 01:59:01 Paypal: Process accessed
+2014-11-15 01:59:01 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [mc_fee] => 0.44
+    [txn_id] => 1065151552
+    [receiver_email] => seller@paypalsandbox.com
+    [custom] => xyz123
+    [payment_date] => 20:56:53 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [item_name1] => something
+    [mc_handling] => 2.06
+    [mc_handling1] => 1.67
+    [tax] => 2.02
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [verify_sign] => AzEXlruowPUe5f6rW-tYWKSUGMNgA6MM07dfCtZclkWV9GoXYUjubCkr
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.4
+    [txn_type] => cart
+    [test_ipn] => 1
+    [payer_status] => unverified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [mc_shipping] => 3.02
+    [mc_shipping1] => 1.02
+    [item_number1] => AK-1234
+    [address_state] => CA
+    [mc_gross1] => 9.34
+    [payment_type] => instant
+    [address_street] => 123, any street
+)
+
+2014-11-15 01:59:03 Paypal: POST Valid
+2014-11-15 02:01:56 Paypal: Process accessed
+2014-11-15 02:01:56 Paypal: POST Not Validated
+2014-11-15 02:20:06 Paypal: Process accessed
+2014-11-15 02:20:06 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [mc_fee] => 0.44
+    [txn_id] => 202999075
+    [receiver_email] => seller@paypalsandbox.com
+    [custom] => xyz123
+    [payment_date] => 21:20:02 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [item_name1] => something
+    [mc_handling] => 2.06
+    [mc_handling1] => 1.67
+    [tax] => 2.02
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31A0odS06Bq6FviXZ7AmRK65KVyIlf
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.4
+    [txn_type] => cart
+    [test_ipn] => 1
+    [payer_status] => unverified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [mc_shipping] => 3.02
+    [mc_shipping1] => 1.02
+    [item_number1] => AK-1234
+    [address_state] => CA
+    [mc_gross1] => 9.34
+    [payment_type] => instant
+    [address_street] => 123, any street
+)
+
+2014-11-15 02:20:08 Paypal: POST Valid
+2014-11-15 02:26:24 Paypal: Process accessed
+2014-11-15 02:26:24 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [mc_fee] => 0.44
+    [txn_id] => 786121412
+    [receiver_email] => seller@paypalsandbox.com
+    [custom] => xyz123
+    [payment_date] => 21:20:06 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [item_name1] => something
+    [mc_handling] => 2.06
+    [mc_handling1] => 1.67
+    [tax] => 2.02
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [verify_sign] => AkV44A5pMol1dzxDonBnswnIA5vvA-5GNhoWJIorzK9DPvXEcb0xskLE
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.4
+    [txn_type] => cart
+    [test_ipn] => 1
+    [payer_status] => unverified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [mc_shipping] => 3.02
+    [mc_shipping1] => 1.02
+    [item_number1] => AK-1234
+    [address_state] => CA
+    [mc_gross1] => 9.34
+    [payment_type] => instant
+    [address_street] => 123, any street
+)
+
+2014-11-15 02:26:25 Paypal: POST Valid
+2014-11-15 02:27:45 Paypal: Process accessed
+2014-11-15 02:27:45 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [mc_fee] => 0.44
+    [txn_id] => 461710871
+    [receiver_email] => seller@paypalsandbox.com
+    [custom] => xyz123
+    [payment_date] => 21:26:23 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [item_name1] => something
+    [mc_handling] => 2.06
+    [mc_handling1] => 1.67
+    [tax] => 2.02
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [verify_sign] => AmmiPzNXrZHvPpe4nnpCiDmmqU1-AZASZDGbughoKNzp.UpCXa4VgLUS
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.4
+    [txn_type] => cart
+    [test_ipn] => 1
+    [payer_status] => unverified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [mc_shipping] => 3.02
+    [mc_shipping1] => 1.02
+    [item_number1] => AK-1234
+    [address_state] => CA
+    [mc_gross1] => 9.34
+    [payment_type] => instant
+    [address_street] => 123, any street
+)
+
+2014-11-15 02:27:46 Paypal: POST Valid
+2014-11-15 02:36:21 Paypal: Process accessed
+2014-11-15 02:36:21 Paypal: Process accessed
+2014-11-15 02:36:21 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [mc_fee] => 0.44
+    [txn_id] => 489818880
+    [receiver_email] => seller@paypalsandbox.com
+    [custom] => xyz123
+    [payment_date] => 21:27:44 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [item_name1] => something
+    [mc_handling] => 2.06
+    [mc_handling1] => 1.67
+    [tax] => 2.02
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [verify_sign] => An5ns1Kso7MWUdW4ErQKJJJ4qi4-AxlPd3qge.pbJb-s4j4yRxdkQT-7
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.4
+    [txn_type] => cart
+    [test_ipn] => 1
+    [payer_status] => unverified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [mc_shipping] => 3.02
+    [mc_shipping1] => 1.02
+    [item_number1] => AK-1234
+    [address_state] => CA
+    [mc_gross1] => 9.34
+    [payment_type] => instant
+    [address_street] => 123, any street
+)
+
+2014-11-15 02:36:23 Paypal: POST Valid
+2014-11-15 02:49:41 Paypal: Process accessed
+2014-11-15 02:49:41 Paypal: Process accessed
+2014-11-15 02:49:41 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [mc_fee] => 0.44
+    [txn_id] => 732071406
+    [receiver_email] => seller@paypalsandbox.com
+    [custom] => xyz123
+    [payment_date] => 21:36:20 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [item_name1] => something
+    [mc_handling] => 2.06
+    [mc_handling1] => 1.67
+    [tax] => 2.02
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [verify_sign] => AhTVllx7gcUpI1FHKNooM3iWWNdyAXoBBiEY5AkLTMbqUxno2G9nkVke
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.4
+    [txn_type] => cart
+    [test_ipn] => 1
+    [payer_status] => unverified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [mc_shipping] => 3.02
+    [mc_shipping1] => 1.02
+    [item_number1] => AK-1234
+    [address_state] => CA
+    [mc_gross1] => 9.34
+    [payment_type] => instant
+    [address_street] => 123, any street
+)
+
+2014-11-15 02:49:42 Paypal: POST Valid
+2014-11-15 02:49:44 Paypal: Processing Trasaction: 5466e978-83ec-45ed-9cc9-07f08437880b
+2014-11-15 02:49:45 Paypal: 5466e978-83ec-45ed-9cc9-07f08437880b
+2014-11-15 03:26:52 Paypal: Process accessed
+2014-11-15 03:26:52 Paypal: POST Array
+(
+    [mc_gross] => 12.00
+    [protection_eligibility] => Ineligible
+    [address_status] => confirmed
+    [payer_id] => 25XCG8445FKXC
+    [tax] => 0.00
+    [address_street] => 1 Main St
+    [payment_date] => 22:26:49 Nov 14, 2014 PST
+    [payment_status] => Pending
+    [charset] => windows-1252
+    [address_zip] => 95131
+    [first_name] => Test
+    [address_country_code] => US
+    [address_name] => Test Buyer
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [address_country] => United States
+    [address_city] => San Jose
+    [quantity] => 1
+    [verify_sign] => Ae7Yuje5KHU-89jH9tbIIrkiM6IVAdxhskYGZvyWEv4DYeM3anuuBIau
+    [payer_email] => andres.garcia-buyer-1@inakanetworks.com
+    [txn_id] => 9CW88260M5517072W
+    [payment_type] => instant
+    [last_name] => Buyer
+    [address_state] => CA
+    [receiver_email] => andres.garcia@inakanetworks.com
+    [pending_reason] => unilateral
+    [txn_type] => web_accept
+    [item_name] => test item
+    [mc_currency] => USD
+    [item_number] => 
+    [residence_country] => US
+    [test_ipn] => 1
+    [handling_amount] => 0.00
+    [transaction_subject] => 
+    [payment_gross] => 12.00
+    [shipping] => 0.00
+    [ipn_track_id] => db1c7eecd8680
+)
+
+2014-11-15 03:26:54 Paypal: POST Valid
+2014-11-15 03:26:56 Paypal: Processing Trasaction: 5466f22f-7f84-49f6-b501-0a558437880b
+2014-11-15 03:26:56 Paypal: 5466f22f-7f84-49f6-b501-0a558437880b
+2014-11-15 03:34:57 Paypal: Process accessed
+2014-11-15 03:34:57 Paypal: POST Array
+(
+    [mc_gross] => 50.00
+    [protection_eligibility] => Ineligible
+    [address_status] => confirmed
+    [payer_id] => 25XCG8445FKXC
+    [tax] => 0.00
+    [address_street] => 1 Main St
+    [payment_date] => 22:34:52 Nov 14, 2014 PST
+    [payment_status] => Pending
+    [charset] => windows-1252
+    [address_zip] => 95131
+    [first_name] => Test
+    [address_country_code] => US
+    [address_name] => Test Buyer
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [address_country] => United States
+    [address_city] => San Jose
+    [quantity] => 1
+    [verify_sign] => A0wE6N1IBdSCw-R1f2x-fSTprOX4AuS8BN-zfI55LaDgu3fZVnolZaR-
+    [payer_email] => andres.garcia-buyer-1@inakanetworks.com
+    [txn_id] => 6WP85519A81542812
+    [payment_type] => instant
+    [last_name] => Buyer
+    [address_state] => CA
+    [receiver_email] => andres.garcia@inakanetworks.com
+    [pending_reason] => unilateral
+    [txn_type] => web_accept
+    [item_name] => Aviso publicado en MiLEEM
+    [mc_currency] => USD
+    [item_number] => 361
+    [residence_country] => US
+    [test_ipn] => 1
+    [handling_amount] => 0.00
+    [transaction_subject] => 
+    [payment_gross] => 50.00
+    [shipping] => 0.00
+    [ipn_track_id] => d7bad5d016133
+)
+
+2014-11-15 03:34:59 Paypal: POST Valid
+2014-11-15 03:35:00 Paypal: Processing Trasaction: 5466f414-eda8-4056-a711-0bfe8437880b
+2014-11-15 03:35:01 Paypal: 5466f414-eda8-4056-a711-0bfe8437880b
+2014-11-15 04:16:48 Paypal: Process accessed
+2014-11-15 04:16:48 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 678370837
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:16:15 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31A4NpEk86eAeWBjEjNyD5lBFp9kpN
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:18:00 Paypal: Process accessed
+2014-11-15 04:18:00 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 433061317
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:16:47 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31AGAHjFD8Y4qCbKIWBDwpWVbZ1tAY
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:18:49 Paypal: Process accessed
+2014-11-15 04:18:49 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 1020636438
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:17:59 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31ATEOTVDFchhyOzUT-e4sOxKVthFT
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:19:30 Paypal: Process accessed
+2014-11-15 04:19:30 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 211094555
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:18:48 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => An5ns1Kso7MWUdW4ErQKJJJ4qi4-AvSQbPryO4K2MYN-VMP3SSp3waqa
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:20:07 Paypal: Process accessed
+2014-11-15 04:20:07 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 986604861
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:19:30 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => An5ns1Kso7MWUdW4ErQKJJJ4qi4-AMbcrOZ.zGrFMrdy7CeWnVDvrQOe
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:20:08 Paypal: POST Valid
+2014-11-15 04:20:10 Paypal: Processing Trasaction: 5466feaa-bd58-47b5-8356-133f8437880b
+2014-11-15 04:20:11 Paypal: 5466feaa-bd58-47b5-8356-133f8437880b
+2014-11-15 04:22:26 Paypal: Process accessed
+2014-11-15 04:22:26 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 715958049
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:20:06 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31AJNq-v0KbLJH6alWpc9iWRw7D.XH
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:26:36 Paypal: Process accessed
+2014-11-15 04:26:36 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 600179370
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:22:25 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31AAxilCOYzo5yl.bXcKQ24-J6RWMO
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:27:50 Paypal: Process accessed
+2014-11-15 04:27:50 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 971568278
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:26:35 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => ArE5JcxoXlxws23gLFAEEVbOFTXWAEMEqZa0eZ7UjfxG68opJ9BHydsj
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:27:51 Paypal: POST Valid
+2014-11-15 04:27:53 Paypal: Processing Trasaction: 54670079-7d00-4792-998b-0a558437880b
+2014-11-15 04:27:54 Paypal: 54670079-7d00-4792-998b-0a558437880b
+2014-11-15 04:30:50 Paypal: Process accessed
+2014-11-15 04:30:50 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 910764820
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:27:49 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => AP3OQt6ym6Ij9csy65Lv7J1yEQrjA1qZTY4kfqKas5KoVBTIRqH8TWUj
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:30:52 Paypal: POST Valid
+2014-11-15 04:30:53 Paypal: Processing Trasaction: 5467012d-ffb4-4567-a825-0bfd8437880b
+2014-11-15 04:30:54 Paypal: 5467012d-ffb4-4567-a825-0bfd8437880b
+2014-11-15 04:32:07 Paypal: Process accessed
+2014-11-15 04:32:07 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 861357531
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:30:49 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31Ad9g8lGNBvvLDhYK9NWsZd39B4uz
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:32:09 Paypal: POST Valid
+2014-11-15 04:32:10 Paypal: Processing Trasaction: 5467017a-e1e4-4937-96f2-0c028437880b
+2014-11-15 04:32:11 Paypal: 5467017a-e1e4-4937-96f2-0c028437880b
+2014-11-15 04:37:07 Paypal: Process accessed
+2014-11-15 04:37:07 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 917721961
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:32:06 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => A88IkXK7uOe5dyH7wHmgRNH1vAu4Ar3-xtbfFJ1JGFgMK6VnXWnP3SgT
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:37:08 Paypal: POST Valid
+2014-11-15 04:37:10 Paypal: Processing Trasaction: 546702a6-99fc-44e9-a763-0bfe8437880b
+2014-11-15 04:37:11 Paypal: 546702a6-99fc-44e9-a763-0bfe8437880b
+2014-11-15 04:38:10 Paypal: Process accessed
+2014-11-15 04:38:10 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 1041276645
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:37:06 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31AFMzaKoBFhx.ANtQavYA76xK4cau
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:39:02 Paypal: Process accessed
+2014-11-15 04:39:02 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 863134516
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:38:09 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => AdjBsoY33fL1W..zl3P8uu7DKNaaAQvaoDwwi5JCTp0HDPdXYdLDP7pG
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:39:43 Paypal: Process accessed
+2014-11-15 04:39:43 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 863134516
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:38:09 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => A-bGVQA5mIbE6AMQMru7ykcncqKuARR2dTNsCRr7hJxHPjMVW7-zvRh3
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:40:02 Paypal: Process accessed
+2014-11-15 04:40:02 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 756669833
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:39:43 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => 631
+    [verify_sign] => APWoSfO17z.cfGGmTG-WeocE.SZeAuo3uOOdwJ8t3GYDXbL-hKWvwOtU
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:40:26 Paypal: Process accessed
+2014-11-15 04:40:26 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 297768304
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:40:02 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31ACKNkhd8LB6NfXYq98WyHrI321Mc
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:43:56 Paypal: Process accessed
+2014-11-15 04:43:56 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 529815063
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:40:26 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31A8VoDHN1QgxWjVbBX4UAb8n0Ei5x
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:46:03 Paypal: Process accessed
+2014-11-15 04:46:03 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 346009137
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:43:56 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => A9Shd2OjaLuhe6uy3ZpUFwHtIg9DAPsZYgIzMYcv1LUegGYwQwfusboI
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:56:21 Paypal: Process accessed
+2014-11-15 04:56:21 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 110847001
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:52:34 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => AXPb1xTTVxutJZIgzyRFiMsii46-AGuPikTopT4CPyTQs3P9n04BTw9g
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:56:23 Paypal: POST Valid
+2014-11-15 04:56:25 Paypal: Processing Trasaction: 54670729-7380-4ee2-8761-12968437880b
+2014-11-15 04:56:26 Paypal: 54670729-7380-4ee2-8761-12968437880b
+2014-11-15 04:57:45 Paypal: Process accessed
+2014-11-15 04:57:45 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 1072821208
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:56:20 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => 631
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31A9yd.a7v1ayIj8sUPCpwiuriWwBR
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:57:46 Paypal: POST Valid
+2014-11-15 04:57:48 Paypal: Processing Trasaction: 5467077c-b6c8-4780-bf3b-0ddb8437880b
+2014-11-15 04:57:49 Paypal: 5467077c-b6c8-4780-bf3b-0ddb8437880b
+2014-11-15 04:59:22 Paypal: Process accessed
+2014-11-15 04:59:22 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 978869786
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:57:44 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31A8pZlpN7BEFwj87X0gxf4ciirWw4
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 04:59:24 Paypal: POST Valid
+2014-11-15 04:59:26 Paypal: Processing Trasaction: 546707de-fc54-4c4e-9350-0fb38437880b
+2014-11-15 04:59:27 Paypal: 546707de-fc54-4c4e-9350-0fb38437880b
+2014-11-15 04:59:28 Paypal: item_number: AK-1234
+2014-11-15 04:59:28 Paypal: Array
+(
+)
+
+2014-11-15 05:09:53 Paypal: Process accessed
+2014-11-15 05:09:53 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 524878360
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 23:59:22 14 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31AySPTTdDPeRt.p1RJmSCWB-ze.nD
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 05:09:55 Paypal: POST Valid
+2014-11-15 05:09:57 Paypal: Processing Trasaction: 54670a54-5df0-4ceb-a48d-0ddb8437880b
+2014-11-15 05:09:57 Paypal: 54670a54-5df0-4ceb-a48d-0ddb8437880b
+2014-11-15 05:10:55 Paypal: Process accessed
+2014-11-15 05:10:55 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 249791033
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 00:09:52 15 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => AZ0W0bEjUr6nRaQ7wF-9jBTU7-1gAiS37OaAjzFQfPT.4iTk.Qp.ULxn
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 05:10:57 Paypal: POST Valid
+2014-11-15 05:10:59 Paypal: Processing Trasaction: 54670a93-bc60-4dcb-a467-0fb38437880b
+2014-11-15 05:11:00 Paypal: 54670a93-bc60-4dcb-a467-0fb38437880b
+2014-11-15 05:11:46 Paypal: Process accessed
+2014-11-15 05:11:46 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 839077612
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 00:10:55 15 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => AK-1234
+    [verify_sign] => AruQ2zdWrIKxSSZn2Dsjvw7tZfn8A80gVxccYQ6Dk1sqNJ5tBPep0.Rv
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 05:11:48 Paypal: POST Valid
+2014-11-15 05:11:50 Paypal: Processing Trasaction: 54670ac5-1bd8-4b28-9f34-133f8437880b
+2014-11-15 05:11:50 Paypal: 54670ac5-1bd8-4b28-9f34-133f8437880b
+2014-11-15 05:11:52 Paypal: item_number: AK-1234
+2014-11-15 05:12:06 Paypal: Process accessed
+2014-11-15 05:12:06 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 331051604
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 00:11:46 15 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => 631
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31AoV5f1cCxNM.wRH3Ze-jqhEI3kHd
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 05:12:07 Paypal: POST Valid
+2014-11-15 05:12:09 Paypal: Processing Trasaction: 54670ad9-6558-4325-9618-07f28437880b
+2014-11-15 05:12:10 Paypal: 54670ad9-6558-4325-9618-07f28437880b
+2014-11-15 05:12:11 Paypal: item_number: 631
+2014-11-15 05:12:52 Paypal: Process accessed
+2014-11-15 05:12:52 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 617533477
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 00:12:05 15 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => 361
+    [verify_sign] => AaPIRyzLOGqC4y1E0ZHWHhtlEdTrAmLehPKSpmdCV.slC2hFPA3D32RX
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 05:12:54 Paypal: POST Valid
+2014-11-15 05:12:56 Paypal: Processing Trasaction: 54670b07-85dc-471d-8ed8-07f08437880b
+2014-11-15 05:12:56 Paypal: 54670b07-85dc-471d-8ed8-07f08437880b
+2014-11-15 05:12:58 Paypal: item_number: 361
+2014-11-15 05:12:58 Paypal: Array
+(
+    [Publication] => Array
+        (
+            [id] => 361
+            [lat] => -34.60400580
+            [lng] => -58.38654490
+            [neighborhood_id] => 1
+            [covered_area] => 432
+            [total_area] => 432
+            [rooms] => 
+            [expenses] => 
+            [age] => 
+            [brand_new] => 
+            [price] => 342
+            [currency] => ARS
+            [balcony] => 
+            [bathrooms] => 
+            [dining_room] => 
+            [ensuite_bedroom] => 
+            [storage] => 
+            [garage] => 
+            [studio] => 
+            [kitchen] => 
+            [service_unit] => 
+            [hall] => 
+            [frontgarden] => 
+            [backyard] => 
+            [laundry] => 
+            [lounge] => 
+            [living_room] => 
+            [terrace] => 
+            [mains_water] => 
+            [drains] => 
+            [cable] => 
+            [gas] => 
+            [internet] => 
+            [pavement] => 
+            [publication_date] => 2014-11-15 00:00:00
+            [publication_type] => 2
+            [status] => 1
+            [video] => 
+            [images_url] => []
+            [created] => 2014-11-15 03:24:04
+            [updated] => 2014-11-15 03:24:08
+            [operation_type_id] => 1
+            [property_type_id] => 1
+            [user_id] => 41
+            [end_date] => 2015-02-13 00:00:00
+            [description] => -
+            [availability] => 
+            [republicada] => 
+            [pagado] => 
+            [address] => URUGUAY AV. 401
+        )
+
+    [Neighborhood] => Array
+        (
+            [id] => 1
+            [name] => Agronomía
+            [created] => 2014-09-25 01:13:33
+            [updated] => 2014-09-25 01:36:42
+            [city_id] => 1
+        )
+
+    [OperationType] => Array
+        (
+            [id] => 1
+            [name] => Alquiler
+            [created] => 2014-09-25 01:27:30
+            [updated] => 2014-09-25 01:27:30
+        )
+
+    [PropertyType] => Array
+        (
+            [id] => 1
+            [name] => Casa
+            [category] => 1
+            [created] => 2014-09-25 01:26:12
+            [updated] => 2014-09-25 01:26:12
+        )
+
+    [User] => Array
+        (
+            [id] => 41
+            [username] => spike886@gmail.com
+            [password] => 608329ee4ce905882302093f79e3524e09a91084
+            [name] => andres
+            [tel_part] => 5456456
+            [mobile] => 456456
+            [created] => 2014-11-11 04:21:34
+            [updated] => 2014-11-11 04:21:34
+        )
+
+    [PublicationType] => Array
+        (
+            [id] => 2
+            [duration] => 90
+            [republication_days] => 7
+            [cost] => 50
+            [republication_cost] => 30
+        )
+
+)
+
+2014-11-15 05:15:28 Paypal: Process accessed
+2014-11-15 05:15:28 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 174291254
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 00:12:52 15 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => 361
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31Aomxf.Gg8GeIJ3ALMpvLN4J4Z66W
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 05:15:29 Paypal: POST Valid
+2014-11-15 05:15:31 Paypal: Processing Trasaction: 54670ba3-0450-4f6e-8c92-0a558437880b
+2014-11-15 05:15:32 Paypal: 54670ba3-0450-4f6e-8c92-0a558437880b
+2014-11-15 05:16:27 Paypal: Process accessed
+2014-11-15 05:16:27 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 744771677
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 00:15:27 15 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => 361
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31AnAjwhOLrTs3TbugpsYWl4PF0LTy
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 05:16:29 Paypal: POST Valid
+2014-11-15 05:16:30 Paypal: Processing Trasaction: 54670bde-bc38-4cce-a3fe-0bfe8437880b
+2014-11-15 05:16:31 Paypal: 54670bde-bc38-4cce-a3fe-0bfe8437880b
+2014-11-15 05:16:33 Paypal: Array
+(
+    [Publication] => Array
+        (
+            [id] => 361
+            [lat] => -34.60400580
+            [lng] => -58.38654490
+            [neighborhood_id] => 1
+            [covered_area] => 432
+            [total_area] => 432
+            [rooms] => 
+            [expenses] => 
+            [age] => 
+            [brand_new] => 
+            [price] => 342
+            [currency] => ARS
+            [balcony] => 
+            [bathrooms] => 
+            [dining_room] => 
+            [ensuite_bedroom] => 
+            [storage] => 
+            [garage] => 
+            [studio] => 
+            [kitchen] => 
+            [service_unit] => 
+            [hall] => 
+            [frontgarden] => 
+            [backyard] => 
+            [laundry] => 
+            [lounge] => 
+            [living_room] => 
+            [terrace] => 
+            [mains_water] => 
+            [drains] => 
+            [cable] => 
+            [gas] => 
+            [internet] => 
+            [pavement] => 
+            [publication_date] => 2014-11-15 00:00:00
+            [publication_type] => 2
+            [status] => 1
+            [video] => 
+            [images_url] => []
+            [created] => 2014-11-15 03:24:04
+            [updated] => 2014-11-15 03:24:08
+            [operation_type_id] => 1
+            [property_type_id] => 1
+            [user_id] => 41
+            [end_date] => 2015-02-13 00:00:00
+            [description] => -
+            [availability] => 
+            [republicada] => 
+            [pagado] => 
+            [address] => URUGUAY AV. 401
+        )
+
+    [Neighborhood] => Array
+        (
+            [id] => 1
+            [name] => Agronomía
+            [created] => 2014-09-25 01:13:33
+            [updated] => 2014-09-25 01:36:42
+            [city_id] => 1
+        )
+
+    [OperationType] => Array
+        (
+            [id] => 1
+            [name] => Alquiler
+            [created] => 2014-09-25 01:27:30
+            [updated] => 2014-09-25 01:27:30
+        )
+
+    [PropertyType] => Array
+        (
+            [id] => 1
+            [name] => Casa
+            [category] => 1
+            [created] => 2014-09-25 01:26:12
+            [updated] => 2014-09-25 01:26:12
+        )
+
+    [User] => Array
+        (
+            [id] => 41
+            [username] => spike886@gmail.com
+            [password] => 608329ee4ce905882302093f79e3524e09a91084
+            [name] => andres
+            [tel_part] => 5456456
+            [mobile] => 456456
+            [created] => 2014-11-11 04:21:34
+            [updated] => 2014-11-11 04:21:34
+        )
+
+    [PublicationType] => Array
+        (
+            [id] => 2
+            [duration] => 90
+            [republication_days] => 7
+            [cost] => 50
+            [republication_cost] => 30
+        )
+
+)
+
+2014-11-15 05:17:15 Paypal: Process accessed
+2014-11-15 05:17:15 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 1035419692
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 00:16:27 15 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => 361
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31AedCJFJZrNguZTZNOKq8D7dgNc6u
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 05:17:16 Paypal: POST Valid
+2014-11-15 05:17:18 Paypal: Processing Trasaction: 54670c0d-ad40-453f-973f-0ddb8437880b
+2014-11-15 05:17:19 Paypal: 54670c0d-ad40-453f-973f-0ddb8437880b
+2014-11-15 05:17:20 Paypal: Array
+(
+    [Publication] => Array
+        (
+            [id] => 361
+            [lat] => -34.60400580
+            [lng] => -58.38654490
+            [neighborhood_id] => 1
+            [covered_area] => 432
+            [total_area] => 432
+            [rooms] => 
+            [expenses] => 
+            [age] => 
+            [brand_new] => 
+            [price] => 342
+            [currency] => ARS
+            [balcony] => 
+            [bathrooms] => 
+            [dining_room] => 
+            [ensuite_bedroom] => 
+            [storage] => 
+            [garage] => 
+            [studio] => 
+            [kitchen] => 
+            [service_unit] => 
+            [hall] => 
+            [frontgarden] => 
+            [backyard] => 
+            [laundry] => 
+            [lounge] => 
+            [living_room] => 
+            [terrace] => 
+            [mains_water] => 
+            [drains] => 
+            [cable] => 
+            [gas] => 
+            [internet] => 
+            [pavement] => 
+            [publication_date] => 2014-11-15 00:00:00
+            [publication_type] => 2
+            [status] => 1
+            [video] => 
+            [images_url] => []
+            [created] => 2014-11-15 03:24:04
+            [updated] => 2014-11-15 03:24:08
+            [operation_type_id] => 1
+            [property_type_id] => 1
+            [user_id] => 41
+            [end_date] => 2015-02-13 00:00:00
+            [description] => -
+            [availability] => 
+            [republicada] => 
+            [pagado] => 
+            [address] => URUGUAY AV. 401
+        )
+
+    [Neighborhood] => Array
+        (
+            [id] => 1
+            [name] => Agronomía
+            [created] => 2014-09-25 01:13:33
+            [updated] => 2014-09-25 01:36:42
+            [city_id] => 1
+        )
+
+    [OperationType] => Array
+        (
+            [id] => 1
+            [name] => Alquiler
+            [created] => 2014-09-25 01:27:30
+            [updated] => 2014-09-25 01:27:30
+        )
+
+    [PropertyType] => Array
+        (
+            [id] => 1
+            [name] => Casa
+            [category] => 1
+            [created] => 2014-09-25 01:26:12
+            [updated] => 2014-09-25 01:26:12
+        )
+
+    [User] => Array
+        (
+            [id] => 41
+            [username] => spike886@gmail.com
+            [password] => 608329ee4ce905882302093f79e3524e09a91084
+            [name] => andres
+            [tel_part] => 5456456
+            [mobile] => 456456
+            [created] => 2014-11-11 04:21:34
+            [updated] => 2014-11-11 04:21:34
+        )
+
+    [PublicationType] => Array
+        (
+            [id] => 2
+            [duration] => 90
+            [republication_days] => 7
+            [cost] => 50
+            [republication_cost] => 30
+        )
+
+)
+
+2014-11-15 05:19:33 Paypal: Process accessed
+2014-11-15 05:19:33 Paypal: POST Array
+(
+    [residence_country] => US
+    [invoice] => abc1234
+    [address_city] => San Jose
+    [first_name] => John
+    [payer_id] => TESTBUYERID01
+    [shipping] => 3.04
+    [mc_fee] => 0.44
+    [txn_id] => 463529448
+    [receiver_email] => seller@paypalsandbox.com
+    [quantity] => 1
+    [custom] => xyz123
+    [payment_date] => 00:17:15 15 Nov 2014 PST
+    [address_country_code] => US
+    [address_zip] => 95131
+    [tax] => 2.02
+    [item_name] => something
+    [address_name] => John Smith
+    [last_name] => Smith
+    [receiver_id] => seller@paypalsandbox.com
+    [item_number] => 361
+    [verify_sign] => AFcWxV21C7fd0v3bYYYRCpSSRl31ATXonJ.nW39J5P-DHiuI3IxHd2NP
+    [address_country] => United States
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [business] => seller@paypalsandbox.com
+    [payer_email] => buyer@paypalsandbox.com
+    [notify_version] => 2.1
+    [txn_type] => web_accept
+    [test_ipn] => 1
+    [payer_status] => verified
+    [mc_currency] => USD
+    [mc_gross] => 12.34
+    [address_state] => CA
+    [mc_gross1] => 12.34
+    [payment_type] => echeck
+    [address_street] => 123, any street
+)
+
+2014-11-15 05:19:35 Paypal: POST Valid
+2014-11-15 05:19:36 Paypal: Processing Trasaction: 54670c98-2598-4833-9296-12968437880b
+2014-11-15 05:19:37 Paypal: 54670c98-2598-4833-9296-12968437880b
+2014-11-15 05:19:39 Paypal: Array
+(
+    [Publication] => Array
+        (
+            [id] => 361
+            [lat] => -34.60400580
+            [lng] => -58.38654490
+            [neighborhood_id] => 1
+            [covered_area] => 432
+            [total_area] => 432
+            [rooms] => 
+            [expenses] => 
+            [age] => 
+            [brand_new] => 
+            [price] => 342
+            [currency] => ARS
+            [balcony] => 
+            [bathrooms] => 
+            [dining_room] => 
+            [ensuite_bedroom] => 
+            [storage] => 
+            [garage] => 
+            [studio] => 
+            [kitchen] => 
+            [service_unit] => 
+            [hall] => 
+            [frontgarden] => 
+            [backyard] => 
+            [laundry] => 
+            [lounge] => 
+            [living_room] => 
+            [terrace] => 
+            [mains_water] => 
+            [drains] => 
+            [cable] => 
+            [gas] => 
+            [internet] => 
+            [pavement] => 
+            [publication_date] => 2014-11-15 00:00:00
+            [publication_type] => 2
+            [status] => 1
+            [video] => 
+            [images_url] => []
+            [created] => 2014-11-15 03:24:04
+            [updated] => 2014-11-15 03:24:08
+            [operation_type_id] => 1
+            [property_type_id] => 1
+            [user_id] => 41
+            [end_date] => 2015-02-13 00:00:00
+            [description] => -
+            [availability] => 
+            [republicada] => 
+            [pagado] => 1
+            [address] => URUGUAY AV. 401
+        )
+
+    [Neighborhood] => Array
+        (
+            [id] => 1
+            [name] => Agronomía
+            [created] => 2014-09-25 01:13:33
+            [updated] => 2014-09-25 01:36:42
+            [city_id] => 1
+        )
+
+    [OperationType] => Array
+        (
+            [id] => 1
+            [name] => Alquiler
+            [created] => 2014-09-25 01:27:30
+            [updated] => 2014-09-25 01:27:30
+        )
+
+    [PropertyType] => Array
+        (
+            [id] => 1
+            [name] => Casa
+            [category] => 1
+            [created] => 2014-09-25 01:26:12
+            [updated] => 2014-09-25 01:26:12
+        )
+
+    [User] => Array
+        (
+            [id] => 41
+            [username] => spike886@gmail.com
+            [password] => 608329ee4ce905882302093f79e3524e09a91084
+            [name] => andres
+            [tel_part] => 5456456
+            [mobile] => 456456
+            [created] => 2014-11-11 04:21:34
+            [updated] => 2014-11-11 04:21:34
+        )
+
+    [PublicationType] => Array
+        (
+            [id] => 2
+            [duration] => 90
+            [republication_days] => 7
+            [cost] => 50
+            [republication_cost] => 30
+        )
+
+)
+
+2014-11-15 05:20:48 Paypal: Process accessed
+2014-11-15 05:20:48 Paypal: POST Array
+(
+    [mc_gross] => 99.00
+    [protection_eligibility] => Ineligible
+    [address_status] => confirmed
+    [payer_id] => 25XCG8445FKXC
+    [tax] => 0.00
+    [address_street] => 1 Main St
+    [payment_date] => 00:20:44 Nov 15, 2014 PST
+    [payment_status] => Pending
+    [charset] => windows-1252
+    [address_zip] => 95131
+    [first_name] => Test
+    [address_country_code] => US
+    [address_name] => Test Buyer
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [address_country] => United States
+    [address_city] => San Jose
+    [quantity] => 1
+    [verify_sign] => AfcJQ6hE4rGj.0wMpKgV9A4.VEDWAJUF8sJBkh67BWnfRCGMDGsz7hye
+    [payer_email] => andres.garcia-buyer-1@inakanetworks.com
+    [txn_id] => 7EK5412945432870A
+    [payment_type] => instant
+    [last_name] => Buyer
+    [address_state] => CA
+    [receiver_email] => andres.garcia@inakanetworks.com
+    [pending_reason] => unilateral
+    [txn_type] => web_accept
+    [item_name] => Aviso publicado en MiLEEM
+    [mc_currency] => USD
+    [item_number] => 351
+    [residence_country] => US
+    [test_ipn] => 1
+    [handling_amount] => 0.00
+    [transaction_subject] => 
+    [payment_gross] => 99.00
+    [shipping] => 0.00
+    [ipn_track_id] => e5a63714ef810
+)
+
+2014-11-15 05:20:49 Paypal: POST Valid
+2014-11-15 05:20:51 Paypal: Processing Trasaction: 54670ce2-fbec-4d76-acb0-0ddb8437880b
+2014-11-15 05:20:51 Paypal: 54670ce2-fbec-4d76-acb0-0ddb8437880b
+2014-11-15 05:20:53 Paypal: Array
+(
+    [Publication] => Array
+        (
+            [id] => 351
+            [lat] => -34.57426510
+            [lng] => -58.43686800
+            [neighborhood_id] => 1
+            [covered_area] => 123
+            [total_area] => 123
+            [rooms] => 
+            [expenses] => 
+            [age] => 
+            [brand_new] => 
+            [price] => 1300
+            [currency] => ARS
+            [balcony] => 
+            [bathrooms] => 
+            [dining_room] => 
+            [ensuite_bedroom] => 
+            [storage] => 
+            [garage] => 
+            [studio] => 
+            [kitchen] => 
+            [service_unit] => 
+            [hall] => 
+            [frontgarden] => 
+            [backyard] => 
+            [laundry] => 
+            [lounge] => 
+            [living_room] => 
+            [terrace] => 
+            [mains_water] => 
+            [drains] => 
+            [cable] => 
+            [gas] => 
+            [internet] => 
+            [pavement] => 
+            [publication_date] => 2014-11-15 00:00:00
+            [publication_type] => 3
+            [status] => 1
+            [video] => 
+            [images_url] => []
+            [created] => 2014-11-15 03:10:55
+            [updated] => 2014-11-15 03:11:00
+            [operation_type_id] => 1
+            [property_type_id] => 1
+            [user_id] => 41
+            [end_date] => 2015-11-15 00:00:00
+            [description] => -
+            [availability] => 
+            [republicada] => 
+            [pagado] => 
+            [address] => CABILDO AV. 15
+        )
+
+    [Neighborhood] => Array
+        (
+            [id] => 1
+            [name] => Agronomía
+            [created] => 2014-09-25 01:13:33
+            [updated] => 2014-09-25 01:36:42
+            [city_id] => 1
+        )
+
+    [OperationType] => Array
+        (
+            [id] => 1
+            [name] => Alquiler
+            [created] => 2014-09-25 01:27:30
+            [updated] => 2014-09-25 01:27:30
+        )
+
+    [PropertyType] => Array
+        (
+            [id] => 1
+            [name] => Casa
+            [category] => 1
+            [created] => 2014-09-25 01:26:12
+            [updated] => 2014-09-25 01:26:12
+        )
+
+    [User] => Array
+        (
+            [id] => 41
+            [username] => spike886@gmail.com
+            [password] => 608329ee4ce905882302093f79e3524e09a91084
+            [name] => andres
+            [tel_part] => 5456456
+            [mobile] => 456456
+            [created] => 2014-11-11 04:21:34
+            [updated] => 2014-11-11 04:21:34
+        )
+
+    [PublicationType] => Array
+        (
+            [id] => 3
+            [duration] => 365
+            [republication_days] => 30
+            [cost] => 99
+            [republication_cost] => 70
+        )
+
+)
+
+2014-11-15 05:23:56 Paypal: Process accessed
+2014-11-15 05:23:56 Paypal: POST Array
+(
+    [mc_gross] => 50.00
+    [protection_eligibility] => Ineligible
+    [address_status] => confirmed
+    [payer_id] => 25XCG8445FKXC
+    [tax] => 0.00
+    [address_street] => 1 Main St
+    [payment_date] => 00:23:53 Nov 15, 2014 PST
+    [payment_status] => Pending
+    [charset] => windows-1252
+    [address_zip] => 95131
+    [first_name] => Test
+    [address_country_code] => US
+    [address_name] => Test Buyer
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [address_country] => United States
+    [address_city] => San Jose
+    [quantity] => 1
+    [verify_sign] => AnNMT7nRteKS2auTkxdsRz9rRvvPAn-WDwG3pd1gXPc6M1BGSfG3.EnC
+    [payer_email] => andres.garcia-buyer-1@inakanetworks.com
+    [txn_id] => 9V095233JN477905U
+    [payment_type] => instant
+    [last_name] => Buyer
+    [address_state] => CA
+    [receiver_email] => andres.garcia@inakanetworks.com
+    [pending_reason] => unilateral
+    [txn_type] => web_accept
+    [item_name] => Aviso publicado en MiLEEM
+    [mc_currency] => USD
+    [item_number] => 341
+    [residence_country] => US
+    [test_ipn] => 1
+    [handling_amount] => 0.00
+    [transaction_subject] => 
+    [payment_gross] => 50.00
+    [shipping] => 0.00
+    [ipn_track_id] => 34e68941d3f6b
+)
+
+2014-11-15 05:23:57 Paypal: POST Valid
+2014-11-15 05:23:59 Paypal: Processing Trasaction: 54670d9f-eb8c-4220-89ec-0bfd8437880b
+2014-11-15 05:23:59 Paypal: 54670d9f-eb8c-4220-89ec-0bfd8437880b
+2014-11-15 05:24:19 Paypal: Process accessed
+2014-11-15 05:24:19 Paypal: POST Array
+(
+    [mc_gross] => 50.00
+    [protection_eligibility] => Ineligible
+    [address_status] => confirmed
+    [payer_id] => 25XCG8445FKXC
+    [tax] => 0.00
+    [address_street] => 1 Main St
+    [payment_date] => 00:23:53 Nov 15, 2014 PST
+    [payment_status] => Pending
+    [charset] => windows-1252
+    [address_zip] => 95131
+    [first_name] => Test
+    [address_country_code] => US
+    [address_name] => Test Buyer
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [address_country] => United States
+    [address_city] => San Jose
+    [quantity] => 1
+    [verify_sign] => AnNMT7nRteKS2auTkxdsRz9rRvvPAn-WDwG3pd1gXPc6M1BGSfG3.EnC
+    [payer_email] => andres.garcia-buyer-1@inakanetworks.com
+    [txn_id] => 9V095233JN477905U
+    [payment_type] => instant
+    [last_name] => Buyer
+    [address_state] => CA
+    [receiver_email] => andres.garcia@inakanetworks.com
+    [pending_reason] => unilateral
+    [txn_type] => web_accept
+    [item_name] => Aviso publicado en MiLEEM
+    [mc_currency] => USD
+    [item_number] => 341
+    [residence_country] => US
+    [test_ipn] => 1
+    [handling_amount] => 0.00
+    [transaction_subject] => 
+    [payment_gross] => 50.00
+    [shipping] => 0.00
+    [ipn_track_id] => 34e68941d3f6b
+)
+
+2014-11-15 05:24:21 Paypal: POST Valid
+2014-11-15 05:24:22 Paypal: Processing Trasaction: 54670db6-6c78-45b8-a897-12968437880b
+2014-11-15 05:24:23 Paypal: 54670db6-6c78-45b8-a897-12968437880b
+2014-11-15 05:24:50 Paypal: Process accessed
+2014-11-15 05:24:50 Paypal: POST Array
+(
+    [mc_gross] => 50.00
+    [protection_eligibility] => Ineligible
+    [address_status] => confirmed
+    [payer_id] => 25XCG8445FKXC
+    [tax] => 0.00
+    [address_street] => 1 Main St
+    [payment_date] => 00:23:53 Nov 15, 2014 PST
+    [payment_status] => Pending
+    [charset] => windows-1252
+    [address_zip] => 95131
+    [first_name] => Test
+    [address_country_code] => US
+    [address_name] => Test Buyer
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [address_country] => United States
+    [address_city] => San Jose
+    [quantity] => 1
+    [verify_sign] => AnNMT7nRteKS2auTkxdsRz9rRvvPAn-WDwG3pd1gXPc6M1BGSfG3.EnC
+    [payer_email] => andres.garcia-buyer-1@inakanetworks.com
+    [txn_id] => 9V095233JN477905U
+    [payment_type] => instant
+    [last_name] => Buyer
+    [address_state] => CA
+    [receiver_email] => andres.garcia@inakanetworks.com
+    [pending_reason] => unilateral
+    [txn_type] => web_accept
+    [item_name] => Aviso publicado en MiLEEM
+    [mc_currency] => USD
+    [item_number] => 341
+    [residence_country] => US
+    [test_ipn] => 1
+    [handling_amount] => 0.00
+    [transaction_subject] => 
+    [payment_gross] => 50.00
+    [shipping] => 0.00
+    [ipn_track_id] => 34e68941d3f6b
+)
+
+2014-11-15 05:24:52 Paypal: POST Valid
+2014-11-15 05:24:53 Paypal: Processing Trasaction: 54670dd5-7fdc-4088-a441-0ddb8437880b
+2014-11-15 05:24:54 Paypal: 54670dd5-7fdc-4088-a441-0ddb8437880b
+2014-11-15 05:25:43 Paypal: Process accessed
+2014-11-15 05:25:43 Paypal: POST Array
+(
+    [mc_gross] => 50.00
+    [protection_eligibility] => Ineligible
+    [address_status] => confirmed
+    [payer_id] => 25XCG8445FKXC
+    [tax] => 0.00
+    [address_street] => 1 Main St
+    [payment_date] => 00:23:53 Nov 15, 2014 PST
+    [payment_status] => Pending
+    [charset] => windows-1252
+    [address_zip] => 95131
+    [first_name] => Test
+    [address_country_code] => US
+    [address_name] => Test Buyer
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [address_country] => United States
+    [address_city] => San Jose
+    [quantity] => 1
+    [verify_sign] => AnNMT7nRteKS2auTkxdsRz9rRvvPAn-WDwG3pd1gXPc6M1BGSfG3.EnC
+    [payer_email] => andres.garcia-buyer-1@inakanetworks.com
+    [txn_id] => 9V095233JN477905U
+    [payment_type] => instant
+    [last_name] => Buyer
+    [address_state] => CA
+    [receiver_email] => andres.garcia@inakanetworks.com
+    [pending_reason] => unilateral
+    [txn_type] => web_accept
+    [item_name] => Aviso publicado en MiLEEM
+    [mc_currency] => USD
+    [item_number] => 341
+    [residence_country] => US
+    [test_ipn] => 1
+    [handling_amount] => 0.00
+    [transaction_subject] => 
+    [payment_gross] => 50.00
+    [shipping] => 0.00
+    [ipn_track_id] => 34e68941d3f6b
+)
+
+2014-11-15 05:25:45 Paypal: POST Valid
+2014-11-15 05:25:47 Paypal: Processing Trasaction: 54670e0a-041c-4c44-a55e-0fb38437880b
+2014-11-15 05:25:47 Paypal: 54670e0a-041c-4c44-a55e-0fb38437880b
+2014-11-15 05:28:13 Paypal: Process accessed
+2014-11-15 05:28:13 Paypal: POST Array
+(
+    [mc_gross] => 50.00
+    [protection_eligibility] => Ineligible
+    [address_status] => confirmed
+    [payer_id] => 25XCG8445FKXC
+    [tax] => 0.00
+    [address_street] => 1 Main St
+    [payment_date] => 00:23:53 Nov 15, 2014 PST
+    [payment_status] => Pending
+    [charset] => windows-1252
+    [address_zip] => 95131
+    [first_name] => Test
+    [address_country_code] => US
+    [address_name] => Test Buyer
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [address_country] => United States
+    [address_city] => San Jose
+    [quantity] => 1
+    [verify_sign] => AnNMT7nRteKS2auTkxdsRz9rRvvPAn-WDwG3pd1gXPc6M1BGSfG3.EnC
+    [payer_email] => andres.garcia-buyer-1@inakanetworks.com
+    [txn_id] => 9V095233JN477905U
+    [payment_type] => instant
+    [last_name] => Buyer
+    [address_state] => CA
+    [receiver_email] => andres.garcia@inakanetworks.com
+    [pending_reason] => unilateral
+    [txn_type] => web_accept
+    [item_name] => Aviso publicado en MiLEEM
+    [mc_currency] => USD
+    [item_number] => 341
+    [residence_country] => US
+    [test_ipn] => 1
+    [handling_amount] => 0.00
+    [transaction_subject] => 
+    [payment_gross] => 50.00
+    [shipping] => 0.00
+    [ipn_track_id] => 34e68941d3f6b
+)
+
+2014-11-15 05:28:14 Paypal: POST Valid
+2014-11-15 05:28:16 Paypal: Processing Trasaction: 54670e9f-269c-4307-9476-133f8437880b
+2014-11-15 05:28:17 Paypal: 54670e9f-269c-4307-9476-133f8437880b
