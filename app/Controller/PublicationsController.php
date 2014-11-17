@@ -100,7 +100,7 @@ class PublicationsController extends AppController {
 				$publication =$this->Publication->findById($this->Publication->getLastInsertID());
 				$this->__sendPublicationStartEmail($publication);
 				$this->Session->setFlash(__('The publication has been saved'), 'flash/success');
-                if($publication_type->id==1){
+                if($type=="1"){
                     $this->Publication->saveField('pagado',true);
                     $this->redirect(array('action' => 'index'));
                 }else{
