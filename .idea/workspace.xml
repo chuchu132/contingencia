@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="338e6ee8-8984-4168-b3aa-1678eab3bbe0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/PublicationsController.php" afterPath="$PROJECT_DIR$/app/Controller/PublicationsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Publications/index.ctp" afterPath="$PROJECT_DIR$/app/View/Publications/index.ctp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Config/core.php" afterPath="$PROJECT_DIR$/app/Config/core.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="contingencia.iws" />
@@ -26,24 +25,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PublicationsController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PublicationsController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Controller/PublicationsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.2941175" vertical-offset="3099" max-vertical-offset="5970">
-              <caret line="228" column="94" selection-start-line="228" selection-start-column="94" selection-end-line="228" selection-end-column="94" />
+            <state vertical-scroll-proportion="0.3349917" vertical-offset="3563" max-vertical-offset="5970">
+              <caret line="251" column="105" selection-start-line="251" selection-start-column="103" selection-end-line="251" selection-end-column="105" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ctp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.ctp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/View/Publications/index.ctp">
           <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5933014" vertical-offset="963" max-vertical-offset="2085">
-              <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
+            <state vertical-scroll-proportion="-12.111111" vertical-offset="888" max-vertical-offset="2085">
+              <caret line="81" column="53" selection-start-line="81" selection-start-column="53" selection-end-line="81" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="core.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Config/core.php">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.5384614" vertical-offset="312" max-vertical-offset="5895">
+              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -69,6 +81,7 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/Controller/PublicationsController.php" />
+        <option value="$PROJECT_DIR$/app/Config/core.php" />
         <option value="$PROJECT_DIR$/app/View/Publications/index.ctp" />
       </list>
     </option>
@@ -194,6 +207,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contingencia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contingencia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -279,7 +310,11 @@
       <created>1416247031298</created>
       <updated>1416247031298</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Revolve bugs">
+      <created>1416248101616</created>
+      <updated>1416248101616</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -338,10 +373,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/PublicationsController.php">
+    <entry file="file://$PROJECT_DIR$/app/Config/core.php">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.2941175" vertical-offset="3099" max-vertical-offset="5970">
-          <caret line="228" column="94" selection-start-line="228" selection-start-column="94" selection-end-line="228" selection-end-column="94" />
+        <state vertical-scroll-proportion="-2.5384614" vertical-offset="312" max-vertical-offset="5895">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -351,8 +389,16 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5933014" vertical-offset="963" max-vertical-offset="2085">
-          <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
+        <state vertical-scroll-proportion="-12.111111" vertical-offset="888" max-vertical-offset="2085">
+          <caret line="81" column="53" selection-start-line="81" selection-start-column="53" selection-end-line="81" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/PublicationsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3349917" vertical-offset="3563" max-vertical-offset="5970">
+          <caret line="251" column="105" selection-start-line="251" selection-start-column="103" selection-end-line="251" selection-end-column="105" />
           <folding />
         </state>
       </provider>
