@@ -77,10 +77,12 @@
 			}
 		?>"> 
 		<?php echo h($status_list[$publication['Publication']['status']]); ?>&nbsp;</div></td>
-		<td><?php if($publication['Publication']['pagado']){
-		 echo $this->Html->tag('span', ' Pago', array('class' => 'glyphicon glyphicon-ok label label-success'));
-		 }else{
-		 echo $this->Html->tag('span', ' Impago', array('class' => 'glyphicon glyphicon-remove label label-danger'));
+		<td><?php if($publication['OperationType']['id']!=0){
+            if($publication['Publication']['pagado']){
+             echo $this->Html->tag('span', ' Pago', array('class' => 'glyphicon glyphicon-ok label label-success'));
+             }else{
+             echo $this->Html->tag('span', ' Impago', array('class' => 'glyphicon glyphicon-remove label label-danger'));
+            }
 		}?>&nbsp;</td>
 		<td><?php echo h( date('d-m-Y',strtotime($publication['Publication']['publication_date']))); ?>&nbsp;</td>
 		<td><?php echo h( date('d-m-Y',strtotime($publication['Publication']['end_date']))); ?>&nbsp;</td>
