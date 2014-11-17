@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="338e6ee8-8984-4168-b3aa-1678eab3bbe0" name="Default" comment="">
+    <list default="true" id="338e6ee8-8984-4168-b3aa-1678eab3bbe0" name="Default" comment="Revolve bugs">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/PublicationsController.php" afterPath="$PROJECT_DIR$/app/Controller/PublicationsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/View/Publications/index.ctp" afterPath="$PROJECT_DIR$/app/View/Publications/index.ctp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="PublicationsController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Controller/PublicationsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.9411764" vertical-offset="1125" max-vertical-offset="5970">
-              <caret line="102" column="43" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="43" />
+            <state vertical-scroll-proportion="-7.470588" vertical-offset="3189" max-vertical-offset="5970">
+              <caret line="238" column="50" selection-start-line="238" selection-start-column="19" selection-end-line="238" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -42,8 +42,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5215311" vertical-offset="873" max-vertical-offset="2115">
-              <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.6411483" vertical-offset="873" max-vertical-offset="2100">
+              <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -323,7 +323,11 @@
       <created>1416248429216</created>
       <updated>1416248429216</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Revolve bugs">
+      <created>1416248831566</created>
+      <updated>1416248831566</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -395,8 +399,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Controller/PublicationsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.9411764" vertical-offset="1125" max-vertical-offset="5970">
-          <caret line="102" column="43" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="43" />
+        <state vertical-scroll-proportion="-7.470588" vertical-offset="3189" max-vertical-offset="5970">
+          <caret line="238" column="50" selection-start-line="238" selection-start-column="19" selection-end-line="238" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -406,8 +410,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5215311" vertical-offset="873" max-vertical-offset="2115">
-          <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.6411483" vertical-offset="873" max-vertical-offset="2100">
+          <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
           <folding />
         </state>
       </provider>
